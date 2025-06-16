@@ -83,7 +83,7 @@ function SidebarPannel() {
       shadow="$lg"
       rounded="$lg"
       bgColor="white"
-      _dark={{ bgColor: "$neutral3" }}
+      _dark={{ backgroundColor: "$neutral3" }}
       onMouseEnter={showFullSidebar}
       onMouseLeave={resetSidebar}
       ref={(el: HTMLDivElement) => setSideBarRef(el)}

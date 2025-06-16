@@ -1,0 +1,31 @@
+name: upload
+
+on: workflow_dispatch
+
+jobs:
+  upload:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest]
+    name: upload
+    runs-on: ${{ matrix.platform }}
+    steps:
+      - name: Commit dist
+        run: |
+          cd NiSweet-Dist
+          rm -rf dist
+          cp -r ../NiSweet-Dist/dist .
+          git add .
+          git config --local user.email "nisweet@peifeng.li"
+          git config --local user.name "LEO"
+          git commit --amend -m "upload dev dist"
+          cd ..
+
+      - name: Upload dist files
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.MY_TOKEN }}
+          branch: dev
+          directory: NiSweet-Dist
+          repository: li-peifeng/NiSweet-Dist
+          force: true

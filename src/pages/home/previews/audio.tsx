@@ -37,14 +37,11 @@ const Preview = () => {
     if (coverObj) {
       cover = rawLink(coverObj, true)
     } else {
-      cover =
-        obj.thumb ||
-        getSetting("audio_cover") ||
-        "https://docs.oplist.org/logo.svg"
+      cover = obj.thumb || getSetting("audio_cover") || "/images/audio.png"
     }
     const audio = {
       name: obj.name,
-      artist: "Unknown",
+      artist: "•••",
       url: rawLink(obj, true),
       cover: cover,
       lrc: lrc,

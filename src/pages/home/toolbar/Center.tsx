@@ -1,11 +1,20 @@
-import { Box, HStack, useColorModeValue } from "@hope-ui/solid"
+import { Box, HStack, useColorModeValue, Badge } from "@hope-ui/solid"
 import { createMemo, For, Show } from "solid-js"
-import { checkboxOpen, haveSelected, objStore, selectAll, State } from "~/store"
+import {
+  checkboxOpen,
+  haveSelected,
+  objStore,
+  selectAll,
+  State,
+  me,
+  selectedObjs,
+} from "~/store"
 import { CopyLink } from "./CopyLink"
 import { CenterIcon } from "./Icon"
 import { bus } from "~/utils"
 import { Download } from "./Download"
 import { Motion, Presence } from "solid-motionone"
+import { UserMethods } from "~/types"
 
 export const Center = () => {
   const show = createMemo(
@@ -16,18 +25,18 @@ export const Center = () => {
   )
   return (
     <Presence exitBeforeEnter>
-      <Show when={show()}>
+      <Show when={show() && UserMethods.is_admin(me())}>
         <Box
           class="center-toolbar"
           pos="fixed"
-          bottom="$4"
+          bottom="$5"
           right="50%"
           w="max-content"
           color="$neutral11"
           as={Motion.div}
-          initial={{ opacity: 0, scale: 0.9, x: "50% ", y: 10 }}
+          initial={{ opacity: 0, scale: 0, x: "50% ", y: 100 }}
           animate={{ opacity: 1, scale: 1, x: "50%", y: 0 }}
-          exit={{ opacity: 0, scale: 0.9 }}
+          exit={{ opacity: 0, scale: 0, x: "50% ", y: 100 }}
           // @ts-ignore
           transition={{ duration: 0.2 }}
         >
@@ -38,9 +47,12 @@ export const Center = () => {
             shadow="0px 10px 30px -5px rgba(0, 0, 0, 0.3)"
             rounded="$lg"
             css={{
-              backdropFilter: "blur(8px)",
+              backdropFilter: "blur(15px)",
             }}
           >
+            <Show when={haveSelected()}>
+              <Badge colorScheme="warning">{selectedObjs().length}</Badge>
+            </Show>
             <For each={["rename", "move", "copy", "delete", "decompress"]}>
               {(name) => {
                 return (

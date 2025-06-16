@@ -1,12 +1,21 @@
-import { Box, Center, Flex, HStack, useColorModeValue } from "@hope-ui/solid"
-import { FullLoading, SwitchColorMode, SwitchLanguageWhite } from "~/components"
+import {
+  Icon,
+  notificationService,
+  Box,
+  Center,
+  Flex,
+  HStack,
+  useColorModeValue,
+} from "@hope-ui/solid"
+import { SwitchColorMode, SwitchLanguageWhite } from "~/components"
 import { useT, useTitle } from "~/hooks"
 import { Header } from "./Header"
 import { SideMenu } from "./SideMenu"
 import { side_menu_items } from "./sidemenu_items"
 import { Route, Routes } from "@solidjs/router"
-import { For, Suspense } from "solid-js"
+import { For } from "solid-js"
 import { routes } from "./routes"
+import { VsActivateBreakpoints as Auto } from "solid-icons/vs"
 
 const Manage = () => {
   const t = useT()
@@ -32,8 +41,24 @@ const Manage = () => {
           <SideMenu items={side_menu_items} />
           <Center>
             <HStack spacing="$4" p="$2" color="$neutral11">
-              <SwitchLanguageWhite />
               <SwitchColorMode />
+              <Icon
+                as={Auto}
+                cursor="pointer"
+                boxSize="$7"
+                onClick={() => {
+                  localStorage.removeItem("hope-ui-color-mode")
+                  notificationService.show({
+                    status: "success",
+                    description: "设置成功，即将自动刷新",
+                    closable: false,
+                  })
+                  setTimeout(function () {
+                    location.reload()
+                  }, 2500)
+                }}
+              />
+              <SwitchLanguageWhite />
             </HStack>
           </Center>
         </Box>

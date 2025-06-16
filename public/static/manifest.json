@@ -2,10 +2,10 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "OpenList",
+  "name": "甜蜜云",
   "icons": [
     {
-      "src": "https://docs.oplist.org/logo.png",
+      "src": "logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }

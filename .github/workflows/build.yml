@@ -1,16 +1,16 @@
-name: release
+name: build
 
 on:
   push:
-    tags:
+    branches:
       - "*"
 
 jobs:
-  release:
+  build:
     strategy:
       matrix:
         platform: [ubuntu-latest]
-    name: Release
+    name: Build
     runs-on: ${{ matrix.platform }}
     steps:
       - name: Setup Node
@@ -39,25 +39,34 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: li-peifeng/NiSweet-Dist
-          ref: main
+          ref: dev
           path: NiSweet-Dist
           persist-credentials: false
           fetch-depth: 0
 
       - name: Build
         run: |
-          mv Nisweet-Frontend/release.sh .
-          bash release.sh
+          cd Nisweet-Frontend
+          pnpm install --no-frozen-lockfile
+          pnpm build
+          cd ..
+
+      - name: Commit dist
+        run: |
+          cd NiSweet-Dist
+          rm -rf dist
+          cp -r ../Nisweet-Frontend/dist .
+          git add .
+          git config --local user.email "nisweet@peifeng.li"
+          git config --local user.name "LEO"
+          git commit --amend -m "upload dev dist"
+          cd ..
 
       - name: Upload dist files
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.MY_TOKEN }}
-          branch: main
+          branch: dev
           directory: NiSweet-Dist
           repository: li-peifeng/NiSweet-Dist
-
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        with:
-          files: compress/*
+          force: true

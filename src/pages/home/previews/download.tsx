@@ -33,15 +33,12 @@ export const Download = (props: { openWith?: boolean }) => {
         <Button colorScheme="accent" onClick={() => copyCurrentRawLink(true)}>
           {t("home.toolbar.copy_link")}
         </Button>
-        <Button as="a" href={objStore.raw_url} target="_blank">
-          {t("home.preview.download")}
-        </Button>
         <Popover opened={pinned() || hover()} motionPreset="none">
           <PopoverTrigger
             as={IconButton}
             icon={<BsQrCode />}
             aria-label="QRCode"
-            colorScheme="success"
+            colorScheme="warning"
             onClick={() => {
               setPinned(!pinned())
             }}
@@ -52,14 +49,17 @@ export const Download = (props: { openWith?: boolean }) => {
             <PopoverArrow />
             <PopoverBody>
               <Image
-                maxWidth="300px"
+                maxWidth="156px"
                 src={qrUrl()}
-                alt="QR Code of download link"
+                alt="QR.Code 链接二维码"
                 objectFit="cover"
               />
             </PopoverBody>
           </PopoverContent>
         </Popover>
+        <Button as="a" href={objStore.raw_url} target="_blank">
+          {t("home.preview.download")}
+        </Button>
       </HStack>
       <Show when={props.openWith}>
         <OpenWith />

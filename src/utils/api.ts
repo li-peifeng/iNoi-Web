@@ -215,7 +215,7 @@ export const fetchText = async (
       responseType: "blob",
       params: ts
         ? {
-            openlist_ts: new Date().getTime(),
+            alist_ts: new Date().getTime(),
           }
         : undefined,
     })

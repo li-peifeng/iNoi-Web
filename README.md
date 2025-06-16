@@ -1,35 +1,55 @@
-# OpenList (frontend)
+<p align="center">
+  <a href="https://peifeng.li"><img width="184px" alt="logo" src="https://cdn.jsdelivr.net/gh/li-peifeng/static/logo.png" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/li-peifeng/nisweet/actions?query=workflow:Build">
+    <img src="https://img.shields.io/github/actions/workflow/status/li-peifeng/nisweet/build.yml?branch=main" alt="Build status" />
+  </a>
+  <a href="https://github.com/li-peifeng/isweet/releases">
+    <img src="https://img.shields.io/github/release/li-peifeng/nisweet" alt="latest version" />
+  </a>
+  <a href="https://hub.docker.com/r/leolitaly/nisweet">
+    <img src="https://img.shields.io/docker/pulls/leolitaly/nisweet?color=#48BB78&logo=docker&label=pulls" alt="Downloads" />
+  </a>
+  <a href="https://github.com/li-peifeng/nisweet/releases">
+    <img src="https://img.shields.io/github/downloads/li-peifeng/nisweet/total?color=#9F7AEA&logo=github" alt="Downloads" />
+  </a>
+</p>
 
-![License MIT](https://img.shields.io/badge/license-MIT-green)
-[![GitHub package.json version](https://img.shields.io/github/package-json/v/OpenListTeam/OpenList-Frontend)](./package.json)
-[![NPM Version](https://img.shields.io/npm/v/%40openlist-frontend%2Fopenlist-frontend)](https://www.npmjs.com/package/@openlist-frontend/openlist-frontend)
-[![NPM Downloads](https://img.shields.io/npm/dw/%40openlist-frontend%2Fopenlist-frontend)](https://www.npmjs.com/package/@openlist-frontend/openlist-frontend)
-[![NPM Last Update](https://img.shields.io/npm/last-update/%40openlist-frontend%2Fopenlist-frontend)](https://www.npmjs.com/package/@openlist-frontend/openlist-frontend)
+## iSweet 现更名为 NiSweet （New iSweet）
 
-## BUILD
+## 现上游仓库改为 OpenList。
 
-You can use [the build script](./build.sh).
+### Docker 镜像拉取
 
-```plaintext
-Usage: ./build.sh [--dev|--release] [--compress|--no-compress] [--enforce-tag]
+#### Docker Hub
 
-Options (will overwrite environment setting):
-  --dev         Build development version
-  --release     Build release version (will check if git tag match package.json version)
-  --compress    Create compressed archive
-  --no-compress Skip compression
-  --enforce-tag Force git tag requirement for both dev and release builds
+#### docker pull leolitaly/nisweet:latest
 
-Environment variables:
-  OPENLIST_FRONTEND_BUILD_MODE=dev|release (default: dev)
-  OPENLIST_FRONTEND_BUILD_COMPRESS=true|false (default: false)
-  OPENLIST_FRONTEND_BUILD_ENFORCE_TAG=true|false (default: false)
-```
+#### Docker Hub 访问有问题的可以用 ghcr.io 源拉取镜像
 
-## LICENSE
+#### docker pull ghcr.io/li-peifeng/nisweet:latest
 
-MIT
+#### 阿里云 Docker
 
-## CREDITS
+#### Docker Hub 和 ghcr.io 访问有问题的国内用户可以用此源拉取镜像
 
-[OpenList](https://github.com/OpenListTeam/OpenList) is a resilient, community-driven fork of [AList](https://github.com/AlistGo/alist) — built to defend open source against trust-based attacks.
+#### $ docker pull crpi-lzr94m9idb4j2kpi.cn-shanghai.personal.cr.aliyuncs.com/isweet/nisweet:latest
+
+### 预览图
+
+#### 更新功能详情请看更新日志。
+
+### light
+
+![IMG_0116](https://github.com/user-attachments/assets/6e248f9e-1f0f-4280-b209-2a137252f69b)
+![IMG_0119](https://github.com/user-attachments/assets/caa65fd7-9c7f-43c5-b312-cc6ec5fa45fc)
+![IMG_0118](https://github.com/user-attachments/assets/6837459c-13f6-4b8d-af6c-d5dc415640bc)
+![IMG_0117](https://github.com/user-attachments/assets/ca96e8ff-15b3-42e2-9fa5-c9485043efa5)
+
+### dark
+
+![IMG_0115](https://github.com/user-attachments/assets/4a2a5a04-cce8-4566-8476-e6bd8868cb7d)
+![IMG_0114](https://github.com/user-attachments/assets/c4e88d97-9629-4411-a65c-a4c41d75691b)
+![IMG_0113](https://github.com/user-attachments/assets/69994ec3-2861-4f15-83b7-619ec7ecff79)

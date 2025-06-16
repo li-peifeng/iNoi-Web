@@ -1,9 +1,9 @@
 import { Show, createSignal, onCleanup } from "solid-js"
 import { Box, Icon } from "@hope-ui/solid"
-import { FiArrowUp } from "solid-icons/fi"
 import { Motion } from "solid-motionone"
 import { isMobile } from "~/utils/compatibility"
 import { getMainColor } from "~/store"
+import { CgChevronDoubleUpO } from "solid-icons/cg"
 
 export const useScrollListener = (
   callback: (e?: Event) => void,
@@ -25,29 +25,29 @@ export const BackTop = () => {
     <Show when={visible()}>
       <Box
         as={Motion.div}
-        initial={{ y: -999 }}
+        initial={{ y: 999 }}
         animate={{ y: 0 }}
         zIndex="$overlay"
         pos="fixed"
-        right="$5"
-        top="0"
-        borderBottomRadius="50%"
-        bgColor="$whiteAlpha12"
+        left="$5"
+        bottom="$5"
+        borderRadius="10px"
+        bgColor="#ffffff00"
         color={getMainColor()}
         overflow="hidden"
         shadow="$lg"
-        _dark={{ bgColor: getMainColor(), color: "white" }}
-        _hover={{ bgColor: getMainColor(), color: "white" }}
+        _dark={{ backgroundColor: "#00000000", color: getMainColor() }}
+        _hover={{ backgroundColor: getMainColor(), color: "$whiteAlpha12" }}
       >
         <Icon
           _focus={{
             outline: "none",
           }}
           cursor="pointer"
-          boxSize="$7"
+          boxSize="$8"
           p="$1"
           rounded="$lg"
-          as={FiArrowUp}
+          as={CgChevronDoubleUpO}
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" })
           }}

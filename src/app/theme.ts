@@ -5,7 +5,6 @@ const theme: HopeThemeConfig = {
   initialColorMode: "system",
   lightTheme: {
     colors: {
-      // background: "$neutral2",
       background: "#f7f8fa",
     },
   },
@@ -13,7 +12,7 @@ const theme: HopeThemeConfig = {
     Button: {
       baseStyle: {
         root: {
-          rounded: "$lg",
+          borderRadius: "$lg",
           _active: {
             transform: "scale(.95)",
             transition: "0.2s",
@@ -39,7 +38,7 @@ const theme: HopeThemeConfig = {
     Input: {
       baseStyle: {
         input: {
-          rounded: "$lg",
+          borderRadius: "$lg",
           _focus: {
             boxShadow: "unset",
             borderColor: "$info8",
@@ -54,7 +53,7 @@ const theme: HopeThemeConfig = {
     },
     Textarea: {
       baseStyle: {
-        rounded: "$lg",
+        borderRadius: "$lg",
         _focus: {
           boxShadow: "unset",
           borderColor: "$info8",
@@ -69,7 +68,7 @@ const theme: HopeThemeConfig = {
     Select: {
       baseStyle: {
         trigger: {
-          rounded: "$lg",
+          borderRadius: "$lg",
           _focus: {
             boxShadow: "unset",
             borderColor: "$info8",
@@ -77,7 +76,7 @@ const theme: HopeThemeConfig = {
         },
         content: {
           border: "none",
-          rounded: "$lg",
+          borderRadius: "$lg",
         },
         optionIndicator: {
           color: "$info10",
@@ -107,14 +106,14 @@ const theme: HopeThemeConfig = {
     Menu: {
       baseStyle: {
         content: {
-          rounded: "$md",
-          minW: "unset",
+          borderRadius: "$md",
+          minWidth: "unset",
           border: "unset",
           // py: "0",
         },
         item: {
-          rounded: "$md",
-          py: "$1",
+          borderRadius: "$md",
+          paddingTop: "$1",
           // mx: "0",
         },
       },
@@ -122,23 +121,27 @@ const theme: HopeThemeConfig = {
     Notification: {
       baseStyle: {
         root: {
-          rounded: "$lg",
+          borderRadius: "$lg",
           border: "unset",
+          backdropFilter: "blur(15px)",
+          backgroundColor: "#ffffff00",
         },
       },
     },
     Alert: {
       baseStyle: {
         root: {
-          rounded: "$lg",
+          borderRadius: "$lg",
+          backgroundColor: "#ffffff00",
+          backdropFilter: "blur(15px)",
         },
       },
     },
     Anchor: {
       baseStyle: {
-        rounded: "$lg",
-        px: "$1_5",
-        py: "$1",
+        borderRadius: "$lg",
+        paddingInlineStart: "$1_5",
+        paddingTop: "$1",
         _hover: {
           bgColor: hoverColor(),
           textDecoration: "none",
@@ -152,7 +155,7 @@ const theme: HopeThemeConfig = {
     Modal: {
       baseStyle: {
         content: {
-          rounded: "$lg",
+          borderRadius: "$lg",
         },
       },
     },

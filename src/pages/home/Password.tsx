@@ -10,7 +10,6 @@ import {
 } from "@hope-ui/solid"
 import { useRouter, useT } from "~/hooks"
 import { JSXElement } from "solid-js"
-
 type PasswordProps = {
   title: string
   password: () => string
@@ -50,9 +49,7 @@ const Password = (props: PasswordProps) => {
           color="$neutral10"
           direction={{ "@initial": "column", "@sm": "row" }}
           columnGap="$1"
-        >
-          {props.children}
-        </Flex>
+        ></Flex>
         <HStack spacing="$2">
           <Button colorScheme="neutral" onClick={back}>
             {t("global.back")}

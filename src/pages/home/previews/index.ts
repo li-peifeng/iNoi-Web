@@ -41,94 +41,88 @@ export type PreviewComponent = Pick<Preview, "name" | "component">
 
 const previews: Preview[] = [
   {
-    name: "HTML render",
+    name: "HTML网页",
     exts: ["html"],
     component: lazy(() => import("./html")),
     prior: true,
   },
   {
-    name: "Aliyun Video Previewer",
+    name: "在线阿里网盘视频",
     type: ObjType.VIDEO,
     provider: /^Aliyundrive(Open)?$/,
     component: lazy(() => import("./aliyun_video")),
     prior: true,
   },
   {
-    name: "Markdown",
+    name: "Markdown文档",
     type: ObjType.TEXT,
     component: lazy(() => import("./markdown")),
     prior: true,
   },
   {
-    name: "Markdown with word wrap",
+    name: "Markdown自动换行",
     type: ObjType.TEXT,
     component: lazy(() => import("./markdown_with_word_wrap")),
     prior: true,
   },
   {
-    name: "Url Open",
+    name: "URL网址",
     exts: ["url"],
     component: lazy(() => import("./url")),
     prior: true,
   },
   {
-    name: "Text Editor",
+    name: "TXT文档",
     type: ObjType.TEXT,
     exts: ["url"],
     component: lazy(() => import("./text-editor")),
     prior: true,
   },
   {
-    name: "Image",
+    name: "在线查看图片",
     type: ObjType.IMAGE,
     component: lazy(() => import("./image")),
     prior: true,
   },
   {
-    name: "Video",
+    name: "在线播放视频",
     type: ObjType.VIDEO,
     component: lazy(() => import("./video")),
     prior: true,
   },
   {
-    name: "Audio",
+    name: "在线播放音频",
     type: ObjType.AUDIO,
     component: lazy(() => import("./audio")),
     prior: true,
   },
   {
-    name: "Ipa",
+    name: "IPA安装及下载",
     exts: ["ipa", "tipa"],
     component: lazy(() => import("./ipa")),
     prior: true,
   },
   {
-    name: "Plist",
+    name: "PLIST",
     exts: ["plist"],
     component: lazy(() => import("./plist")),
     prior: true,
   },
   {
-    name: "Aliyun Office Previewer",
+    name: "办公文档",
     exts: ["doc", "docx", "ppt", "pptx", "xls", "xlsx", "pdf"],
     provider: /^Aliyundrive(Share)?$/,
     component: lazy(() => import("./aliyun_office")),
     prior: true,
   },
   {
-    name: "Asciinema",
+    name: "录屏",
     exts: ["cast"],
     component: lazy(() => import("./asciinema")),
     prior: true,
   },
   {
-    name: "Video360",
-    type: ObjType.VIDEO,
-    component: lazy(() => import("./video360")),
-    prior: true,
-  },
-  {
-    name: "Archive Preview",
+    name: "压缩文档",
     exts: (name: string) => {
       const index = UserPermissions.findIndex(
         (item) => item === "read_archives",
@@ -177,7 +171,7 @@ export const getPreviews = (
   })
   // download page
   res.push({
-    name: "Download",
+    name: "下载保存",
     component: lazy(() => import("./download")),
   })
   return res.concat(subsequent)

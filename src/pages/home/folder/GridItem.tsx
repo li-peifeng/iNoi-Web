@@ -47,7 +47,7 @@ export const GridItem = (props: { obj: StoreObj; index: number }) => {
         transition="all 0.3s"
         _hover={{
           transform: "scale(1.06)",
-          bgColor: hoverColor(),
+          backgroundColor: hoverColor(),
         }}
         as={LinkWithPush}
         href={props.obj.name}

@@ -18,48 +18,26 @@ import { SelectWrapper } from "~/components"
 Artplayer.PLAYBACK_RATE = [0.5, 0.75, 1, 1.25, 1.5, 2, 3, 4]
 
 export const players: { icon: string; name: string; scheme: string }[] = [
-  { icon: "iina", name: "IINA", scheme: "iina://weblink?url=$edurl" },
-  { icon: "potplayer", name: "PotPlayer", scheme: "potplayer://$durl" },
-  { icon: "vlc", name: "VLC", scheme: "vlc://$durl" },
-  { icon: "nplayer", name: "nPlayer", scheme: "nplayer-$durl" },
-  {
-    icon: "omniplayer",
-    name: "OmniPlayer",
-    scheme: "omniplayer://weblink?url=$durl",
-  },
-  {
-    icon: "figplayer",
-    name: "Fig Player",
-    scheme: "figplayer://weblink?url=$durl",
-  },
   {
     icon: "infuse",
     name: "Infuse",
     scheme: "infuse://x-callback-url/play?url=$durl",
   },
-  {
-    icon: "fileball",
-    name: "Fileball",
-    scheme: "filebox://play?url=$durl",
-  },
-  {
-    icon: "mxplayer",
-    name: "MX Player",
-    scheme:
-      "intent:$durl#Intent;package=com.mxtech.videoplayer.ad;S.title=$name;end",
-  },
+  { icon: "nplayer", name: "nPlayer", scheme: "nplayer-$durl" },
+  { icon: "potplayer", name: "PotPlayer", scheme: "potplayer://$durl" },
+  { icon: "vlc", name: "VLC", scheme: "vlc://$durl" },
   {
     icon: "mxplayer-pro",
     name: "MX Player Pro",
     scheme:
       "intent:$durl#Intent;package=com.mxtech.videoplayer.pro;S.title=$name;end",
   },
+  { icon: "iina", name: "IINA", scheme: "iina://weblink?url=$edurl" },
   {
-    icon: "iPlay",
-    name: "iPlay",
-    scheme: "iplay://play/any?type=url&url=$bdurl",
+    icon: "fileball",
+    name: "Fileball",
+    scheme: "filebox://play?url=$durl",
   },
-  { icon: "mpv", name: "mpv", scheme: "mpv://$edurl" },
 ]
 
 export const AutoHeightPlugin = (player: Artplayer) => {
@@ -67,8 +45,8 @@ export const AutoHeightPlugin = (player: Artplayer) => {
   const $videoBox = $container.parentElement!
 
   player.on("ready", () => {
-    const offsetBottom = "1.75rem" // position bottom of "More" button + padding
-    $videoBox.style.maxHeight = `calc(100vh - ${$videoBox.offsetTop}px - ${offsetBottom})`
+    const offsetBottom = "0rem" // position bottom of "More" button + padding
+    $videoBox.style.maxHeight = `calc(100vh - ${offsetBottom})`
     $videoBox.style.minHeight = "320px" // min width of mobie phone
     player.autoHeight()
   })
@@ -125,30 +103,32 @@ export const VideoBox = (props: {
           {t("home.preview.auto_next")}
         </Switch>
       </HStack>
-      <Flex wrap="wrap" gap="$1" justifyContent="center">
-        <For each={players}>
-          {(item) => {
-            return (
-              <Tooltip placement="top" withArrow label={item.name}>
-                <Anchor
-                  // external
-                  href={convertURL(item.scheme, {
-                    raw_url: objStore.raw_url,
-                    name: objStore.obj.name,
-                    d_url: currentObjLink(true),
-                  })}
-                >
-                  <Image
-                    m="0 auto"
-                    boxSize="$8"
-                    src={`${window.__dynamic_base__}/images/${item.icon}.webp`}
-                  />
-                </Anchor>
-              </Tooltip>
-            )
-          }}
-        </For>
-      </Flex>
+      <HStack>
+        <Flex wrap="wrap" gap="$1" justifyContent="center">
+          <For each={players}>
+            {(item) => {
+              return (
+                <Tooltip placement="top" withArrow label={item.name}>
+                  <Anchor
+                    // external
+                    href={convertURL(item.scheme, {
+                      raw_url: objStore.raw_url,
+                      name: objStore.obj.name,
+                      d_url: currentObjLink(true),
+                    })}
+                  >
+                    <Image
+                      m="0 auto"
+                      boxSize="$6"
+                      src={`${window.__dynamic_base__}/images/${item.icon}.webp`}
+                    />
+                  </Anchor>
+                </Tooltip>
+              )
+            }}
+          </For>
+        </Flex>
+      </HStack>
     </VStack>
   )
 }

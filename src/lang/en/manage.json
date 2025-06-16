@@ -1,6 +1,6 @@
 {
   "sidemenu": {
-    "dashboard": "Dashboard",
+    "dashboard": "NiSweet • Admin",
     "settings": "Settings",
     "site": "Site",
     "style": "Style",
@@ -16,7 +16,7 @@
     "upload": "Upload",
     "copy": "Copy",
     "decompress": "Decompress",
-    "backup-restore": "Backup & Restore",
+    "backup-restore": "System",
     "home": "Home",
     "indexes": "Indexes",
     "sso": "Single Sign-on",
@@ -27,7 +27,7 @@
     "ftp": "FTP",
     "traffic": "Traffic"
   },
-  "title": "OpenList Manage",
+  "title": "NiSweet • Admin",
   "not_admin": "You are not admin user, please login with admin account.",
   "logout_success": "Logout successfully",
   "send": "Send",

@@ -19,7 +19,7 @@ import {
   FaSolidCompactDisc,
   FaSolidLink,
 } from "solid-icons/fa"
-import { IoFolder } from "solid-icons/io"
+import { IoInfinite } from "solid-icons/io"
 import { ImAndroid } from "solid-icons/im"
 import { Obj, ObjType } from "~/types"
 import { ext } from "./path"
@@ -62,7 +62,7 @@ export const getIconByTypeAndName = (type: number, name: string) => {
   }
   switch (type) {
     case ObjType.FOLDER:
-      return IoFolder
+      return IoInfinite
     // case ObjType.OFFICE: {
     //   if (ext === "doc" || ext === "docx") {
     //     return BsFileEarmarkWordFill;

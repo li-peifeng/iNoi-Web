@@ -130,7 +130,7 @@ function MarkdownToc(props: {
           shadow="$outline"
           rounded="$lg"
           bgColor="white"
-          _dark={{ bgColor: "$neutral3" }}
+          _dark={{ backgroundColor: "$neutral3" }}
         >
           <List maxH="60vh" overflowY="auto">
             <For each={tocList()}>

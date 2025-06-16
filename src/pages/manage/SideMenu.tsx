@@ -74,7 +74,6 @@ const SideMenuItemWithTo = (props: SideMenuItemProps) => {
       bgColor={isActive() ? "$info4" : ""}
       color={isActive() ? "$info11" : ""}
       external={props.external}
-      // _active={{ transform: "scale(.95)", transition: "0.1s" }}
     >
       <Show when={props.icon}>{<Icon mr="$2" as={props.icon} />}</Show>
       <Heading>{t(props.title)}</Heading>

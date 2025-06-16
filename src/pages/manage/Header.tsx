@@ -1,6 +1,8 @@
 import {
   Box,
+  Icon,
   Center,
+  notificationService,
   createDisclosure,
   Drawer,
   DrawerBody,
@@ -22,6 +24,8 @@ import { SideMenu } from "./SideMenu"
 import { side_menu_items } from "./sidemenu_items"
 import { changeToken, handleResp, notify, r } from "~/utils"
 import { PResp } from "~/types"
+import { VsActivateBreakpoints as Auto } from "solid-icons/vs"
+
 const { isOpen, onOpen, onClose } = createDisclosure()
 const [logOutReqLoading, logOutReq] = useFetch(
   (): PResp<any> => r.get("/auth/logout"),
@@ -75,7 +79,6 @@ const Header = () => {
           <IconButton
             aria-label="logout"
             icon={<IoExit />}
-            loading={logOutReqLoading()}
             onClick={logOut}
             size="sm"
           />
@@ -90,8 +93,24 @@ const Header = () => {
             <SideMenu items={side_menu_items} />
             <Center>
               <HStack spacing="$4" p="$2" color="$neutral11">
-                <SwitchLanguageWhite />
                 <SwitchColorMode />
+                <Icon
+                  as={Auto}
+                  cursor="pointer"
+                  boxSize="$7"
+                  onClick={() => {
+                    localStorage.removeItem("hope-ui-color-mode")
+                    notificationService.show({
+                      status: "success",
+                      description: t("home.toolbar.local_settings_auto"),
+                      closable: false,
+                    })
+                    setTimeout(function () {
+                      location.reload()
+                    }, 2500)
+                  }}
+                />
+                <SwitchLanguageWhite />
               </HStack>
             </Center>
           </DrawerBody>

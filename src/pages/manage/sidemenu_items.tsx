@@ -186,13 +186,6 @@ export const side_menu_items: SideMenuItem[] = [
     component: lazy(() => import("./backup-restore")),
   },
   {
-    title: "manage.sidemenu.about",
-    icon: BsFront,
-    to: "/@manage/about",
-    role: UserRole.GUEST,
-    component: lazy(() => import("./About")),
-  },
-  {
     title: "manage.sidemenu.docs",
     icon: FaSolidBook,
     to: "https://docs.openlist.team",

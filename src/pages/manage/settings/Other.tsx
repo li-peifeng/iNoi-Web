@@ -180,7 +180,7 @@ const OtherSettings = () => {
       <Heading my="$2">{t("settings_other.115")}</Heading>
       <FormControl w="$full" display="flex" flexDirection="column">
         <FormLabel for="115_temp_dir" display="flex" alignItems="center">
-          {t(`settings.115_temp_dir`)}
+          {t(`settings_other.115_temp_dir`)}
         </FormLabel>
         <FolderChooseInput
           id="115_temp_dir"
@@ -194,7 +194,7 @@ const OtherSettings = () => {
         onClick={async () => {
           const resp = await set115()
           handleResp(resp, (data) => {
-            notify.success(data)
+            notify.success(t("settings_other.set_ok"))
           })
         }}
       >
@@ -203,7 +203,7 @@ const OtherSettings = () => {
       <Heading my="$2">{t("settings_other.pikpak")}</Heading>
       <FormControl w="$full" display="flex" flexDirection="column">
         <FormLabel for="pikpak_temp_dir" display="flex" alignItems="center">
-          {t(`settings.pikpak_temp_dir`)}
+          {t(`settings_other.pikpak_temp_dir`)}
         </FormLabel>
         <FolderChooseInput
           id="pikpak_temp_dir"
@@ -217,7 +217,7 @@ const OtherSettings = () => {
         onClick={async () => {
           const resp = await setPikPak()
           handleResp(resp, (data) => {
-            notify.success(data)
+            notify.success(t("settings_other.set_ok"))
           })
         }}
       >
@@ -226,7 +226,7 @@ const OtherSettings = () => {
       <Heading my="$2">{t("settings_other.thunder")}</Heading>
       <FormControl w="$full" display="flex" flexDirection="column">
         <FormLabel for="thunder_temp_dir" display="flex" alignItems="center">
-          {t(`settings.thunder_temp_dir`)}
+          {t(`settings_other.thunder_temp_dir`)}
         </FormLabel>
         <FolderChooseInput
           id="thunder_temp_dir"
@@ -240,7 +240,7 @@ const OtherSettings = () => {
         onClick={async () => {
           const resp = await setThunder()
           handleResp(resp, (data) => {
-            notify.success(data)
+            notify.success(t("settings_other.set_ok"))
           })
         }}
       >
