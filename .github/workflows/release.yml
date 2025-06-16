@@ -46,8 +46,8 @@ jobs:
 
       - name: Build
         run: |
-          mv iNoi-Web/release.sh .
-          bash release.sh
+          mv iNoi-Web/build.sh .
+          bash build.sh
 
       - name: Upload dist files
         uses: ad-m/github-push-action@master
