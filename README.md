@@ -3,21 +3,21 @@
   </a>
 </p>
 <p align="center">
-  <a href="https://github.com/li-peifeng/nisweet/actions?query=workflow:Build">
-    <img src="https://img.shields.io/github/actions/workflow/status/li-peifeng/nisweet/build.yml?branch=main" alt="Build status" />
+  <a href="https://github.com/li-peifeng/inoi/actions?query=workflow:Build">
+    <img src="https://img.shields.io/github/actions/workflow/status/li-peifeng/inoi/build.yml?branch=main" alt="Build status" />
   </a>
   <a href="https://github.com/li-peifeng/isweet/releases">
-    <img src="https://img.shields.io/github/release/li-peifeng/nisweet" alt="latest version" />
+    <img src="https://img.shields.io/github/release/li-peifeng/inoi" alt="latest version" />
   </a>
-  <a href="https://hub.docker.com/r/leolitaly/nisweet">
-    <img src="https://img.shields.io/docker/pulls/leolitaly/nisweet?color=#48BB78&logo=docker&label=pulls" alt="Downloads" />
+  <a href="https://hub.docker.com/r/leolitaly/inoi">
+    <img src="https://img.shields.io/docker/pulls/leolitaly/inoi?color=#48BB78&logo=docker&label=pulls" alt="Downloads" />
   </a>
-  <a href="https://github.com/li-peifeng/nisweet/releases">
-    <img src="https://img.shields.io/github/downloads/li-peifeng/nisweet/total?color=#9F7AEA&logo=github" alt="Downloads" />
+  <a href="https://github.com/li-peifeng/inoi/releases">
+    <img src="https://img.shields.io/github/downloads/li-peifeng/inoi/total?color=#9F7AEA&logo=github" alt="Downloads" />
   </a>
 </p>
 
-## iSweet 现更名为 NiSweet （New iSweet）
+## iSweet 现更名为 iNoi （原项目不再更新）
 
 ## 现上游仓库改为 OpenList。
 
@@ -25,17 +25,17 @@
 
 #### Docker Hub
 
-#### docker pull leolitaly/nisweet:latest
+#### docker pull leolitaly/inoi:latest
 
 #### Docker Hub 访问有问题的可以用 ghcr.io 源拉取镜像
 
-#### docker pull ghcr.io/li-peifeng/nisweet:latest
+#### docker pull ghcr.io/li-peifeng/inoi:latest
 
 #### 阿里云 Docker
 
 #### Docker Hub 和 ghcr.io 访问有问题的国内用户可以用此源拉取镜像
 
-#### $ docker pull crpi-lzr94m9idb4j2kpi.cn-shanghai.personal.cr.aliyuncs.com/isweet/nisweet:latest
+#### $ docker pull crpi-lzr94m9idb4j2kpi.cn-shanghai.personal.cr.aliyuncs.com/isweet/inoi:latest
 
 ### 预览图
 

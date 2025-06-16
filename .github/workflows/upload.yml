@@ -12,11 +12,11 @@ jobs:
     steps:
       - name: Commit dist
         run: |
-          cd NiSweet-Dist
+          cd iNoi-Dist
           rm -rf dist
-          cp -r ../NiSweet-Dist/dist .
+          cp -r ../iNoi-Dist/dist .
           git add .
-          git config --local user.email "nisweet@peifeng.li"
+          git config --local user.email "inoi@peifeng.li"
           git config --local user.name "LEO"
           git commit --amend -m "upload dev dist"
           cd ..
@@ -26,6 +26,6 @@ jobs:
         with:
           github_token: ${{ secrets.MY_TOKEN }}
           branch: dev
-          directory: NiSweet-Dist
-          repository: li-peifeng/NiSweet-Dist
+          directory: iNoi-Dist
+          repository: li-peifeng/iNoi-Dist
           force: true

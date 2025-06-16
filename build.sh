@@ -1,4 +1,4 @@
-cd Nisweet-Frontend
+cd iNoi-Web
 version=$(git describe --abbrev=0 --tags)
 sed -i -e "s/\"version\": \"0.0.0\"/\"version\": \"$version\"/g" package.json
 cat package.json
@@ -9,11 +9,11 @@ pnpm build
 cp -r dist ../
 cd ..
 
-cd NiSweet-Dist
+cd iNoi-Dist
 rm -rf dist
 cp -r ../dist .
 git add .
-git config --local user.email "nisweet@peifeng.li"
+git config --local user.email "inoi@peifeng.li"
 git config --local user.name "LEO"
 git commit --allow-empty -m "upload $version dist files" -a
 git tag -a $version -m "release $version"

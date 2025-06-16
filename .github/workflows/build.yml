@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          path: Nisweet-Frontend
+          path: iNoi-Web
           persist-credentials: false
           fetch-depth: 0
           submodules: recursive
@@ -38,26 +38,26 @@ jobs:
       - name: Checkout dist repo
         uses: actions/checkout@v4
         with:
-          repository: li-peifeng/NiSweet-Dist
+          repository: li-peifeng/iNoi-Dist
           ref: dev
-          path: NiSweet-Dist
+          path: iNoi-Dist
           persist-credentials: false
           fetch-depth: 0
 
       - name: Build
         run: |
-          cd Nisweet-Frontend
+          cd iNoi-Web
           pnpm install --no-frozen-lockfile
           pnpm build
           cd ..
 
       - name: Commit dist
         run: |
-          cd NiSweet-Dist
+          cd iNoi-Dist
           rm -rf dist
-          cp -r ../Nisweet-Frontend/dist .
+          cp -r ../iNoi-Web/dist .
           git add .
-          git config --local user.email "nisweet@peifeng.li"
+          git config --local user.email "inoi@peifeng.li"
           git config --local user.name "LEO"
           git commit --amend -m "upload dev dist"
           cd ..
@@ -67,6 +67,6 @@ jobs:
         with:
           github_token: ${{ secrets.MY_TOKEN }}
           branch: dev
-          directory: NiSweet-Dist
-          repository: li-peifeng/NiSweet-Dist
+          directory: iNoi-Dist
+          repository: li-peifeng/iNoi-Dist
           force: true

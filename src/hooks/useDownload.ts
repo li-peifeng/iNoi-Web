@@ -20,7 +20,7 @@ function isNullOrUndefined(value: string | object): boolean {
 }
 
 async function getSaveDir(rpc_url: string, rpc_secret: string) {
-  let save_dir: string = "/downloads/NiSweet"
+  let save_dir: string = "/downloads/iNoi"
 
   const resp = await axios.post(rpc_url, {
     id: Math.random().toString(),
@@ -97,7 +97,7 @@ export const useDownload = () => {
         return
       }
       try {
-        let save_dir = "/downloads/NiSweet"
+        let save_dir = "/downloads/iNoi"
         // TODO: select dir, but it seems there is no way to get the full path
         // if (window.showDirectoryPicker) {
         //   const dirHandle = await window.showDirectoryPicker()

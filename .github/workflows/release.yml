@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          path: Nisweet-Frontend
+          path: iNoi-Web
           persist-credentials: false
           fetch-depth: 0
           submodules: recursive
@@ -38,15 +38,15 @@ jobs:
       - name: Checkout dist repo
         uses: actions/checkout@v4
         with:
-          repository: li-peifeng/NiSweet-Dist
+          repository: li-peifeng/iNoi-Dist
           ref: main
-          path: NiSweet-Dist
+          path: iNoi-Dist
           persist-credentials: false
           fetch-depth: 0
 
       - name: Build
         run: |
-          mv Nisweet-Frontend/release.sh .
+          mv iNoi-Web/release.sh .
           bash release.sh
 
       - name: Upload dist files
@@ -54,8 +54,8 @@ jobs:
         with:
           github_token: ${{ secrets.MY_TOKEN }}
           branch: main
-          directory: NiSweet-Dist
-          repository: li-peifeng/NiSweet-Dist
+          directory: iNoi-Dist
+          repository: li-peifeng/iNoi-Dist
 
       - name: Release
         uses: softprops/action-gh-release@v2
