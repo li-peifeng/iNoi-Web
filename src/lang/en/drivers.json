@@ -149,16 +149,6 @@
     "root_folder_path": "Root folder path",
     "url": "Url"
   },
-  "OpenList": {
-    "forward_archive_requests": "Forward archive requests",
-    "meta_password": "Meta password",
-    "pass_ua_to_upsteam": "Pass ua to upsteam",
-    "password": "Password",
-    "root_folder_path": "Root folder path",
-    "token": "Token",
-    "url": "Url",
-    "username": "Username"
-  },
   "Alias": {
     "download_concurrency": "Download concurrency",
     "download_concurrency-tips": "Need to enable proxy",
@@ -697,6 +687,16 @@
     "root_folder_path": "Root folder path",
     "tenant_id": "Tenant id"
   },
+  "OpenList": {
+    "forward_archive_requests": "Forward archive requests",
+    "meta_password": "Meta password",
+    "pass_ua_to_upsteam": "Pass ua to upsteam",
+    "password": "Password",
+    "root_folder_path": "Root folder path",
+    "token": "Token",
+    "url": "Url",
+    "username": "Username"
+  },
   "PikPak": {
     "captcha_token": "Captcha token",
     "device_id": "Device id",
@@ -1032,23 +1032,6 @@
     "url_structure-tips": "structure:FolderName:\n  [FileName:][FileSize:][Modified:]Url",
     "writable": "Writable"
   },
-  "VTencent": {
-    "cookie": "Cookie",
-    "order_by": "Order by",
-    "order_bys": {
-      "CreatTime": "CreatTime",
-      "Name": "Name",
-      "Size": "Size",
-      "UpdateTime": "UpdateTime"
-    },
-    "order_direction": "Order direction",
-    "order_directions": {
-      "Asc": "Asc",
-      "Desc": "Desc"
-    },
-    "root_folder_id": "Root folder id",
-    "tf_uid": "Tf uid"
-  },
   "Virtual": {
     "max_file_size": "Max file size",
     "min_file_size": "Min file size",
@@ -1133,7 +1116,6 @@
     },
     "189CloudPC": {},
     "AList V2": {},
-    "OpenList": {},
     "Alias": {},
     "Aliyundrive": {
       "alert": "There may be an infinite loop bug in this driver.\nDeprecated, no longer maintained and will be removed in a future version.\nWe recommend using the official driver AliyundriveOpen."
@@ -1177,6 +1159,7 @@
     "Onedrive": {},
     "Onedrive Sharelink": {},
     "OnedriveAPP": {},
+    "OpenList": {},
     "PikPak": {},
     "PikPakShare": {},
     "Quark": {},
@@ -1199,7 +1182,6 @@
     "UCTV": {},
     "USS": {},
     "UrlTree": {},
-    "VTencent": {},
     "Virtual": {},
     "WebDav": {},
     "WeiYun": {},
@@ -1217,7 +1199,6 @@
     "189Cloud": "189Cloud",
     "189CloudPC": "189CloudPC",
     "AList V2": "AList V2",
-    "OpenList": "OpenList",
     "Alias": "Alias",
     "Aliyundrive": "Aliyundrive",
     "AliyundriveOpen": "AliyundriveOpen",
@@ -1257,6 +1238,7 @@
     "Onedrive": "Onedrive",
     "Onedrive Sharelink": "Onedrive Sharelink",
     "OnedriveAPP": "OnedriveAPP",
+    "OpenList": "OpenList",
     "PikPak": "PikPak",
     "PikPakShare": "PikPakShare",
     "Quark": "Quark",
@@ -1279,7 +1261,6 @@
     "UCTV": "UCTV",
     "USS": "USS",
     "UrlTree": "UrlTree",
-    "VTencent": "VTencent",
     "Virtual": "Virtual",
     "WebDav": "WebDav",
     "WeiYun": "WeiYun",
