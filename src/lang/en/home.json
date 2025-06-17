@@ -175,6 +175,13 @@
       "file": "File"
     }
   },
+  "strm": {
+    "generate_strm": "generate_strm",
+    "generate_strm_tips": "Do you wish to proceed with generating a strm?",
+    "success": "Generated strm successfully",
+    "failed": " Failed to generate strm",
+    "delete_file": "Delete File"
+  },
   "fetching_settings_failed": "Please wait, loading...⏳",
   "get_current_user_failed": "Failed get current user: ",
   "Loading storage, please wait": "Loading storage, please wait",

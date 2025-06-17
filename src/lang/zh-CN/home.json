@@ -185,6 +185,13 @@
       "file": "文件"
     }
   },
+  "strm": {
+    "generate_strm": "生成 Strm 文件",
+    "generate_strm_tips": "您是否希望继续生成 strm 文件?",
+    "success": "生成 strm 文件成功",
+    "failed": "生成 strm 文件失败",
+    "delete_file": "删除文件"
+  },
   "fetching_settings_failed": "请稍候，正在加载中...⏳",
   "get_current_user_failed": "用户信息验证失败：",
   "conflict_policy": {
