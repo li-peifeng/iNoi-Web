@@ -21,17 +21,17 @@
 
 ### 现上游仓库改为 OpenList。
 
-- Docker 镜像拉取
+#### Docker 镜像拉取 
 
-#### Docker Hub
+##### Docker Hub
 
 - docker pull leolitaly/inoi:latest
 
-#### ghcr.io 源拉取镜像
+#### ghcr.io
 
 - docker pull ghcr.io/li-peifeng/inoi:latest
 
-#### 阿里云 Docker
+##### 阿里云
 
 - Docker Hub 和 ghcr.io 访问有问题的国内用户可以用此源拉取镜像
 
