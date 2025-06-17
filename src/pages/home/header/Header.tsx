@@ -72,7 +72,7 @@ export const Header = () => {
                 color={getMainColor()}
                 bgColor={changeColor(getMainColor(), { alpha: 0.05 })}
                 _hover={{
-                  backgroundColor: changeColor(getMainColor(), { alpha: 0.2 }),
+                  bgColor: changeColor(getMainColor(), { alpha: 0.2 }),
                 }}
                 compact
                 size="lg"

@@ -82,7 +82,7 @@ const ListItem = (props: ListItemProps) => {
         transition="all 0.3s"
         _hover={{
           transform: "scale(1.01)",
-          backgroundColor: hoverColor(),
+          bgColor: hoverColor(),
         }}
         cursor={!isMouseSupported() ? "pointer" : "default"}
         on:click={(_: MouseEvent) => {
