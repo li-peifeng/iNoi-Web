@@ -6,7 +6,7 @@
   <a href="https://github.com/li-peifeng/inoi/actions?query=workflow:Build">
     <img src="https://img.shields.io/github/actions/workflow/status/li-peifeng/inoi/build.yml?branch=main" alt="Build status" />
   </a>
-  <a href="https://github.com/li-peifeng/isweet/releases">
+  <a href="https://github.com/li-peifeng/inoi/releases">
     <img src="https://img.shields.io/github/release/li-peifeng/inoi" alt="latest version" />
   </a>
   <a href="https://hub.docker.com/r/leolitaly/inoi">

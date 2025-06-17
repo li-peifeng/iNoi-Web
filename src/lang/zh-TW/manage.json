@@ -1,6 +1,6 @@
 {
   "sidemenu": {
-    "dashboard": "iSweet • 管理",
+    "dashboard": "iNoi • 管理",
     "settings": "設置",
     "site": "站點",
     "style": "樣式",
@@ -27,7 +27,7 @@
     "ftp": "FTP",
     "traffic": "流量"
   },
-  "title": "iSweet • 管理",
+  "title": "iNoi • 管理",
   "not_admin": "請使用管理員帳號登入",
   "logout_success": "登出成功",
   "send": "發送",
