@@ -1,49 +1,49 @@
-import "aplayer/dist/APlayer.min.css";
-import "./audio.css";
-import APlayer from "aplayer";
-import { Box } from "@hope-ui/solid";
-import { onCleanup, onMount } from "solid-js";
-import { useLink, useRouter, useTitle } from "~/hooks";
-import { getMainColor, getSetting, getSettingBool, objStore } from "~/store";
-import { ObjType, StoreObj } from "~/types";
-import { baseName, fsGet } from "~/utils";
+import "aplayer/dist/APlayer.min.css"
+import "./audio.css"
+import APlayer from "aplayer"
+import { Box } from "@hope-ui/solid"
+import { onCleanup, onMount } from "solid-js"
+import { useLink, useRouter, useTitle } from "~/hooks"
+import { getMainColor, getSetting, getSettingBool, objStore } from "~/store"
+import { ObjType, StoreObj } from "~/types"
+import { baseName, fsGet } from "~/utils"
 
 const Preview = () => {
-  const { proxyLink, rawLink, previewPage } = useLink();
-  const { searchParams } = useRouter();
-  let audios = objStore.objs.filter((obj) => obj.type === ObjType.AUDIO);
+  const { proxyLink, rawLink, previewPage } = useLink()
+  const { searchParams } = useRouter()
+  let audios = objStore.objs.filter((obj) => obj.type === ObjType.AUDIO)
   if (audios.length === 0 || searchParams["from"] === "search") {
-    audios = [objStore.obj];
+    audios = [objStore.obj]
   }
-  let ap: any;
-  
+  let ap: any
+
   const objToAudio = (obj: StoreObj) => {
-    let lrc = undefined;
+    let lrc = undefined
     const lrcObj = objStore.objs.find((o) => {
-      return baseName(o.name) === baseName(obj.name) && o.name.endsWith(".lrc");
-    });
+      return baseName(o.name) === baseName(obj.name) && o.name.endsWith(".lrc")
+    })
     if (lrcObj) {
-      lrc = proxyLink(lrcObj, true);
+      lrc = proxyLink(lrcObj, true)
     }
-    
-    const cover = obj.thumb || getSetting("audio_cover") || "/images/audio.png";
+
+    const cover = obj.thumb || getSetting("audio_cover") || "/images/audio.png"
     const audio = {
       name: obj.name,
       artist: "•••",
       url: rawLink(obj, true),
       cover: cover,
       lrc: lrc,
-    };
-    
-    if (objStore.provider === "NeteaseMusic") {
-      const matched = obj.name.match(/((.+)\s-\s)?(.+)\.(mp3|flac)/);
-      audio.artist = matched?.[2] || "Unknown";
-      audio.name = matched?.[3] || obj.name;
-      const lrcURL = new URL(previewPage(obj).replace(/\.(mp3|flac)/, ".lrc"));
-      audio.lrc = decodeURIComponent(lrcURL.pathname);
     }
-    return audio;
-  };
+
+    if (objStore.provider === "NeteaseMusic") {
+      const matched = obj.name.match(/((.+)\s-\s)?(.+)\.(mp3|flac)/)
+      audio.artist = matched?.[2] || "Unknown"
+      audio.name = matched?.[3] || obj.name
+      const lrcURL = new URL(previewPage(obj).replace(/\.(mp3|flac)/, ".lrc"))
+      audio.lrc = decodeURIComponent(lrcURL.pathname)
+    }
+    return audio
+  }
 
   onMount(() => {
     ap = new APlayer({
@@ -59,44 +59,44 @@ const Preview = () => {
       listFolded: false,
       lrcType: objStore.provider === "NeteaseMusic" ? 1 : 3,
       audio: audios.map(objToAudio),
-    });
+    })
 
     if (objStore.provider === "NeteaseMusic") {
       ap.on("loadstart", () => {
-        const i = ap.list.index;
-        if (!ap.list.audios[i].lrc) return;
-        const lrcURL = ap.list.audios[i].lrc;
+        const i = ap.list.index
+        if (!ap.list.audios[i].lrc) return
+        const lrcURL = ap.list.audios[i].lrc
         fsGet(lrcURL).then((resp) => {
-          ap.lrc.async = true;
-          ap.lrc.parsed[i] = undefined;
-          ap.list.audios[i].lrc = resp.data.raw_url;
-          ap.lrc.switch(i); // fetch lrc into `parsed`
-          ap.list.audios[i].lrc = "";
-          ap.lrc.async = false;
-        });
-      });
+          ap.lrc.async = true
+          ap.lrc.parsed[i] = undefined
+          ap.list.audios[i].lrc = resp.data.raw_url
+          ap.lrc.switch(i) // fetch lrc into `parsed`
+          ap.list.audios[i].lrc = ""
+          ap.lrc.async = false
+        })
+      })
     }
 
-    const curIndex = audios.findIndex((obj) => obj.name === objStore.obj.name);
+    const curIndex = audios.findIndex((obj) => obj.name === objStore.obj.name)
     if (curIndex !== -1) {
-      ap.list.switch(curIndex);
+      ap.list.switch(curIndex)
     }
 
     if ("mediaSession" in navigator) {
       navigator.mediaSession.setActionHandler("seekto", (evt) =>
-        ap.seek(evt.seekTime)
-      );
+        ap.seek(evt.seekTime),
+      )
       if (ap.list.audios.length > 1) {
         navigator.mediaSession.setActionHandler("previoustrack", () => {
-          ap.skipBack();
-        });
+          ap.skipBack()
+        })
         navigator.mediaSession.setActionHandler("nexttrack", () => {
-          ap.skipForward();
-        });
+          ap.skipForward()
+        })
       }
       ap.on("play", () => {
-        const current = ap.list.audios[ap.list.index];
-        useTitle(current.name);
+        const current = ap.list.audios[ap.list.index]
+        useTitle(current.name)
         navigator.mediaSession.metadata = new MediaMetadata({
           title: current.name,
           artist: current.artist === "Unknown" ? undefined : current.artist,
@@ -105,16 +105,16 @@ const Preview = () => {
               src: current.cover,
             },
           ],
-        });
-      });
+        })
+      })
     }
-  });
+  })
 
   onCleanup(() => {
-    ap?.destroy();
-  });
+    ap?.destroy()
+  })
 
-  return <Box w="$full" id="audio-player" />;
-};
+  return <Box w="$full" id="audio-player" />
+}
 
-export default Preview;
+export default Preview
