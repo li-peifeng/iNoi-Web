@@ -19,7 +19,9 @@
     },
     "qrcode_token": "二维码令牌",
     "qrcode_token-tips": "需要 QR 代码令牌和 cookie 中的一个",
-    "root_folder_id": "根文件夹ID"
+    "root_folder_id": "根文件夹ID",
+    "use_online_api": "使用在线API",
+    "api_url_address": "API 网络地址"
   },
   "115 Open": {
     "order_by": "排序",
@@ -35,7 +37,9 @@
       "desc": "降序"
     },
     "refresh_token": "刷新令牌",
-    "root_folder_id": "根文件夹ID"
+    "root_folder_id": "根文件夹ID",
+    "use_online_api": "使用在线API",
+    "api_url_address": "API 网络地址"
   },
   "115 Share": {
     "cookie": "Cookie",
@@ -183,7 +187,9 @@
     },
     "rapid_upload": "秒传",
     "refresh_token": "刷新令牌",
-    "root_folder_id": "根文件夹ID"
+    "root_folder_id": "根文件夹ID",
+    "use_online_api": "使用在线API",
+    "api_url_address": "API 网络地址"
   },
   "AliyundriveOpen": {
     "client_id": "客户端ID",
@@ -224,7 +230,9 @@
       "delete": "删除",
       "trash": "回收站"
     },
-    "root_folder_id": "根文件夹ID"
+    "root_folder_id": "根文件夹ID",
+    "use_online_api": "使用在线API",
+    "api_url_address": "API 网络地址"
   },
   "AliyundriveShare": {
     "order_by": "排序",
@@ -283,7 +291,9 @@
     "root_folder_path": "根文件夹路径",
     "upload_api": "上传 api",
     "upload_thread": "上传线程",
-    "upload_thread-tips": "1<=线程<=32"
+    "upload_thread-tips": "1<=线程<=32",
+    "use_online_api": "使用在线API",
+    "api_url_address": "API 网络地址"
   },
   "BaiduPhoto": {
     "album_id": "相簿ID",
@@ -475,7 +485,9 @@
       "desc": "降序"
     },
     "refresh_token": "刷新令牌",
-    "root_folder_id": "根文件夹ID"
+    "root_folder_id": "根文件夹ID",
+    "use_online_api": "使用在线API",
+    "api_url_address": "API 网络地址"
   },
   "GooglePhoto": {
     "client_id": "客户端ID",
@@ -642,7 +654,9 @@
       "us": "美国版"
     },
     "root_folder_path": "根文件夹路径",
-    "site_id": "站点ID"
+    "site_id": "站点ID",
+    "use_online_api": "使用在线API",
+    "api_url_address": "API 网络地址"
   },
   "Onedrive Sharelink": {
     "password": "密码",
@@ -664,7 +678,9 @@
       "us": "美国版"
     },
     "root_folder_path": "根文件夹路径",
-    "tenant_id": "租户 ID"
+    "tenant_id": "租户 ID",
+    "use_online_api": "使用在线API",
+    "api_url_address": "API 网络地址"
   },
   "PikPak": {
     "captcha_token": "验证码",
@@ -1095,7 +1111,9 @@
       "desc": "降序"
     },
     "refresh_token": "刷新令牌",
-    "root_folder_path": "根文件夹路径"
+    "root_folder_path": "根文件夹路径",
+    "use_online_api": "使用在线API",
+    "api_url_address": "API 网络地址"
   },
   "config": {
     "115 Cloud": {},

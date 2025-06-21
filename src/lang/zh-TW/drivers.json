@@ -19,7 +19,9 @@
     },
     "qrcode_token": "二維碼令牌",
     "qrcode_token-tips": "需要 QR code Token 和 cookie 其中一個",
-    "root_folder_id": "根資料夾ID"
+    "root_folder_id": "根資料夾ID",
+    "use_online_api": "使用線上API",
+    "api_url_address": "API 網路位址"
   },
   "115 Open": {
     "order_by": "排序",
@@ -35,7 +37,9 @@
       "desc": "遞減排序"
     },
     "refresh_token": "更新 Token",
-    "root_folder_id": "根資料夾ID"
+    "root_folder_id": "根資料夾ID",
+    "use_online_api": "使用線上API",
+    "api_url_address": "API 網路位址"
   },
   "115 Share": {
     "cookie": "Cookie",
@@ -183,7 +187,9 @@
     },
     "rapid_upload": "秒傳",
     "refresh_token": "更新 Token",
-    "root_folder_id": "根資料夾ID"
+    "root_folder_id": "根資料夾ID",
+    "use_online_api": "使用線上API",
+    "api_url_address": "API 網路位址"
   },
   "AliyundriveOpen": {
     "client_id": "客户端ID",
@@ -224,7 +230,9 @@
       "delete": "刪除",
       "trash": "回收桶"
     },
-    "root_folder_id": "根資料夾ID"
+    "root_folder_id": "根資料夾ID",
+    "use_online_api": "使用線上API",
+    "api_url_address": "API 網路位址"
   },
   "AliyundriveShare": {
     "order_by": "排序",
@@ -282,7 +290,9 @@
     "root_folder_path": "根資料夾路徑",
     "upload_api": "上傳 api",
     "upload_thread": "上傳線程",
-    "upload_thread-tips": "1<=線程<=32"
+    "upload_thread-tips": "1<=線程<=32",
+    "use_online_api": "使用線上API",
+    "api_url_address": "API 網路位址"
   },
   "BaiduPhoto": {
     "album_id": "相簿ID",
@@ -474,7 +484,9 @@
       "desc": "遞減排序"
     },
     "refresh_token": "更新 Token",
-    "root_folder_id": "根資料夾ID"
+    "root_folder_id": "根資料夾ID",
+    "use_online_api": "使用線上API",
+    "api_url_address": "API 網路位址"
   },
   "GooglePhoto": {
     "client_id": "客户端ID",
@@ -641,7 +653,9 @@
       "us": "美國版"
     },
     "root_folder_path": "根資料夾路徑",
-    "site_id": "網站ID"
+    "site_id": "網站ID",
+    "use_online_api": "使用線上API",
+    "api_url_address": "API 網路位址"
   },
   "Onedrive Sharelink": {
     "password": "密碼",
@@ -663,7 +677,9 @@
       "us": "美國版"
     },
     "root_folder_path": "根資料夾路徑",
-    "tenant_id": "租戶ID"
+    "tenant_id": "租戶ID",
+    "use_online_api": "使用線上API",
+    "api_url_address": "API 網路位址"
   },
   "PikPak": {
     "captcha_token": "驗證碼",
@@ -1090,7 +1106,9 @@
       "desc": "遞減排序"
     },
     "refresh_token": "更新 Token",
-    "root_folder_path": "根資料夾路徑"
+    "root_folder_path": "根資料夾路徑",
+    "use_online_api": "使用線上API",
+    "api_url_address": "API 網路位址"
   },
   "config": {
     "115 Cloud": {},

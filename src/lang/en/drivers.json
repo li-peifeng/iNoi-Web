@@ -19,7 +19,9 @@
     },
     "qrcode_token": "Qrcode token",
     "qrcode_token-tips": "one of QR code token and cookie required",
-    "root_folder_id": "Root folder id"
+    "root_folder_id": "Root folder id",
+    "use_online_api": "use online api",
+    "api_url_address": "api url address"
   },
   "115 Open": {
     "limit_rate": "Limit rate",
@@ -37,7 +39,9 @@
       "desc": "Desc"
     },
     "refresh_token": "Refresh token",
-    "root_folder_id": "Root folder id"
+    "root_folder_id": "Root folder id",
+    "use_online_api": "use online api",
+    "api_url_address": "api url address"
   },
   "115 Share": {
     "cookie": "Cookie",
@@ -175,7 +179,9 @@
     },
     "rapid_upload": "Rapid upload",
     "refresh_token": "Refresh token",
-    "root_folder_id": "Root folder id"
+    "root_folder_id": "Root folder id",
+    "use_online_api": "use online api",
+    "api_url_address": "api url address"
   },
   "AliyundriveOpen": {
     "client_id": "Client id",
@@ -216,7 +222,9 @@
       "delete": "Delete",
       "trash": "Trash"
     },
-    "root_folder_id": "Root folder id"
+    "root_folder_id": "Root folder id",
+    "use_online_api": "use online api",
+    "api_url_address": "api url address"
   },
   "AliyundriveShare": {
     "order_by": "Order by",
@@ -275,7 +283,9 @@
     "root_folder_path": "Root folder path",
     "upload_api": "Upload api",
     "upload_thread": "Upload thread",
-    "upload_thread-tips": "1\u003c=thread\u003c=32"
+    "upload_thread-tips": "1\u003c=thread\u003c=32",
+    "use_online_api": "use online api",
+    "api_url_address": "api url address"
   },
   "BaiduPhoto": {
     "album_id": "Album id",
@@ -496,7 +506,9 @@
       "desc": "Desc"
     },
     "refresh_token": "Refresh token",
-    "root_folder_id": "Root folder id"
+    "root_folder_id": "Root folder id",
+    "use_online_api": "use online api",
+    "api_url_address": "api url address"
   },
   "GooglePhoto": {
     "client_id": "Client id",
@@ -663,7 +675,9 @@
       "us": "Us"
     },
     "root_folder_path": "Root folder path",
-    "site_id": "Site id"
+    "site_id": "Site id",
+    "use_online_api": "use online api",
+    "api_url_address": "api url address"
   },
   "Onedrive Sharelink": {
     "password": "Password",
@@ -685,7 +699,9 @@
       "us": "Us"
     },
     "root_folder_path": "Root folder path",
-    "tenant_id": "Tenant id"
+    "tenant_id": "Tenant id",
+    "use_online_api": "use online api",
+    "api_url_address": "api url address"
   },
   "OpenList": {
     "forward_archive_requests": "Forward archive requests",
@@ -1101,7 +1117,9 @@
       "desc": "Desc"
     },
     "refresh_token": "Refresh token",
-    "root_folder_path": "Root folder path"
+    "root_folder_path": "Root folder path",
+    "use_online_api": "use online api",
+    "api_url_address": "api url address"
   },
   "config": {
     "115 Cloud": {},
