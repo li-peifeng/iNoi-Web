@@ -19,7 +19,6 @@ import {
   FaSolidCompactDisc,
   FaSolidLink,
 } from "solid-icons/fa"
-import { IoInfinite } from "solid-icons/io"
 import { ImAndroid } from "solid-icons/im"
 import { Obj, ObjType } from "~/types"
 import { ext } from "./path"
@@ -29,6 +28,7 @@ import {
 } from "~/components"
 import { SiAsciinema } from "solid-icons/si"
 import { isArchive } from "~/store/archive"
+import { FolderIcon } from "~/components/icons" // 导入你的新组件
 
 const iconMap = {
   "dmg,ipa,plist,tipa": BsApple,
@@ -62,20 +62,7 @@ export const getIconByTypeAndName = (type: number, name: string) => {
   }
   switch (type) {
     case ObjType.FOLDER:
-      return IoInfinite
-    // case ObjType.OFFICE: {
-    //   if (ext === "doc" || ext === "docx") {
-    //     return BsFileEarmarkWordFill;
-    //   }
-    //   if (ext === "xls" || ext === "xlsx") {
-    //     return BsFileEarmarkExcelFill;
-    //   }
-    //   if (ext === "ppt" || ext === "pptx") {
-    //     return BsFileEarmarkPptFill;
-    //   } else {
-    //     return BsFileEarmarkPdfFill;
-    //   }
-    // }
+      return FolderIcon // 在这里使用你的新 FolderIcon 组件
     case ObjType.VIDEO:
       return BsFileEarmarkPlayFill
     case ObjType.AUDIO:
