@@ -19,14 +19,16 @@ const Preview = () => {
 
   const objToAudio = (obj: StoreObj) => {
     let lrc = undefined
+    
     const lrcObj = objStore.objs.find((o) => {
       return baseName(o.name) === baseName(obj.name) && o.name.endsWith(".lrc")
     })
     if (lrcObj) {
       lrc = proxyLink(lrcObj, true)
     }
+    
+    const cover = getSetting("audio_cover") || "/images/music.png"
 
-    const cover = obj.thumb || getSetting("audio_cover") || "/images/audio.png"
     const audio = {
       name: obj.name,
       artist: "•••",
