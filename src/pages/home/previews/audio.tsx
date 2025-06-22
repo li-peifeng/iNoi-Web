@@ -27,7 +27,7 @@ const Preview = () => {
       lrc = proxyLink(lrcObj, true)
     }
 
-    const cover = getSetting("audio_cover") || "/images/music.png"
+    const cover = getSetting("audio_cover") || "/images/audio.png"
 
     const audio = {
       name: obj.name,
