@@ -24,8 +24,9 @@
     "api_url_address": "api url address"
   },
   "115 Open": {
-    "limit_rate": "Limit rate",
-    "limit_rate-tips": "limit all api request rate ([limit]r/1s)",
+    "access_token": "Access token",
+    "limit_rate,string": "Limit rate,string",
+    "limit_rate,string-tips": "limit all api request rate ([limit]r/1s)",
     "order_by": "Order by",
     "order_bys": {
       "file_name": "File name",
@@ -68,6 +69,15 @@
     "root_folder_id": "Root folder id",
     "share_code": "Share code",
     "share_code-tips": "share code of 115 share link"
+  },
+  "123 Open": {
+    "AccessToken": "AccessToken",
+    "ClientID": "ClientID",
+    "ClientSecret": "ClientSecret",
+    "RefreshToken": "RefreshToken",
+    "UploadThread": "UploadThread",
+    "UploadThread-tips": "the threads of upload",
+    "root_folder_id": "Root folder id"
   },
   "123Pan": {
     "password": "Password",
@@ -147,17 +157,12 @@
     "username": "Username",
     "validate_code": "Validate code"
   },
-  "AList V2": {
-    "access_token": "Access token",
-    "password": "Password",
-    "root_folder_path": "Root folder path",
-    "url": "Url"
-  },
   "Alias": {
     "download_concurrency": "Download concurrency",
     "download_concurrency-tips": "Need to enable proxy",
     "download_part_size": "Download part size",
     "download_part_size-tips": "Need to enable proxy. Unit: KB",
+    "parallel_write": "Parallel write",
     "paths": "Paths",
     "protect_same_name": "Protect same name",
     "protect_same_name-tips": "Protects same-name files from Delete or Rename",
@@ -184,6 +189,7 @@
     "api_url_address": "api url address"
   },
   "AliyundriveOpen": {
+    "api_url_address": "Api url address",
     "client_id": "Client id",
     "client_id-tips": "Keep it empty if you don't have one",
     "client_secret": "Client secret",
@@ -201,7 +207,6 @@
       "jpeg": "Jpeg",
       "mov": "Mov"
     },
-    "oauth_token_url": "Oauth token url",
     "order_by": "Order by",
     "order_bys": {
       "created_at": "Created at",
@@ -223,9 +228,8 @@
       "trash": "Trash"
     },
     "root_folder_id": "Root folder id",
-    "use_online_api": "use online api",
-    "api_url_address": "api url address"
-  },
+    "use_online_api": "use online api"
+    },
   "AliyundriveShare": {
     "order_by": "Order by",
     "order_bys": {
@@ -255,6 +259,7 @@
     "sign_url_expire-tips": "The expiration time for SAS URLs, in hours."
   },
   "BaiduNetdisk": {
+    "api_url_address": "Api url address",
     "client_id": "Client id",
     "client_secret": "Client secret",
     "custom_crack_ua": "Custom crack ua",
@@ -284,8 +289,7 @@
     "upload_api": "Upload api",
     "upload_thread": "Upload thread",
     "upload_thread-tips": "1\u003c=thread\u003c=32",
-    "use_online_api": "use online api",
-    "api_url_address": "api url address"
+    "use_online_api": "use online api"
   },
   "BaiduPhoto": {
     "album_id": "Album id",
@@ -417,13 +421,14 @@
     "share_ids": "Share ids"
   },
   "Dropbox": {
+    "api_url_address": "Api url address",
     "client_id": "Client id",
     "client_id-tips": "Keep it empty if you don't have one",
     "client_secret": "Client secret",
     "client_secret-tips": "Keep it empty if you don't have one",
-    "oauth_token_url": "Oauth token url",
     "refresh_token": "Refresh token",
-    "root_folder_path": "Root folder path"
+    "root_folder_path": "Root folder path",
+    "use_online_api": "Use online api"
   },
   "FTP": {
     "address": "Address",
@@ -494,6 +499,7 @@
     "token-tips": "GitHub token, if you want to access private repositories or increase the rate limit"
   },
   "GoogleDrive": {
+    "api_url_address": "Api url address",
     "chunk_size": "Chunk size",
     "chunk_size-tips": "chunk size while uploading (unit: MB)",
     "client_id": "Client id",
@@ -507,8 +513,7 @@
     },
     "refresh_token": "Refresh token",
     "root_folder_id": "Root folder id",
-    "use_online_api": "use online api",
-    "api_url_address": "api url address"
+    "use_online_api": "use online api"
   },
   "GooglePhoto": {
     "client_id": "Client id",
@@ -570,17 +575,6 @@
       "url": "Url"
     },
     "user_agent": "User agent"
-  },
-  "Lark": {
-    "app_id": "App id",
-    "app_id-tips": "app id",
-    "app_secret": "App secret",
-    "app_secret-tips": "app secret",
-    "external_mode": "External mode",
-    "external_mode-tips": "external mode",
-    "root_folder_path": "Root folder path",
-    "tenant_url_prefix": "Tenant url prefix",
-    "tenant_url_prefix-tips": "tenant url prefix"
   },
   "LenovoNasShare": {
     "host": "Host",
@@ -659,6 +653,7 @@
     "song_limit-tips": "only get 200 songs by default"
   },
   "Onedrive": {
+    "api_url_address": "Api url address",
     "chunk_size": "Chunk size",
     "client_id": "Client id",
     "client_secret": "Client secret",
@@ -676,8 +671,7 @@
     },
     "root_folder_path": "Root folder path",
     "site_id": "Site id",
-    "use_online_api": "use online api",
-    "api_url_address": "api url address"
+    "use_online_api": "use online api"
   },
   "Onedrive Sharelink": {
     "password": "Password",
@@ -762,15 +756,6 @@
     "query_token": "Query token",
     "query_token-tips": "don't edit'",
     "refresh_token": "Refresh token",
-    "root_folder_id": "Root folder id"
-  },
-  "Quqi": {
-    "cdn": "Cdn",
-    "cdn-tips": "If you enable this option, the download speed can be increased, but there will be some performance loss",
-    "cookie": "Cookie",
-    "cookie-tips": "Cookie can be used on multiple clients at the same time",
-    "password": "Password",
-    "phone": "Phone",
     "root_folder_id": "Root folder id"
   },
   "S3": {
@@ -1101,6 +1086,7 @@
     }
   },
   "YandexDisk": {
+    "api_url_address": "Api url address",
     "client_id": "Client id",
     "client_secret": "Client secret",
     "order_by": "Order by",
@@ -1118,13 +1104,13 @@
     },
     "refresh_token": "Refresh token",
     "root_folder_path": "Root folder path",
-    "use_online_api": "use online api",
-    "api_url_address": "api url address"
+    "use_online_api": "use online api"
   },
   "config": {
     "115 Cloud": {},
     "115 Open": {},
     "115 Share": {},
+    "123 Open": {},
     "123Pan": {},
     "123PanLink": {},
     "123PanShare": {},
@@ -1133,7 +1119,6 @@
       "alert": "You can try to use 189PC driver if this driver does not work."
     },
     "189CloudPC": {},
-    "AList V2": {},
     "Alias": {},
     "Aliyundrive": {
       "alert": "There may be an infinite loop bug in this driver.\nDeprecated, no longer maintained and will be removed in a future version.\nWe recommend using the official driver AliyundriveOpen."
@@ -1164,7 +1149,6 @@
     "IPFS API": {},
     "KodBox": {},
     "Lanzou": {},
-    "Lark": {},
     "LenovoNasShare": {},
     "Local": {},
     "MediaTrack": {},
@@ -1182,7 +1166,6 @@
     "PikPakShare": {},
     "Quark": {},
     "QuarkTV": {},
-    "Quqi": {},
     "S3": {},
     "SFTP": {},
     "SMB": {},
@@ -1210,13 +1193,13 @@
     "115 Cloud": "115 Cloud",
     "115 Open": "115 Open",
     "115 Share": "115 Share",
+    "123 Open": "123 Open",
     "123Pan": "123Pan",
     "123PanLink": "123PanLink",
     "123PanShare": "123PanShare",
     "139Yun": "139Yun",
     "189Cloud": "189Cloud",
     "189CloudPC": "189CloudPC",
-    "AList V2": "AList V2",
     "Alias": "Alias",
     "Aliyundrive": "Aliyundrive",
     "AliyundriveOpen": "AliyundriveOpen",
@@ -1245,7 +1228,6 @@
     "IPFS API": "IPFS API",
     "KodBox": "KodBox",
     "Lanzou": "Lanzou",
-    "Lark": "Lark",
     "LenovoNasShare": "LenovoNasShare",
     "Local": "Local",
     "MediaTrack": "MediaTrack",
@@ -1261,7 +1243,6 @@
     "PikPakShare": "PikPakShare",
     "Quark": "Quark",
     "QuarkTV": "QuarkTV",
-    "Quqi": "Quqi",
     "S3": "S3",
     "SFTP": "SFTP",
     "SMB": "SMB",
