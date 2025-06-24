@@ -63,24 +63,9 @@ export function FolderIcon(props: IconProps) {
   return IconTemplate(
     {
       a: {
-        viewBox: "0 0 1080 1080",
+        viewBox: "0 0 512 512",
       },
-      c: `<defs>
-        <style>
-          .cls-2 {
-            fill: currentColor;
-            stroke: currentColor;
-            stroke-width: 24;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-          }
-        </style>
-      </defs>
-      <g id="Web_1920_1" data-name="Web 1920 – 1">
-        <path id="路径_2" data-name="路径 2" class="cls-2" d="M399.061,444.658l-419-425a28,28,0,0,1,.281-39.6,28,28,0,0,1,39.6.282l419,425C449.8,416.354,404.54,450.216,399.061,444.658Z" transform="translate(139 305)"/>
-        <path id="直线_1" data-name="直线 1" class="cls-2" d="M1,373a28,28,0,0,1-28-27.919l-1-345A28,28,0,0,1-.081-28,28,28,0,0,1,28-.081l1,345A28,28,0,0,1,1.081,373Z" transform="translate(138 455)"/>
-        <path id="路径_1" data-name="路径 1" class="cls-2" d="M713.146,777c-55.821,0-117.126-9.032-187.134-74.557a28,28,0,1,1,38.267-40.885C617.164,711.056,660.449,721,713.146,721c125.411,0,213-87.589,213-213s-87.589-213-213-213c-128.982,0-171.264,78.2-181.151,102.162a28,28,0,0,1-51.768-21.356C507.51,309.67,583.026,239,713.146,239c155.869,0,269,113.131,269,269S869.015,777,713.146,777Z" transform="translate(15.854 51)"/>
-      </g>`,
+      c: `<image href="/images/folder.png" width="100%" height="100%" preserveAspectRatio="xMidYMid meet"/>`,
     },
     props,
   )
