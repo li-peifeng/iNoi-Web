@@ -25,10 +25,10 @@ import { ext } from "./path"
 import {
   VscodeIconsFileTypeAi2,
   VscodeIconsFileTypePhotoshop2,
+  FolderIcon,
 } from "~/components"
 import { SiAsciinema } from "solid-icons/si"
 import { isArchive } from "~/store/archive"
-import { FolderIcon } from "~/components/icons" // 导入你的新组件
 
 const iconMap = {
   "dmg,ipa,plist,tipa": BsApple,
@@ -62,7 +62,7 @@ export const getIconByTypeAndName = (type: number, name: string) => {
   }
   switch (type) {
     case ObjType.FOLDER:
-      return FolderIcon // 在这里使用你的新 FolderIcon 组件
+      return FolderIcon
     case ObjType.VIDEO:
       return BsFileEarmarkPlayFill
     case ObjType.AUDIO:
