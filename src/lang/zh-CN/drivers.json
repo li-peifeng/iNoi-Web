@@ -24,6 +24,8 @@
     "api_url_address": "API 网络地址"
   },
   "115 Open": {
+    "limit_rate,string": "限制速率",
+    "limit_rate,string-tips": "限制所有 api 请求率 ([limit]r/1s)",
     "order_by": "排序",
     "order_bys": {
       "file_name": "名称",

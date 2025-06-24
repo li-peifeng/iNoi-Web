@@ -24,6 +24,8 @@
     "api_url_address": "API 網路位址"
   },
   "115 Open": {
+    "limit_rate,string": "次數限制",
+    "limit_rate,string-tips": "限制所有 API 次數上限 (1r/[limit_rate])",
     "order_by": "排序",
     "order_bys": {
       "file_name": "名稱",
