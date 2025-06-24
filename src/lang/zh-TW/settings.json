@@ -78,8 +78,11 @@
   "robots_txt": "Robots txt",
   "s3_access_key_id": "S3訪問密鑰 id",
   "s3_buckets": "S3桶",
+  "s3_enabled": "S3 已啟用",
   "s3_generate": "S3 產生金鑰",
   "s3_secret_access_key": "S3訪問密鑰",
+  "s3_buckets_duplicate_name": "儲存桶名稱重複",
+  "s3_buckets_empty": "儲存桶名稱或路徑為空白",
   "s3_restart_to_apply": "您需要重啟來應用本頁設置",
   "search_index": "搜索索引",
   "search_indexs": {
