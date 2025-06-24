@@ -5,7 +5,7 @@ const theme: HopeThemeConfig = {
   initialColorMode: "system",
   lightTheme: {
     colors: {
-      background: "#f7f8fa",
+      background: "#e8f0fa",
     },
   },
   components: {
