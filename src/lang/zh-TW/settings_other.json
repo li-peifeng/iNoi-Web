@@ -19,5 +19,8 @@
   "thunder": "Thunder",
   "set_thunder": "設定 Thunder",
   "thunder_temp_dir": "Thunder 快取目錄",
-  "set_ok": "設定已完成"
+  "set_ok": "設定已完成",
+  "thunder_browser": "Thunder 瀏覽器",
+  "set_thunder_browser": "設定 Thunder 瀏覽器",
+  "thunder_browser_temp_dir": "設定 Thunder 瀏覽器快取目錄"
 }

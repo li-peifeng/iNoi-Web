@@ -19,5 +19,8 @@
   "thunder": "Thunder",
   "set_thunder": "Set Thunder",
   "thunder_temp_dir": "Thunder Temp DIR",
-  "set_ok": "Option setting completed"
+  "set_ok": "Option setting completed",
+  "thunder_browser": "ThunderBrowser",
+  "set_thunder_browser": "Set ThunderBrowser",
+  "thunder_browser_temp_dir": "Thunder ThunderBrowser Temp DIR"
 }

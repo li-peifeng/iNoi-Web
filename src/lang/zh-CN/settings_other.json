@@ -19,5 +19,8 @@
   "thunder": "Thunder",
   "set_thunder": "设置 Thunder",
   "thunder_temp_dir": "Thunder 缓存目录",
-  "set_ok": "设置已完成"
+  "set_ok": "设置已完成",
+  "thunder_browser": "Thunder 浏览器",
+  "set_thunder_browser": "设置 Thunder 浏览器",
+  "thunder_browser_temp_dir": "设置 Thunder 浏览器缓存目录"
 }
