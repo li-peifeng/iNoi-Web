@@ -751,6 +751,30 @@
     },
     "root_folder_id": "Root folder id"
   },
+  "QuarkOpen": {
+    "access_token": "Access token",
+    "api_url_address": "Api url address",
+    "app_id": "App id",
+    "app_id-tips": "Keep it empty if you don't have one",
+    "order_by": "Order by",
+    "order_bys": {
+      "created_at": "Created at",
+      "file_name": "File name",
+      "file_type": "File type",
+      "none": "None",
+      "updated_at": "Updated at"
+    },
+    "order_direction": "Order direction",
+    "order_directions": {
+      "asc": "Asc",
+      "desc": "Desc"
+    },
+    "refresh_token": "Refresh token",
+    "root_folder_id": "Root folder id",
+    "sign_key": "Sign key",
+    "sign_key-tips": "Keep it empty if you don't have one",
+    "use_online_api": "Use online api"
+  },
   "QuarkTV": {
     "device_id": "Device id",
     "query_token": "Query token",
@@ -1165,6 +1189,7 @@
     "PikPak": {},
     "PikPakShare": {},
     "Quark": {},
+    "QuarkOpen": {},
     "QuarkTV": {},
     "S3": {},
     "SFTP": {},
@@ -1242,6 +1267,7 @@
     "PikPak": "PikPak",
     "PikPakShare": "PikPakShare",
     "Quark": "Quark",
+    "QuarkOpen": "QuarkOpen",
     "QuarkTV": "QuarkTV",
     "S3": "S3",
     "SFTP": "SFTP",
