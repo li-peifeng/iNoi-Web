@@ -157,6 +157,30 @@
     "username": "使用者名稱",
     "validate_code": "驗證碼"
   },
+  "189CloudTV": {
+    "access_token": "存取權杖",
+    "family_id": "家庭ID",
+    "order_by": "排序依據",
+    "order_bys": {
+      "filename": "檔案名稱",
+      "filesize": "檔案大小",
+      "lastOpTime": "上次操作時間"
+    },
+    "order_direction": "排序",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "rapid_upload": "快速上傳",
+    "root_folder_id": "根資料夾ID",
+    "type": "型別",
+    "types": {
+      "family": "家庭",
+      "personal": "個人"
+    },
+    "upload_thread": "上傳執行緒",
+    "upload_thread-tips": "1\u003c=thread\u003c=32"
+  },
   "Alias": {
     "download_concurrency": "下載並發",
     "download_concurrency-tips": "需要啟用代理",
@@ -301,14 +325,8 @@
       "root_only_album": "僅根目錄下相簿",
       "root_only_file": "僅根目錄下檔案"
     },
-    "upload_thread": "上傳 Thread",
-    "upload_thread-tips": "1<=線程<=32"
-  },
-  "BaiduShare": {
-    "BDUSS": "BDUSS",
-    "pwd": "百度網盤分享密碼",
-    "root_folder_path": "根資料夾路徑",
-    "surl": "百度網盤分享連結"
+    "upload_thread": "上传线程",
+    "upload_thread-tips": "1<=线程<=32"
   },
   "ChaoXingGroupDrive": {
     "bbsid": "Bbsid",
@@ -884,6 +902,9 @@
   },
   "ThunderBrowser": {
     "captcha_token": "驗證碼",
+    "credit_key": "信用金鑰",
+    "credit_key-tips": "信用金鑰，用於登入",
+    "device_id": "裝置 ID",
     "password": "密碼",
     "remove_way": "拿掉方式",
     "remove_ways": {
@@ -892,6 +913,8 @@
     },
     "root_folder_id": "根資料夾ID",
     "safe_password": "Safe password",
+    "use_fluent_play": "使用 Fluent Play",
+    "use_fluent_play-tips": "使用 Fluent Play 進行離線下載，僅支援磁力連結",
     "use_video_url": "使用視頻url",
     "username": "使用者名稱"
   },
@@ -904,6 +927,8 @@
     "client_id": "客户端ID",
     "client_secret": "客戶端金鑰",
     "client_version": "客户端版本",
+    "credit_key": "信用金鑰",
+    "credit_key-tips": "信用金鑰，用於登入",
     "device_id": "設備id",
     "download_user_agent": "下載使用者 Proxy 代理",
     "login_type": "登入類型",
@@ -931,6 +956,8 @@
     },
     "timestamp": "時間戳",
     "timestamp-tips": "驗證碼簽章的簽章類型，此為必填項目",
+    "use_fluent_play": "使用 Fluent Play",
+    "use_fluent_play-tips": "使用 Fluent Play 進行離線下載，僅支援磁力連結",
     "use_video_url": "使用視頻url",
     "user_agent": "User agent",
     "username": "使用者名稱",
@@ -1143,6 +1170,7 @@
       "alert": "如果此驅動無法工作，你可以嘗試使用「天翼網盤用戶端」驅動。"
     },
     "189CloudPC": {},
+    "189CloudTV": {},
     "Alias": {},
     "Aliyundrive": {
       "alert": "在這個驅動中可能有一個死迴圈的錯誤。\n已廢棄，不再維護，並將在未來的版本中刪除。\n我們建議使用官方驅動的 阿裡雲盤Open。"
@@ -1152,7 +1180,6 @@
     "Azure Blob Storage": {},
     "BaiduNetdisk": {},
     "BaiduPhoto": {},
-    "BaiduShare": {},
     "ChaoXingGroupDrive": {},
     "Cloudreve": {},
     "Cloudreve V4": {},
@@ -1225,6 +1252,7 @@
     "139Yun": "中國移動雲盤",
     "189Cloud": "天翼雲盤",
     "189CloudPC": "天翼雲盤用戶端",
+    "189CloudTV": "天翼雲盤TV端",
     "Alias": "別名",
     "Aliyundrive": "阿里雲盤",
     "AliyundriveOpen": "阿里雲盤 Open",
@@ -1232,8 +1260,7 @@
     "Azure Blob Storage": "Azure Blob Storage",
     "BaiduNetdisk": "百度網盤",
     "BaiduPhoto": "一刻相册",
-    "BaiduShare": "百度分享",
-    "ChaoXingGroupDrive": "超星星小組盤",
+    "ChaoXingGroupDrive": "超星小组盘",
     "Cloudreve": "Cloudreve",
     "Cloudreve V4": "Cloudreve V4",
     "Crypt": "Crypt",

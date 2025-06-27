@@ -157,6 +157,30 @@
     "username": "Username",
     "validate_code": "Validate code"
   },
+  "189CloudTV": {
+    "access_token": "Access token",
+    "family_id": "Family id",
+    "order_by": "Order by",
+    "order_bys": {
+      "filename": "Filename",
+      "filesize": "Filesize",
+      "lastOpTime": "LastOpTime"
+    },
+    "order_direction": "Order direction",
+    "order_directions": {
+      "asc": "Asc",
+      "desc": "Desc"
+    },
+    "rapid_upload": "Rapid upload",
+    "root_folder_id": "Root folder id",
+    "type": "Type",
+    "types": {
+      "family": "Family",
+      "personal": "Personal"
+    },
+    "upload_thread": "Upload thread",
+    "upload_thread-tips": "1\u003c=thread\u003c=32"
+  },
   "Alias": {
     "download_concurrency": "Download concurrency",
     "download_concurrency-tips": "Need to enable proxy",
@@ -303,12 +327,6 @@
     },
     "upload_thread": "Upload thread",
     "upload_thread-tips": "1\u003c=thread\u003c=32"
-  },
-  "BaiduShare": {
-    "BDUSS": "BDUSS",
-    "pwd": "Pwd",
-    "root_folder_path": "Root folder path",
-    "surl": "Surl"
   },
   "ChaoXingGroupDrive": {
     "bbsid": "Bbsid",
@@ -884,6 +902,9 @@
   },
   "ThunderBrowser": {
     "captcha_token": "Captcha token",
+    "credit_key": "Credit key",
+    "credit_key-tips": "credit key,used for login",
+    "device_id": "Device id",
     "password": "Password",
     "remove_way": "Remove way",
     "remove_ways": {
@@ -892,6 +913,8 @@
     },
     "root_folder_id": "Root folder id",
     "safe_password": "Safe password",
+    "use_fluent_play": "Use fluent play",
+    "use_fluent_play-tips": "use fluent play for offline download,only magnet links supported",
     "use_video_url": "Use video url",
     "username": "Username"
   },
@@ -904,6 +927,8 @@
     "client_id": "Client id",
     "client_secret": "Client secret",
     "client_version": "Client version",
+    "credit_key": "Credit key",
+    "credit_key-tips": "credit key,used for login",
     "device_id": "Device id",
     "download_user_agent": "Download user agent",
     "login_type": "Login type",
@@ -931,6 +956,8 @@
     },
     "timestamp": "Timestamp",
     "timestamp-tips": "sign type is captcha_sign,this is required",
+    "use_fluent_play": "Use fluent play",
+    "use_fluent_play-tips": "use fluent play for offline download,only magnet links supported",
     "use_video_url": "Use video url",
     "user_agent": "User agent",
     "username": "Username",
@@ -1143,6 +1170,7 @@
       "alert": "You can try to use 189PC driver if this driver does not work."
     },
     "189CloudPC": {},
+    "189CloudTV": {},
     "Alias": {},
     "Aliyundrive": {
       "alert": "There may be an infinite loop bug in this driver.\nDeprecated, no longer maintained and will be removed in a future version.\nWe recommend using the official driver AliyundriveOpen."
@@ -1152,7 +1180,6 @@
     "Azure Blob Storage": {},
     "BaiduNetdisk": {},
     "BaiduPhoto": {},
-    "BaiduShare": {},
     "ChaoXingGroupDrive": {},
     "Cloudreve": {},
     "Cloudreve V4": {},
@@ -1225,6 +1252,7 @@
     "139Yun": "139Yun",
     "189Cloud": "189Cloud",
     "189CloudPC": "189CloudPC",
+    "189CloudTV": "189CloudTV",
     "Alias": "Alias",
     "Aliyundrive": "Aliyundrive",
     "AliyundriveOpen": "AliyundriveOpen",
@@ -1232,7 +1260,6 @@
     "Azure Blob Storage": "Azure Blob Storage",
     "BaiduNetdisk": "BaiduNetdisk",
     "BaiduPhoto": "BaiduPhoto",
-    "BaiduShare": "BaiduShare",
     "ChaoXingGroupDrive": "ChaoXingGroupDrive",
     "Cloudreve": "Cloudreve",
     "Cloudreve V4": "Cloudreve V4",

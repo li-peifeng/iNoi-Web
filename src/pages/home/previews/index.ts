@@ -109,6 +109,12 @@ const previews: Preview[] = [
     prior: true,
   },
   {
+    name: "图片",
+    exts: ["heic", "heif", "avif", "vvc", "avc", "jpeg", "jpg"],
+    component: lazy(() => import("./heic")),
+    prior: true,
+  },
+  {
     name: "办公文档",
     exts: ["doc", "docx", "ppt", "pptx", "xls", "xlsx", "pdf"],
     provider: /^Aliyundrive(Share)?$/,

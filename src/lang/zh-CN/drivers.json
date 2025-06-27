@@ -157,6 +157,30 @@
     "username": "用户名",
     "validate_code": "验证码"
   },
+  "189CloudTV": {
+    "access_token": "访问令牌",
+    "family_id": "家庭ID",
+    "order_by": "排序依据",
+    "order_bys": {
+      "filename": "文件名",
+      "filesize": "文件大小",
+      "lastOpTime": "上次操作时间"
+    },
+    "order_direction": "排序",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "rapid_upload": "快速上传",
+    "root_folder_id": "根文件夹ID",
+    "type": "类型",
+    "types": {
+      "family": "家庭",
+      "personal": "个人"
+    },
+    "upload_thread": "上传线程",
+    "upload_thread-tips": "1\u003c=thread\u003c=32"
+  },
   "Alias": {
     "download_concurrency": "下载并发",
     "download_concurrency-tips": "需要启用代理",
@@ -303,12 +327,6 @@
     },
     "upload_thread": "上传线程",
     "upload_thread-tips": "1<=线程<=32"
-  },
-  "BaiduShare": {
-    "BDUSS": "BDUSS",
-    "pwd": "百度网盘分享密码",
-    "root_folder_path": "根文件夹路径",
-    "surl": "百度网盘分享链接"
   },
   "ChaoXingGroupDrive": {
     "bbsid": "Bbsid",
@@ -884,6 +902,9 @@
   },
   "ThunderBrowser": {
     "captcha_token": "验证码",
+    "credit_key": "信用密钥",
+    "credit_key-tips": "信用密钥，用于登录",
+    "device_id": "设备 ID",
     "password": "密码",
     "remove_way": "移除方式",
     "remove_ways": {
@@ -892,6 +913,8 @@
     },
     "root_folder_id": "根文件夹ID",
     "safe_password": "安全密码",
+    "use_fluent_play": "使用 Fluent Play",
+    "use_fluent_play-tips": "使用 Fluent Play 进行离线下载，仅支持磁力链接",
     "use_video_url": "使用视频url",
     "username": "用户名"
   },
@@ -904,6 +927,8 @@
     "client_id": "客户端ID",
     "client_secret": "客户端密钥",
     "client_version": "客户端版本",
+    "credit_key": "信用密钥",
+    "credit_key-tips": "信用密钥，用于登录",
     "device_id": "设备id",
     "download_user_agent": "下载用户代理",
     "login_type": "登录类型",
@@ -931,6 +956,8 @@
     },
     "timestamp": "时间戳",
     "timestamp-tips": "签名类型是验证码签名,此为必填项",
+    "use_fluent_play": "使用 Fluent Play",
+    "use_fluent_play-tips": "使用 Fluent Play 进行离线下载，仅支持磁力链接",
     "use_video_url": "使用视频url",
     "user_agent": "用户代理",
     "username": "用户名",
@@ -1143,6 +1170,7 @@
       "alert": "如果此驱动无法工作，你可以尝试使用“天翼网盘客户端”驱动。"
     },
     "189CloudPC": {},
+    "189CloudTV": {},
     "Alias": {},
     "Aliyundrive": {
       "alert": "在这个驱动中可能有一个死循环的错误。\n已废弃，不再维护，并将在未来的版本中删除。\n我们建议使用官方驱动的 阿里云盘Open。"
@@ -1152,7 +1180,6 @@
     "Azure Blob Storage": {},
     "BaiduNetdisk": {},
     "BaiduPhoto": {},
-    "BaiduShare": {},
     "ChaoXingGroupDrive": {},
     "Cloudreve": {},
     "Cloudreve V4": {},
@@ -1225,6 +1252,7 @@
     "139Yun": "中国移动云盘",
     "189Cloud": "天翼云盘",
     "189CloudPC": "天翼云盘客户端",
+    "189CloudTV": "天翼云盘TV端",
     "Alias": "别名",
     "Aliyundrive": "阿里云盘",
     "AliyundriveOpen": "阿里云盘 Open",
@@ -1232,7 +1260,6 @@
     "Azure Blob Storage": "Azure Blob Storage",
     "BaiduNetdisk": "百度网盘",
     "BaiduPhoto": "一刻相册",
-    "BaiduShare": "百度分享",
     "ChaoXingGroupDrive": "超星小组盘",
     "Cloudreve": "Cloudreve",
     "Cloudreve V4": "Cloudreve V4",
