@@ -17,6 +17,8 @@
   </a>
 </p>
 
+### Telegram群 https://t.me/openinoi
+
 #### 现更名为 iNoi （原 iSweet 项目不再更新）
 
 #### 现上游仓库改为 OpenList。
