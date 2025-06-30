@@ -482,3 +482,12 @@
 .hope-select__option {
   flex-shrink: 0;
 }
+
+.aplayer-list {
+  max-height: 400px !important;
+}
+
+.aplayer-list ol {
+  max-height: 400px !important;
+  overflow-y: auto !important;
+}
