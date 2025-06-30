@@ -92,7 +92,7 @@ const theme: HopeThemeConfig = {
       defaultProps: {
         root: {
           colorScheme: "info",
-          variant: "filled",
+          variant: "outline",
         },
       },
     },

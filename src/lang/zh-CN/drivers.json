@@ -755,6 +755,7 @@
   },
   "Quark": {
     "cookie": "Cookie",
+    "only_list_video_file": "仅列出视频文件",
     "order_by": "排序",
     "order_bys": {
       "file_name": "文件名称",
@@ -767,7 +768,9 @@
       "asc": "升序",
       "desc": "降序"
     },
-    "root_folder_id": "根文件夹ID"
+    "root_folder_id": "根文件夹ID",
+    "use_transcoding_address": "使用转码地址",
+    "use_transcoding_address-tips": "您可以观看转码后的视频，并支持 302 重定向"
   },
   "QuarkOpen": {
     "access_token": "访问令牌",
@@ -1047,6 +1050,7 @@
   },
   "UC": {
     "cookie": "Cookie",
+    "only_list_video_file": "仅列出视频文件",
     "order_by": "排序",
     "order_bys": {
       "file_name": "文件名称",
@@ -1059,7 +1063,9 @@
       "asc": "升序",
       "desc": "降序"
     },
-    "root_folder_id": "根文件夹ID"
+    "root_folder_id": "根文件夹ID",
+    "use_transcoding_address": "使用转码地址",
+    "use_transcoding_address-tips": "您可以观看转码后的视频，并支持 302 重定向"
   },
   "UCTV": {
     "device_id": "设备id",
