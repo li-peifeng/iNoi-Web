@@ -351,6 +351,7 @@
     "enable_folder_size": "Enable folder size",
     "enable_thumb": "Enable thumb",
     "enable_version_upload": "Enable version upload",
+    "hide_uploading": "Hide uploading",
     "order_by": "Order by",
     "order_bys": {
       "created_at": "Created at",
@@ -851,6 +852,15 @@
     "token": "Token",
     "username": "Username"
   },
+  "Strm": {
+    "filterFileTypes": "FilterFileTypes",
+    "filterFileTypes-tips": "Supports suffix name of strm file",
+    "paths": "Paths",
+    "protect_same_name": "Protect same name",
+    "protect_same_name-tips": "Protects same-name files from Delete or Rename",
+    "siteUrl": "SiteUrl",
+    "siteUrl-tips": "The prefix URL of the strm file"
+  },
   "Teambition": {
     "cookie": "Cookie",
     "order_by": "Order by",
@@ -1228,6 +1238,7 @@
     "SFTP": {},
     "SMB": {},
     "Seafile": {},
+    "Strm": {},
     "Teambition": {},
     "Terabox": {},
     "Thunder": {},
@@ -1306,6 +1317,7 @@
     "SFTP": "SFTP",
     "SMB": "SMB",
     "Seafile": "Seafile",
+    "Strm": "Strm",
     "Teambition": "Teambition",
     "Terabox": "Terabox",
     "Thunder": "Thunder",
