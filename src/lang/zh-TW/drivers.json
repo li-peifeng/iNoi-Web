@@ -351,6 +351,7 @@
     "enable_folder_size": "啟用資料夾大小",
     "enable_thumb": "啟用縮圖",
     "enable_version_upload": "啟用版本上傳",
+    "hide_uploading": "隱藏上傳",
     "order_by": "排序依據",
     "order_bys": {
       "created_at": "建立時間",
@@ -851,6 +852,15 @@
     "token": "Token",
     "username": "使用者名稱"
   },
+  "Strm": {
+    "filterFileTypes": "過濾檔案類型",
+    "filterFileTypes-tips": "支援 strm 檔案的字尾名",
+    "paths": "路徑",
+    "protect_same_name": "保護同名檔案",
+    "protect_same_name-tips": "保護同名檔案不被刪除或重新命名",
+    "siteUrl": "網站網址",
+    "siteUrl-tips": "strm 檔案的前綴 URL"
+  },
   "Teambition": {
     "cookie": "Cookie",
     "order_by": "排序",
@@ -1228,6 +1238,7 @@
     "SFTP": {},
     "SMB": {},
     "Seafile": {},
+    "Strm": {},
     "Teambition": {},
     "Terabox": {},
     "Thunder": {},
@@ -1306,6 +1317,7 @@
     "SFTP": "SFTP",
     "SMB": "SMB",
     "Seafile": "Seafile",
+    "Strm": "Strm",
     "Teambition": "Teambition 網盤",
     "Terabox": "Terabox",
     "Thunder": "迅雷",

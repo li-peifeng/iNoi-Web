@@ -351,6 +351,7 @@
     "enable_folder_size": "启用文件夹大小",
     "enable_thumb": "启用缩略图",
     "enable_version_upload": "启用版本上传",
+    "hide_uploading": "隐藏上传",
     "order_by": "排序依据",
     "order_bys": {
       "created_at": "创建时间",
@@ -851,6 +852,15 @@
     "token": "令牌",
     "username": "用户名"
   },
+  "Strm": {
+    "filterFileTypes": "过滤文件类型",
+    "filterFileTypes-tips": "支持 strm 文件的后缀名",
+    "paths": "路径",
+    "protect_same_name": "保护同名文件",
+    "protect_same_name-tips": "保护同名文件不被删除或重命名",
+    "siteUrl": "站点网址",
+    "siteUrl-tips": "strm 文件的前缀 URL"
+  },
   "Teambition": {
     "cookie": "Cookie",
     "order_by": "排序",
@@ -1228,6 +1238,7 @@
     "SFTP": {},
     "SMB": {},
     "Seafile": {},
+    "Strm": {},
     "Teambition": {},
     "Terabox": {},
     "Thunder": {},
@@ -1306,6 +1317,7 @@
     "SFTP": "SFTP",
     "SMB": "SMB",
     "Seafile": "Seafile",
+    "Strm": "Strm",
     "Teambition": "Teambition 网盘",
     "Terabox": "Terabox",
     "Thunder": "迅雷",
