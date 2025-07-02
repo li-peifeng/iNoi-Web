@@ -3,8 +3,8 @@
   </a>
 </p>
 <p align="center">
-  <a href="https://github.com/li-peifeng/inoi/releases">
-    <img src="https://img.shields.io/github/release/li-peifeng/inoi" alt="latest version" />
+  <a href="https://github.com/li-peifeng/inoi-web/releases">
+    <img src="https://img.shields.io/github/release/li-peifeng/inoi-web" alt="latest version" />
   </a>
   <a href="https://hub.docker.com/r/leolitaly/inoi">
     <img src="https://img.shields.io/docker/pulls/leolitaly/inoi?color=#48BB78&logo=docker&label=pulls" alt="Downloads" />
