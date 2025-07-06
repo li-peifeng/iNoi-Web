@@ -14,6 +14,7 @@ import bencode from "bencode"
 import crypto from "crypto-js"
 
 const deletePolicies = [
+  "upload_download_stream",
   "delete_on_upload_succeed",
   "delete_on_upload_failed",
   "delete_never",
@@ -58,7 +59,7 @@ export const OfflineDownload = () => {
   })
   const [tool, setTool] = createSignal("")
   const [deletePolicy, setDeletePolicy] = createSignal<DeletePolicy>(
-    "delete_on_upload_succeed",
+    "upload_download_stream",
   )
   onMount(async () => {
     const resp = await reqTool()
@@ -118,7 +119,15 @@ export const OfflineDownload = () => {
         <Box mb="$2">
           <SelectWrapper
             value={tool()}
-            onChange={(v) => setTool(v)}
+            onChange={(v) => {
+              if (
+                v !== "SimpleHttp" &&
+                deletePolicy() === "upload_download_stream"
+              ) {
+                setDeletePolicy("delete_on_upload_succeed")
+              }
+              setTool(v)
+            }}
             options={tools().map((tool) => {
               return { value: tool, label: tool }
             })}
@@ -130,12 +139,18 @@ export const OfflineDownload = () => {
           <SelectWrapper
             value={deletePolicy()}
             onChange={(v) => setDeletePolicy(v as DeletePolicy)}
-            options={deletePolicies.map((policy) => {
-              return {
-                value: policy,
-                label: t(`home.toolbar.delete_policy.${policy}`),
-              }
-            })}
+            options={deletePolicies
+              .filter((policy) =>
+                policy == "upload_download_stream"
+                  ? tool() === "SimpleHttp"
+                  : true,
+              )
+              .map((policy) => {
+                return {
+                  value: policy,
+                  label: t(`home.toolbar.delete_policy.${policy}`),
+                }
+              })}
           />
         </Box>
       }
