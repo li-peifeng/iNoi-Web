@@ -175,7 +175,14 @@
 }
 
 .hope-form-control.hope-c-dXIoOt.hope-c-PJLV.hope-c-PJLV-ithcVa-css {
-  background-color: #ffffff1a !important;
+  background-color: #ffffff00 !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.hope-ui-dark
+  .hope-form-control.hope-c-dXIoOt.hope-c-PJLV.hope-c-PJLV-ithcVa-css {
+  background-color: #00000000 !important;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
