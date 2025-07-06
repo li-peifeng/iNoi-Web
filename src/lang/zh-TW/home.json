@@ -38,7 +38,6 @@
     "toggle_checkbox": "切換核取方塊",
     "rename": "重命名",
     "input_new_name": "請輸入新名稱",
-    "only_one-tips": "只能選擇一個哦",
     "move": "移動",
     "copy": "複製",
     "choose_dst_folder": "選擇目標資料夾",
@@ -69,7 +68,8 @@
       "delete_on_upload_succeed": "上傳成功後刪除",
       "delete_on_upload_failed": "上傳失敗時刪除",
       "delete_never": "從不刪除",
-      "delete_always": "總是刪除"
+      "delete_always": "總是刪除",
+      "upload_download_stream": "下載串流直接上傳"
     },
     "download": "下載",
     "batch_download": "批次下載",
@@ -111,8 +111,6 @@
     "success": "成功",
     "error": "錯誤",
     "back": "返回上傳",
-    "stream": "串流式",
-    "from": "表單",
     "clear_done": "清空完成"
   },
   "local_settings": {
@@ -153,13 +151,6 @@
       "direct": "直接打開",
       "dblclick": "雙擊打開",
       "disable_while_checked": "選中時禁用"
-    },
-    "filename_scrollable": "長檔名滾動條",
-    "grid_item_size": "圖示大小",
-    "select_with_mouse": "在複選框關閉時使用滑鼠選擇項目",
-    "select_with_mouse_options": {
-      "disabled": "停用",
-      "open_item_with_dblclick": "雙擊打開"
     }
   },
   "package_download": {

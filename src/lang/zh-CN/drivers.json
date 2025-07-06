@@ -1053,11 +1053,6 @@
     "username": "用户名",
     "username-tips": "登录类型是用户名,此为必填项"
   },
-  "Trainbit": {
-    "AUSHELLPORTAL": "AUSHELLPORTAL",
-    "apikey": "Apikey",
-    "root_folder_id": "根文件夹ID"
-  },
   "UC": {
     "cookie": "Cookie",
     "only_list_video_file": "仅列出视频文件",
@@ -1247,7 +1242,6 @@
     "ThunderExpert": {},
     "ThunderX": {},
     "ThunderXExpert": {},
-    "Trainbit": {},
     "UC": {},
     "UCTV": {},
     "USS": {},
@@ -1326,7 +1320,6 @@
     "ThunderExpert": "迅雷专家版",
     "ThunderX": "迅雷 X",
     "ThunderXExpert": "迅雷 X 专家版",
-    "Trainbit": "Trainbit",
     "UC": "UC",
     "UCTV": "UC TV",
     "USS": "又拍云存储",

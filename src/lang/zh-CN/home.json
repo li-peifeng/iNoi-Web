@@ -38,7 +38,6 @@
     "toggle_checkbox": "复选框开关",
     "rename": "重命名",
     "input_new_name": "输入新名称",
-    "only_one-tips": "只能选择一个哦",
     "move": "移动",
     "copy": "复制",
     "choose_dst_folder": "选择目标文件夹",
@@ -69,7 +68,8 @@
       "delete_on_upload_succeed": "上传成功后删除",
       "delete_on_upload_failed": "上传失败时删除",
       "delete_never": "从不删除",
-      "delete_always": "总是删除"
+      "delete_always": "总是删除",
+      "upload_download_stream": "下载流直接上传"
     },
     "download": "下载",
     "batch_download": "批量下载",
@@ -111,8 +111,6 @@
     "success": "成功",
     "error": "错误",
     "back": "返回上传",
-    "stream": "流式",
-    "from": "表单",
     "clear_done": "清空完成"
   },
   "local_settings": {
@@ -153,13 +151,6 @@
       "direct": "直接打开",
       "dblclick": "双击打开",
       "disable_while_checked": "选中时禁用"
-    },
-    "filename_scrollable": "长文件名滚动条",
-    "grid_item_size": "图标大小",
-    "select_with_mouse": "用鼠标选择项目",
-    "select_with_mouse_options": {
-      "disabled": " 关闭",
-      "open_item_with_dblclick": "双击打开"
     }
   },
   "package_download": {
