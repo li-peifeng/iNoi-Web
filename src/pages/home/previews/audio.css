@@ -81,13 +81,13 @@
 .aplayer .aplayer-list ol li:hover,
 .aplayer .aplayer-list ol li.aplayer-list-light {
   background-color: #ffffff00;
-  background-image: linear-gradient(180deg, #ffffff99, #ffdede99, #ffffff99);
+  background-image: linear-gradient(180deg, #ffffff33, #fff, #ffffff33);
 }
 
 .hope-ui-dark .aplayer .aplayer-list ol li:hover,
 .hope-ui-dark .aplayer .aplayer-list ol li.aplayer-list-light {
   background-color: #00000000;
-  background-image: linear-gradient(180deg, #7e7e7e99, #00ff0000, #7e7e7e99);
+  background-image: linear-gradient(180deg, #3a3a3a80, #00ff0000, #3a3a3a80);
 }
 
 .hope-ui-dark .aplayer .aplayer-info .aplayer-music .aplayer-author {

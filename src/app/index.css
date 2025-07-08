@@ -26,10 +26,22 @@
 
 .hope-c-PJLV-ikSuVsl-css {
   background-color: #ffffff1a !important;
+  box-shadow:
+    0 5px 25px -2px #0000004d,
+    0 4px 6px -4px #0000001a !important;
+  -webkit-box-shadow:
+    0 5px 25px -2px #0000004d,
+    0 4px 6px -4px #0000001a !important;
 }
 
 .hope-c-PJLV-iiuDLME-css {
-  background-color: #0000001a !important;
+  background-color: #00000000 !important;
+  box-shadow:
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
+  -webkit-box-shadow:
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
 }
 
 .hope-modal__content.hope-c-hOYTCS.hope-c-jJyNvw.hope-c-jJyNvw-bVSmjq-size-xs.hope-c-jJyNvw-juNrEW-scrollBehavior-outside.hope-c-jJyNvw-kvuHwT-size-md.hope-c-PJLV.hope-c-PJLV-ibvTkII-css {
@@ -37,11 +49,11 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow:
-    0 5px 25px -2px rgba(0, 0, 0, 0.3),
-    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+    0 5px 25px -2px #0000004d,
+    0 4px 6px -4px #0000001a !important;
   -webkit-box-shadow:
-    0 5px 25px -2px rgba(0, 0, 0, 0.3),
-    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+    0 5px 25px -2px #0000004d,
+    0 4px 6px -4px #0000001a !important;
 }
 
 .hope-ui-dark
@@ -50,11 +62,11 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow:
-    0 0px 15px -1px rgba(200, 255, 255, 0.25),
-    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
   -webkit-box-shadow:
-    0 0px 15px -1px rgba(200, 255, 255, 0.25),
-    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
 }
 
 .hope-modal__content.hope-c-hOYTCS.hope-c-jJyNvw.hope-c-jJyNvw-fuVnmB-size-xl.hope-c-jJyNvw-juNrEW-scrollBehavior-outside.hope-c-PJLV.hope-c-PJLV-ibvTkII-css {
@@ -62,11 +74,11 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow:
-    0 5px 25px -2px rgba(0, 0, 0, 0.3),
-    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+    0 5px 25px -2px #0000004d,
+    0 4px 6px -4px #0000001a !important;
   -webkit-box-shadow:
-    0 5px 25px -2px rgba(0, 0, 0, 0.3),
-    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+    0 5px 25px -2px #0000004d,
+    0 4px 6px -4px #0000001a !important;
 }
 
 .hope-ui-dark
@@ -75,10 +87,10 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow:
-    0 0px 15px -1px rgba(200, 255, 255, 0.25),
+    0 0px 15px -1px rgba(255, 255, 255, 0.25),
     0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
   -webkit-box-shadow:
-    0 0px 15px -1px rgba(200, 255, 255, 0.25),
+    0 0px 15px -1px rgba(255, 255, 255, 0.25),
     0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
 }
 
@@ -100,11 +112,11 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow:
-    0 0px 15px -1px rgba(200, 255, 255, 0.25),
-    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
   -webkit-box-shadow:
-    0 0px 15px -1px rgba(200, 255, 255, 0.25),
-    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
 }
 
 .hope-c-UdTFD {
@@ -149,7 +161,7 @@
 }
 
 .hope-ui-dark .hope-c-PJLV-ieGWMbI-css {
-  background-color: #0000001a !important;
+  background-color: #00000000 !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -210,7 +222,7 @@
 }
 
 .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iigjoxS-css {
-  background-color: #0000001a !important;
+  background-color: #00000000 !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow:
@@ -223,7 +235,7 @@
 
 .hope-ui-dark
   .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iigjoxS-css {
-  background-color: #0000001a !important;
+  background-color: #00000000 !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow:
@@ -252,20 +264,63 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow:
-    0 0px 15px -1px rgba(200, 255, 255, 0.25),
-    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
   -webkit-box-shadow:
-    0 0px 15px -1px rgba(200, 255, 255, 0.25),
-    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
+}
+
+.hope-c-PJLV-ikBeZBm-css {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 0px 5px 2px #0000004d,
+    0 4px 6px -4px #0000001a !important;
+  -webkit-box-shadow:
+    0 0px 5px 2px #0000004d,
+    0 4px 6px -4px #0000001a !important;
+}
+
+.hope-ui-dark .hope-c-PJLV-ikBeZBm-css {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
+  -webkit-box-shadow:
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
+}
+
+.hope-c-PJLV-ileGxZh-css {
+  background-color: #00000000 !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px !important;
+  box-shadow:
+    0 0px 5px 2px #0000004d,
+    0 4px 6px -4px #0000001a !important;
+  -webkit-box-shadow:
+    0 0px 5px 2px #0000004d,
+    0 4px 6px -4px #0000001a !important;
+}
+
+.hope-ui-dark .hope-c-PJLV-ileGxZh-css {
+  background-color: #00000000 !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px !important;
+  box-shadow:
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
+  -webkit-box-shadow:
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
 }
 
 .hope-form-label.hope-c-fOburX.hope-c-PJLV.hope-c-PJLV-iiiZWRH-css {
   background-color: #44c30000 !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-.hope-c-PJLV-ikBeZBm-css {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -289,7 +344,7 @@
 }
 
 .hope-ui-dark .hope-c-PJLV-ikEIIxw-css {
-  background-color: #0000001a !important;
+  background-color: #00000000 !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -298,12 +353,24 @@
   background-color: #ffffff1a !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 0px 5px 2px #0000004d,
+    0 4px 6px -4px #0000001a !important;
+  -webkit-box-shadow:
+    0 0px 5px 2px #0000004d,
+    0 4px 6px -4px #0000001a !important;
 }
 
 .hope-ui-dark .hope-c-PJLV-iSMXDf-css {
-  background-color: #0000001a !important;
+  background-color: #00000000 !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
+  -webkit-box-shadow:
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
 }
 
 .hope-form-control.hope-c-dXIoOt.hope-c-PJLV.hope-c-PJLV-ithcVa-css {
@@ -321,8 +388,41 @@
 
 .hope-modal__overlay.hope-c-ctSAUo.hope-c-PJLV.hope-c-PJLV-ijhzIfm-css {
   background-color: #00000000 !important;
+}
+
+.hope-ui-light .hope-c-PJLV-ijgzmFG-css {
+  background-color: #ffffff1a !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 5px 25px -2px rgba(0, 0, 0, 0.2),
+    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  -webkit-box-shadow:
+    0 5px 25px -2px rgba(0, 0, 0, 0.2),
+    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+}
+
+.hope-ui-dark .hope-c-PJLV-ijgzmFG-css {
+  background-color: #00000000 !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
+  -webkit-box-shadow:
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
+}
+
+.hope-ui-light .hope-c-PJLV-ijIbXvT-css {
+  background-color: #ffffff1a !important;
+  border-radius: 10px !important;
+  box-shadow:
+    0 5px 25px -2px rgba(0, 0, 0, 0.2),
+    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  -webkit-box-shadow:
+    0 5px 25px -2px rgba(0, 0, 0, 0.2),
+    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
 }
 
 .hope-drawer__content.hope-c-hOYTCS.hope-c-iPJpIL.hope-c-iPJpIL-bVSmjq-size-xs.hope-c-PJLV.hope-c-PJLV-ijhzIfm-css {
@@ -343,11 +443,11 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow:
-    0 0px 15px -1px rgba(200, 255, 255, 0.25),
-    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
   -webkit-box-shadow:
-    0 0px 15px -1px rgba(200, 255, 255, 0.25),
-    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+    0 0px 15px -1px #ffffff40,
+    0 4px 6px -4px #0000001a !important;
 }
 
 .hope-drawer__overlay.hope-c-ctSAUo.hope-c-PJLV.hope-c-PJLV-ijhzIfm-css {
@@ -369,7 +469,7 @@
 }
 
 .hope-c-PJLV.hope-c-PJLV-iwUksD-css {
-  background-color: #0000001a !important;
+  background-color: #00000000 !important;
 }
 
 .hope-ui-light .hope-c-hrsMRY {
@@ -381,11 +481,11 @@
 }
 
 .hope-ui-light .hope-c-kvTTWD-hYRNAb-variant-filled {
-  background-color: #dedede80 !important;
+  background-color: #ffffff80 !important;
 }
 
 .hope-ui-dark .hope-c-kvTTWD-hYRNAb-variant-filled {
-  background-color: #03030380 !important;
+  background-color: #00000033 !important;
 }
 
 ::-webkit-scrollbar {
@@ -456,36 +556,12 @@
 }
 
 .hope-ui-dark .hope-c-PJLV.hope-c-PJLV-iciJSBF-css {
-  background-color: #0000001a !important;
-  border-radius: 10px !important;
-}
-
-.hope-ui-light .hope-c-PJLV-ijgzmFG-css {
-  background-color: #ffffff1a !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-.hope-ui-dark .hope-c-PJLV-ijgzmFG-css {
-  background-color: #0000001a !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-.hope-c-PJLV-ileGxZh-css {
-  background-color: #0000001a !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px !important;
-}
-
-.hope-ui-light .hope-c-PJLV-ijIbXvT-css {
-  background-color: #ffffff1a !important;
+  background-color: #00000000 !important;
   border-radius: 10px !important;
 }
 
 .hope-ui-dark .hope-c-PJLV-ijrHllL-css {
-  background-color: #0000001a !important;
+  background-color: #00000000 !important;
   border-radius: 10px !important;
 }
 
@@ -508,7 +584,7 @@
 }
 
 .hope-ui-dark .lg-backdrop {
-  background-color: #0000001a !important;
+  background-color: #00000000 !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -552,7 +628,7 @@
 }
 
 .hope-ui-dark .lg-outer .lg-thumb-outer {
-  background-color: #0000001a !important;
+  background-color: #00000000 !important;
 }
 
 .hope-ui-light .lg-next {
@@ -563,7 +639,7 @@
 }
 
 .hope-ui-dark .lg-next {
-  background-color: #0000001a !important;
+  background-color: #00000000 !important;
   border-radius: 10px !important;
   color: #7a7a7a !important;
   font-size: 28px !important;
@@ -577,7 +653,7 @@
 }
 
 .hope-ui-dark .lg-prev {
-  background-color: #0000001a !important;
+  background-color: #00000000 !important;
   border-radius: 10px !important;
   color: #7a7a7a !important;
   font-size: 28px !important;
@@ -614,7 +690,7 @@
 }
 
 .hope-ui-dark .lg-progress-bar {
-  background-color: #0000001a !important;
+  background-color: #00000000 !important;
   height: 3px !important;
 }
 
@@ -629,7 +705,7 @@
 }
 
 .hope-ui-dark .lg-toolbar .lg-icon:hover {
-  background-color: #0000001a !important;
+  background-color: #00000000 !important;
   color: #ff0077 !important;
 }
 
