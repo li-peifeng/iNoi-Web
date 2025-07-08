@@ -164,6 +164,24 @@
   background-color: #ffffff1a !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 5px 25px -2px rgba(0, 0, 0, 0.3),
+    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  -webkit-box-shadow:
+    0 5px 25px -2px rgba(0, 0, 0, 0.3),
+    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+}
+
+.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iubUra-css {
+  background-color: #10101080 !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 0px 15px -1px rgba(200, 255, 255, 0.25),
+    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  -webkit-box-shadow:
+    0 0px 15px -1px rgba(200, 255, 255, 0.25),
+    0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
 }
 
 .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-igScBhH-css {
@@ -348,10 +366,6 @@
   background-color: #00000059 !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-}
-
-.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iubUra-css {
-  background-color: #0000001a !important;
 }
 
 .hope-c-PJLV.hope-c-PJLV-iwUksD-css {
