@@ -91,7 +91,7 @@ const previews: Preview[] = [
     prior: true,
   },
   {
-    name: "在线播放音频",
+    name: "Audio",
     type: ObjType.AUDIO,
     component: lazy(() => import("./audio")),
     prior: true,
@@ -169,16 +169,45 @@ export const getPreviews = (
   })
   // iframe previews
   const iframePreviews = getIframePreviews(file.name)
-  iframePreviews.forEach((preview) => {
-    res.push({
+  res.push(
+    ...iframePreviews.map((preview) => ({
       name: preview.key,
       component: generateIframePreview(preview.value),
-    })
-  })
+    })),
+  )
+
   // download page
-  res.push({
+  const downloadComponent: PreviewComponent = {
     name: "下载保存",
     component: lazy(() => import("./download")),
-  })
+  }
+
+  // Condition for the new requirement: a large text file.
+  const isLargeTextFile =
+    file.type === ObjType.TEXT && file.size >= 1 * 1024 * 1024
+
+  // Conditions from the previous logic for small, unrecognized files.
+  const noPreviewsFound = res.length === 0 && subsequent.length === 0
+  const isSmallFile = file.size < 1 * 1024 * 1024
+
+  if (isLargeTextFile) {
+    // Case 1: Large text file. Place "Download" at the very beginning.
+    // The standard text previews (Markdown, etc.) are already in `res` and will appear after it.
+    res.unshift(downloadComponent)
+  } else if (noPreviewsFound && isSmallFile) {
+    // Case 2: No other previews found for a small file.
+    // Add "Download" first, then suggest default text previews.
+    res.push(downloadComponent)
+    const textPreviewsToAdd = previews
+      .filter((p) =>
+        ["Markdown", "Markdown with word wrap", "Text Editor"].includes(p.name),
+      )
+      .map((p) => ({ name: p.name, component: p.component }))
+    res.push(...textPreviewsToAdd)
+  } else {
+    // Case 3: The "normal" case for all other files (images, videos, small text files, etc.).
+    // Add "Download" as the last fallback option in the high-priority list.
+    res.push(downloadComponent)
+  }
   return res.concat(subsequent)
 }
