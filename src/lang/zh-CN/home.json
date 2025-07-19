@@ -129,6 +129,7 @@
       "grid": "网格视图",
       "image": "图片视图"
     },
+    "grid_item_size":"网格项目大小",
     "position_of_header_navbar": "导航栏位置",
     "position_of_header_navbar_options": {
       "static": "常规固定模式",
