@@ -131,8 +131,10 @@ const Storages = () => {
         <HopeSwitch
           minW={80}
           checked={layout() === "table"}
-          onChange={(e) => {
-            setLayout(e.currentTarget.checked ? "table" : "grid")
+          onChange={(e: Event) => {
+            setLayout(
+              (e.currentTarget as HTMLInputElement).checked ? "table" : "grid",
+            )
           }}
         >
           {t("storages.other.table_layout")}

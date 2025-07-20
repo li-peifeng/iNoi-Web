@@ -17,7 +17,13 @@ const notify = {
               padding: "$3",
             }}
           >
-            <div style={{ flexGrow: 1, display: "flex", alignItems: "center" }}>
+            <div
+              style={{
+                "flex-grow": 1,
+                display: "flex",
+                "align-items": "center",
+              }}
+            >
               <div style={{ margin: "auto" }}>{element}</div>
             </div>
           </Box>

@@ -9,27 +9,17 @@ import {
   Spinner,
   useColorModeValue,
 } from "@hope-ui/solid"
-import { useI18n } from "@solid-primitives/i18n"
 import { createSignal, For, Show } from "solid-js"
-import { langMap, languages, loadedLangs, setLang } from "~/app/i18n"
-import { FaSolidLanguage } from "solid-icons/fa"
+import { Lang, languages, setCurrentLang } from "~/app/i18n"
 import { Portal } from "solid-js/web"
-
+import { FaSolidLanguage } from "solid-icons/fa"
 const [fetchingLang, setFetchingLang] = createSignal(false)
 
 export const SwitchLanguage = <C extends ElementType = "button">(
   props: MenuTriggerProps<C>,
 ) => {
-  const [, { locale, add }] = useI18n()
-  const switchLang = async (lang: string) => {
-    if (!loadedLangs.has(lang)) {
-      setFetchingLang(true)
-      add(lang, (await langMap[lang]()).default)
-      setFetchingLang(false)
-      loadedLangs.add(lang)
-    }
-    locale(lang)
-    setLang(lang)
+  const switchLang = async (lang: Lang) => {
+    setCurrentLang(lang)
     localStorage.setItem("lang", lang)
   }
 

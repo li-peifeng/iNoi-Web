@@ -51,6 +51,7 @@ export const initialLocalSettings = [
     default: "direct",
     type: "select",
     options: ["direct", "dblclick", "disable_while_checked"],
+    hidden: false,
   },
 ]
 

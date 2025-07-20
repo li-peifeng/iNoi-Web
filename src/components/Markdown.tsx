@@ -254,7 +254,9 @@ export function Markdown(props: {
       <Show when={show()}>
         <SolidMarkdown
           class={clsx("markdown-body", props.class)}
+          // @ts-ignore
           remarkPlugins={remarkPlugins()}
+          // @ts-ignore
           rehypePlugins={rehypePlugins()}
           children={md()}
         />

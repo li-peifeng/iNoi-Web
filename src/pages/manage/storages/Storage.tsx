@@ -103,7 +103,11 @@ export function StorageGridItem(props: StorageProps) {
         <Box
           css={{ wordBreak: "break-all" }}
           overflowX="auto"
-          innerHTML={props.storage.status}
+          innerHTML={t(
+            `storages.table_fields.status.${props.storage.status}`,
+            undefined,
+            props.storage.status,
+          )}
         />
       </HStack>
       <Text css={{ wordBreak: "break-all" }}>{props.storage.remark}</Text>
@@ -121,7 +125,13 @@ export function StorageListItem(props: StorageProps) {
       <Td>{props.storage.mount_path}</Td>
       <Td>{t(`drivers.drivers.${props.storage.driver}`)}</Td>
       <Td>{props.storage.order}</Td>
-      <Td>{props.storage.status}</Td>
+      <Td>
+        {t(
+          `storages.table_fields.status.${props.storage.status}`,
+          undefined,
+          props.storage.status,
+        )}
+      </Td>
       <Td>{props.storage.remark}</Td>
       <Td>
         <HStack spacing="$2">

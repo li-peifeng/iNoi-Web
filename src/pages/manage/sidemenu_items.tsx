@@ -19,7 +19,7 @@ import { FiLogIn } from "solid-icons/fi"
 import { SiMetabase } from "solid-icons/si"
 import { CgDatabase } from "solid-icons/cg"
 import { OcWorkflow2 } from "solid-icons/oc"
-import { IoCopy, IoHome, IoMagnetOutline } from "solid-icons/io"
+import { IoCopy, IoMove, IoHome, IoMagnetOutline } from "solid-icons/io"
 import { Component, lazy } from "solid-js"
 import { Group, UserRole } from "~/types"
 import { FaSolidBook, FaSolidDatabase } from "solid-icons/fa"
@@ -145,6 +145,13 @@ export const side_menu_items: SideMenuItem[] = [
         to: "/@manage/tasks/copy",
         role: UserRole.GENERAL,
         component: lazy(() => import("./tasks/Copy")),
+      },
+      {
+        title: "manage.sidemenu.move",
+        icon: IoMove,
+        to: "/@manage/tasks/move",
+        role: UserRole.GENERAL,
+        component: lazy(() => import("./tasks/Move")),
       },
       {
         title: "manage.sidemenu.decompress",
