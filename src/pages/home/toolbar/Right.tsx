@@ -70,66 +70,66 @@ export const Right = () => {
           transition={{ duration: 0.2 }}
         >
           <VStack spacing="$1" class="right-toolbar-in">
-            <Show when={isFolder() && (userCan("write") || objStore.write)}>
-              <RightIcon
-                as={AiOutlineCloudUpload}
-                tips="upload"
-                onClick={() => {
-                  bus.emit("tool", "upload")
-                }}
-              />
-              <RightIcon
-                as={operations.new_file.icon}
-                tips="new_file"
-                onClick={() => {
-                  bus.emit("tool", "new_file")
-                }}
-              />
-              <RightIcon
-                as={operations.mkdir.icon}
-                p="$1_5"
-                tips="mkdir"
-                onClick={() => {
-                  bus.emit("tool", "mkdir")
-                }}
-              />
-              <RightIcon
-                as={operations.recursive_move.icon}
-                tips="recursive_move"
-                onClick={() => {
-                  bus.emit("tool", "recursiveMove")
-                }}
-              />
-              <RightIcon
-                as={operations.batch_rename.icon}
-                tips="batch_rename"
-                onClick={() => {
-                  selectAll(true)
-                  bus.emit("tool", "batchRename")
-                }}
-              />
-            </Show>
-            <Show when={isFolder() && userCan("offline_download")}>
-              <RightIcon
-                as={IoMagnetOutline}
-                pl="0"
-                tips="offline_download"
-                onClick={() => {
-                  bus.emit("tool", "offline_download")
-                }}
-              />
-            </Show>
-            <Show when={isTocVisible()}>
-              <RightIcon
-                as={BiSolidBookContent}
-                tips="toggle_markdown_toc"
-                onClick={() => {
-                  setTocDisabled((disabled) => !disabled)
-                }}
-              />
-            </Show>
-            {/* 将刷新按钮移到管理员区域 */}
-            <Show when={UserMethods.is_admin(me())}>
+            {/* 所有工具按钮仅在登录后显示 */}
+            <Show when={me()}>
+              <Show when={isFolder() && (userCan("write") || objStore.write)}>
+                <RightIcon
+                  as={AiOutlineCloudUpload}
+                  tips="upload"
+                  onClick={() => {
+                    bus.emit("tool", "upload")
+                  }}
+                />
+                <RightIcon
+                  as={operations.new_file.icon}
+                  tips="new_file"
+                  onClick={() => {
+                    bus.emit("tool", "new_file")
+                  }}
+                />
+                <RightIcon
+                  as={operations.mkdir.icon}
+                  p="$1_5"
+                  tips="mkdir"
+                  onClick={() => {
+                    bus.emit("tool", "mkdir")
+                  }}
+                />
+                <RightIcon
+                  as={operations.recursive_move.icon}
+                  tips="recursive_move"
+                  onClick={() => {
+                    bus.emit("tool", "recursiveMove")
+                  }}
+                />
+                <RightIcon
+                  as={operations.batch_rename.icon}
+                  tips="batch_rename"
+                  onClick={() => {
+                    selectAll(true)
+                    bus.emit("tool", "batchRename")
+                  }}
+                />
+              </Show>
+              <Show when={isFolder() && userCan("offline_download")}>
+                <RightIcon
+                  as={IoMagnetOutline}
+                  pl="0"
+                  tips="offline_download"
+                  onClick={() => {
+                    bus.emit("tool", "offline_download")
+                  }}
+                />
+              </Show>
+              <Show when={isTocVisible()}>
+                <RightIcon
+                  as={BiSolidBookContent}
+                  tips="toggle_markdown_toc"
+                  onClick={() => {
+                    setTocDisabled((disabled) => !disabled)
+                  }}
+                />
+              </Show>
               <RightIcon
                 as={RiSystemRefreshLine}
                 tips="refresh"
@@ -142,18 +142,20 @@ export const Right = () => {
                   })
                 }}
               />
-              <RightIcon
-                tips="toggle_checkbox"
-                as={TbCheckbox}
-                onClick={toggleCheckbox}
-              />
-              <RightIcon
-                as={AiOutlineSetting}
-                tips="browser_setting"
-                onClick={() => {
-                  bus.emit("tool", "local_settings")
-                }}
-              />
+              <Show when={UserMethods.is_admin(me())}>
+                <RightIcon
+                  tips="toggle_checkbox"
+                  as={TbCheckbox}
+                  onClick={toggleCheckbox}
+                />
+                <RightIcon
+                  as={AiOutlineSetting}
+                  tips="browser_setting"
+                  onClick={() => {
+                    bus.emit("tool", "local_settings")
+                  }}
+                />
+              </Show>
             </Show>
           </VStack>
           <RightIcon tips="close" as={VsHeart} onClick={onToggle} />
