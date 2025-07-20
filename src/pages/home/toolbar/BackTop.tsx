@@ -1,7 +1,6 @@
 import { Show, createSignal, onCleanup } from "solid-js"
 import { Box, Icon } from "@hope-ui/solid"
 import { Motion } from "solid-motionone"
-import { isMobile } from "~/utils/compatibility"
 import { getMainColor } from "~/store"
 import { CgChevronDoubleUpO } from "solid-icons/cg"
 
@@ -15,8 +14,6 @@ export const useScrollListener = (
 }
 
 export const BackTop = () => {
-  if (isMobile) return null
-
   const [visible, setVisible] = createSignal(false)
 
   useScrollListener(() => setVisible(window.scrollY > 100))
