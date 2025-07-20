@@ -67,12 +67,24 @@ export const Right = () => {
           initial={{ opacity: 0, scale: 0, y: 300 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0, y: 300 }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.2 } as any}
         >
           <VStack spacing="$1" class="right-toolbar-in">
             {/* 所有工具按钮仅在登录后显示 */}
             <Show when={me()}>
               <Show when={isFolder() && (userCan("write") || objStore.write)}>
+                <RightIcon
+                  as={RiSystemRefreshLine}
+                  tips="refresh"
+                  onClick={() => {
+                    refresh(undefined, true)
+                    notificationService.show({
+                      status: "success",
+                      description: "目录刷新成功",
+                      closable: false,
+                    })
+                  }}
+                />
                 <RightIcon
                   as={AiOutlineCloudUpload}
                   tips="upload"
@@ -130,18 +142,6 @@ export const Right = () => {
                   }}
                 />
               </Show>
-              <RightIcon
-                as={RiSystemRefreshLine}
-                tips="refresh"
-                onClick={() => {
-                  refresh(undefined, true)
-                  notificationService.show({
-                    status: "success",
-                    description: "目录刷新成功",
-                    closable: false,
-                  })
-                }}
-              />
               <Show when={UserMethods.is_admin(me())}>
                 <RightIcon
                   tips="toggle_checkbox"

@@ -129,5 +129,7 @@
   "version": "版本",
   "video_autoplay": "自动播放视频",
   "video_types": "视频类型",
+  "load_default_setting": "加载默认设置",
+  "load_default_setting_success": "加载成功，未保存",
   "webauthn_login_enabled": "启用 Webauthn 登录"
 }
