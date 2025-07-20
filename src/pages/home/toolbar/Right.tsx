@@ -62,19 +62,15 @@ export const Right = () => {
           p="$1"
           rounded="$lg"
           spacing="$1"
-          // shadow="0px 10px 30px -5px rgba(0, 0, 0, 0.3)"
-          // bgColor={useColorModeValue("white", "$neutral4")()}
           bgColor="$neutral1"
           as={Motion.div}
           initial={{ opacity: 0, scale: 0, y: 300 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0, y: 300 }}
-          // @ts-ignore
           transition={{ duration: 0.2 }}
         >
           <VStack spacing="$1" class="right-toolbar-in">
             <Show when={isFolder() && (userCan("write") || objStore.write)}>
-              {/* <Add /> */}
               <RightIcon
                 as={AiOutlineCloudUpload}
                 tips="upload"
@@ -132,19 +128,20 @@ export const Right = () => {
                 }}
               />
             </Show>
-            <RightIcon
-              as={RiSystemRefreshLine}
-              tips="refresh"
-              onClick={() => {
-                refresh(undefined, true)
-                notificationService.show({
-                  status: "success",
-                  description: "目录刷新成功",
-                  closable: false,
-                })
-              }}
-            />
+            {/* 将刷新按钮移到管理员区域 */}
             <Show when={UserMethods.is_admin(me())}>
+              <RightIcon
+                as={RiSystemRefreshLine}
+                tips="refresh"
+                onClick={() => {
+                  refresh(undefined, true)
+                  notificationService.show({
+                    status: "success",
+                    description: "目录刷新成功",
+                    closable: false,
+                  })
+                }}
+              />
               <RightIcon
                 tips="toggle_checkbox"
                 as={TbCheckbox}
