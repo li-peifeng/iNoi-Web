@@ -213,8 +213,13 @@
     "api_url_address": "API 網路位址"
   },
   "AliyundriveOpen": {
+    "alipan_type": "阿里盤型",
+    "alipan_types": {
+      "alipanTV": "阿里盤電視",
+      "default": "預設"
+    },
     "api_url_address": "API 網路位址",
-    "client_id": "客户端ID",
+    "client_id": "客戶端ID",
     "client_id-tips": "如果你沒有，請留空",
     "client_secret": "用戶端金鑰",
     "client_secret-tips": "如果你沒有，請留空",
@@ -798,10 +803,15 @@
     "use_online_api": "使用線上 API"
   },
   "QuarkTV": {
-    "device_id": "設備id",
-    "query_token": "Query token",
-    "query_token-tips": "don't edit'",
-    "refresh_token": "更新 Token",
+    "device_id": "裝置id",
+    "link_method": "連結方法",
+    "link_methods": {
+      "download": "下載",
+      "streaming": "串流"
+    },
+    "query_token": "查詢令牌",
+    "query_token-tips": "不要編輯",
+    "refresh_token": "刷新令牌",
     "root_folder_id": "根資料夾ID"
   },
   "S3": {
@@ -1073,11 +1083,16 @@
     "use_transcoding_address-tips": "您可以觀看轉碼後的視頻，並支援 302 重定向"
   },
   "UCTV": {
-    "device_id": "設備id",
-    "query_token": "Query token",
-    "query_token-tips": "don't edit'",
-    "refresh_token": "更新 Token",
-    "root_folder_id": "根資料夾ID"
+    "device_id": "裝置 ID",
+    "link_method": "連結方式",
+    "link_methods": {
+      "download": "下載",
+      "streaming": "串流"
+    },
+    "query_token": "查詢令牌",
+    "query_token-tips": "請勿編輯",
+    "refresh_token": "刷新令牌",
+    "root_folder_id": "根資料夾 ID"
   },
   "USS": {
     "anti_theft_chain_token": "Token 防盜鏈",

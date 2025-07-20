@@ -35,8 +35,14 @@
       "front": "提取到最前",
       "back": "提取到最後"
     },
-    "enable_sign": "啟用簽名",
+    "enable_sign": "啟用簽章",
     "disable_index": "停用索引"
+  },
+  "table_fields": {
+    "status": {
+      "work": "工作",
+      "disabled": "已停用"
+    }
   },
   "other": {
     "start_load_success": "開始載入",

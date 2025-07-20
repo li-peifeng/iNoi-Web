@@ -213,6 +213,11 @@
     "api_url_address": "API 网络地址"
   },
   "AliyundriveOpen": {
+    "alipan_type": "阿里盘类型",
+    "alipan_types": {
+      "alipanTV": "阿里盘电视",
+      "default": "默认"
+    },
     "api_url_address": "API 网络地址",
     "client_id": "客户端ID",
     "client_id-tips": "如果你没有，请留空",
@@ -799,6 +804,11 @@
   },
   "QuarkTV": {
     "device_id": "设备id",
+    "link_method": "链接方法",
+    "link_methods": {
+      "download": "下载",
+      "streaming": "流媒体"
+    },
     "query_token": "查询令牌",
     "query_token-tips": "不要编辑",
     "refresh_token": "刷新令牌",
@@ -1073,11 +1083,16 @@
     "use_transcoding_address-tips": "您可以观看转码后的视频，并支持 302 重定向"
   },
   "UCTV": {
-    "device_id": "设备id",
+    "device_id": "设备 ID",
+    "link_method": "链接方式",
+    "link_methods": {
+      "download": "下载",
+      "streaming": "流媒体"
+    },
     "query_token": "查询令牌",
-    "query_token-tips": "不要编辑",
+    "query_token-tips": "请勿编辑",
     "refresh_token": "刷新令牌",
-    "root_folder_id": "根文件夹ID"
+    "root_folder_id": "根文件夹 ID"
   },
   "USS": {
     "anti_theft_chain_token": "反盗链令牌",
