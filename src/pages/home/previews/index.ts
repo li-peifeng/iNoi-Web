@@ -91,7 +91,7 @@ const previews: Preview[] = [
     prior: true,
   },
   {
-    name: "Audio",
+    name: "音乐音频",
     type: ObjType.AUDIO,
     component: lazy(() => import("./audio")),
     prior: true,
