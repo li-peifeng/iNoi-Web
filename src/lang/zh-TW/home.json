@@ -119,10 +119,10 @@
     "no_result": "iNoi • Search",
     "scopes": {
       "all": "全部",
-      "file": "文件",
-      "folder": "目录"
+      "file": "檔案",
+      "folder": "目錄"
     },
-    "search": "搜索"
+    "search": "搜尋"
   },
   "strm": {
     "delete_file": "刪除檔案",
