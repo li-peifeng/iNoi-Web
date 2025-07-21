@@ -47,7 +47,7 @@
   "table_fields": {
     "status": {
       "disabled": "已停用",
-      "work": "工作"
+      "work": "正常運作中"
     }
   }
 }
