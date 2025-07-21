@@ -49,6 +49,8 @@
   "ldap_user_search_base": "LDAP 用户搜索基础",
   "ldap_user_search_filter": "LDAP 用户搜索过滤器",
   "link_expiration": "直链有效期",
+  "load_default_setting": "加载默认设置",
+  "load_default_setting_success": "加载成功，未保存",
   "logo": "图标",
   "main_color": "主颜色",
   "max_client_download_speed": "客户端的最大下行速率（KiB/s，负数无限制）",
@@ -78,12 +80,12 @@
   "robots_txt": "Robots.txt",
   "s3_access_key_id": "S3 访问密钥 ID",
   "s3_buckets": "S3 桶",
-  "s3_enabled": "S3 已启用",
-  "s3_generate": "S3 生成密钥",
-  "s3_secret_access_key": "S3 访问密钥",
   "s3_buckets_duplicate_name": "存储桶名称重复",
   "s3_buckets_empty": "存储桶名称或路径为空",
+  "s3_enabled": "S3 已启用",
+  "s3_generate": "S3 生成密钥",
   "s3_restart_to_apply": "您需要重启来应用本页设置",
+  "s3_secret_access_key": "S3 访问密钥",
   "search_index": "搜索索引",
   "search_indexs": {
     "bleve": "Bleve",
@@ -129,7 +131,5 @@
   "version": "版本",
   "video_autoplay": "自动播放视频",
   "video_types": "视频类型",
-  "load_default_setting": "加载默认设置",
-  "load_default_setting_success": "加载成功，未保存",
   "webauthn_login_enabled": "启用 Webauthn 登录"
 }

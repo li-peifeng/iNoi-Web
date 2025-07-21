@@ -1,221 +1,221 @@
 {
-  "nav": {
-    "dir": "Dir",
-    "file": "File"
+  "conflict_policy": {
+    "cancel_if_exists": "Cancel if file exists",
+    "overwrite_existing": "Overwrite existing files",
+    "skip_existing": "Skip existing files"
   },
-  "obj": {
-    "name": "Name",
-    "size": "Size",
-    "modified": "Modified"
+  "fetching_settings_failed": "Please wait, loading...⏳",
+  "footer": {
+    "guest": "iNoi • 2025",
+    "manage": "iNoi • 2025",
+    "powered_by": "PeiFeng.Li"
   },
-  "preview": {
-    "download": "Download",
-    "failed_load_img": "Failed to load image",
-    "open_with": "Open with ...",
-    "play_with": "Play with ...",
-    "install": "Install",
-    "installing": "Installing",
-    "tr-install": "TrollStore",
-    "tr-installing": "TrollStore Installing",
-    "open_in_new_window": "Open in new window",
-    "auto_next": "Auto next",
-    "pdf": {
-      "document_outline": "Document Outline",
-      "no_outline": "No outline available for this document",
-      "loading": "Loading...",
-      "prev_page": "Previous Page",
-      "next_page": "Next Page",
-      "toggle_sidebar": "Toggle Sidebar",
-      "close_sidebar": "Close Sidebar",
-      "toggle_pen": "Toggle Pen",
-      "zoom_presets": "Zoom Presets",
-      "zoom_levels": "Zoom Levels",
-      "zoom_auto": "Auto",
-      "zoom_actual": "Actual Size",
-      "zoom_fit": "Page Fit",
-      "zoom_width": "Page Width",
-      "zoom_50": "50%",
-      "zoom_75": "75%",
-      "zoom_100": "100%",
-      "zoom_125": "125%",
-      "zoom_150": "150%",
-      "zoom_200": "200%",
-      "zoom_in": "Zoom In",
-      "zoom_out": "Zoom Out"
-    }
-  },
-  "layouts": {
-    "list": "List View",
-    "grid": "Grid View",
-    "image": "Image View"
-  },
-  "no_images": "No images in the current folder",
-  "load_more": "Load more",
-  "no_more": "* * * * *",
+  "get_current_user_failed": "Failed get current user: ",
   "input_password": "Please input password",
-  "toolbar": {
-    "local_settings_auto": "Setup successful, will be refreshed automatically",
-    "more": "open toolbar",
-    "close": "close toolbar",
-    "browser_setting": "browser setting",
-    "refresh": "Refresh",
-    "toggle_theme": "Toggle Theme",
-    "toggle_theme_auto": "Auto toggle theme",
-    "switch_lang": "Switch Language",
-    "toggle_markdown_toc": "Toggle Outline",
-    "toggle_checkbox": "Toggle Checkbox",
-    "rename": "Rename",
-    "input_new_name": "Input new name",
-    "move": "Move",
-    "copy": "Copy",
-    "choose_dst_folder": "Select destination folder",
-    "delete": "Delete",
-    "delete-tips": "Are you sure to delete the selected object?",
-    "decompress": "Decompress",
-    "decompress-pass": "Extraction password: ",
-    "decompress-cache-full": "Cache full into a temp-file",
-    "decompress-put-into-new": "Decompress into a new sub-folder",
-    "extract": "Extract to",
-    "archive": {
-      "input_password": "Please input extraction password",
-      "incorrect_password": "Incorrect password",
-      "extract_header": "Extract {{path}} to..."
-    },
-    "copy_link": "Copy link",
-    "preview_page": "Preview page",
-    "down_link": "Download link",
-    "encode_down_link": "Encode download link",
-    "mkdir": "New Folder",
-    "input_dir_name": "Input folder name",
-    "new_file": "New File",
-    "input_filename": "Input filename",
-    "cancel_select": "Cancel Select",
-    "offline_download": "Offline download",
-    "offline_download-tips": "One URL per line",
-    "delete_policy": {
-      "delete_on_upload_succeed": "Delete on upload succeed",
-      "delete_on_upload_failed": "Delete on upload failed",
-      "delete_never": "Never delete",
-      "delete_always": "Always delete",
-      "upload_download_stream": "Download stream direct upload"
-    },
-    "download": "Download",
-    "batch_download": "Batch Download",
-    "package_download": "Package Download",
-    "package_download_disabled": "Package download is disabled",
-    "send_aria2": "Send to Aria2",
-    "aria2_not_set": "Please set aria2 rpc url",
-    "aria2_set_error": "aria2 set error",
-    "send_aria2_success": "Send to aria2 successfully",
-    "pre_package_download-tips": "Using streamsaver in the browser instead of the server for package download requires the corresponding storage to support cors, and the unsupported storage will fail.",
-    "package_download-tips": "Downloading, please wait don't close the page",
-    "playlist_download": "Playlist Download",
-    "upload": "Upload",
-    "local_settings": "Local Settings",
-    "recursive_move": "Recursive Move",
-    "recursive_move_directory-tips": "Are you sure you want to move all files in the current folder and its subfolders to the specified folder?",
-    "remove_empty_directory": "Remove Empty Folder",
-    "remove_empty_directory-tips": "Are you sure to delete all its empty subfolders?",
-    "batch_rename": "Batch Rename",
-    "regex_rename": "Regex Rename",
-    "sequential_renaming": "Sequential Rename",
-    "regex_rename_preview": "Changed Files",
-    "regex_rename_preview_old_name": "Old Name",
-    "regex_rename_preview_new_name": "New Name",
-    "regular_rename": "Regular expression file renaming. Input the source file name regular expression on the first line, and input the new file name regular expression on the second line.",
-    "sequential_renaming_desc": "The new file name will have a numerical starting value appended to it, and it will be displayed sequentially by adding 1 to the starting value. Enter the new file name on the first line and the starting value on the second line."
+  "layouts": {
+    "grid": "Grid View",
+    "image": "Image View",
+    "list": "List View"
   },
-  "upload": {
-    "add_as_task": "Add as task",
-    "try_rapid": "Try rapid",
-    "upload-tips": "Drag files here to upload, or click:",
-    "release": "Release to upload",
-    "no_files_drag": "No files were dragged in.",
-    "upload_files": "Choose Files",
-    "upload_folder": "Choose Folder",
-    "pending": "Pending",
-    "uploading": "Uploading",
-    "backending": "Uploading in the backend",
-    "success": "Success",
-    "error": "Error",
-    "back": "Back to Upload",
-    "clear_done": "Clear Done"
-  },
+  "load_more": "Load more",
   "local_settings": {
-    "aria2_rpc_url": "Aria2 RPC URL",
-    "aria2_rpc_secret": "Aria2 RPC secret",
     "aria2_dir": "Aria2 download directory",
-    "show_folder_in_image_view": "Show folder in image view",
-    "show_folder_in_image_view_options": {
-      "top": "Top",
-      "bottom": "Bottom",
-      "none": "None"
-    },
+    "aria2_rpc_secret": "Aria2 RPC secret",
+    "aria2_rpc_url": "Aria2 RPC URL",
     "global_default_layout": "Global default layout",
     "global_default_layout_options": {
-      "list": "List View",
       "grid": "Grid View",
-      "image": "Image View"
+      "image": "Image View",
+      "list": "List View"
+    },
+    "list_item_filename_overflow": "List item filename overflow",
+    "list_item_filename_overflow_options": {
+      "ellipsis": "Ellipsis",
+      "multi_line": "Multi-line",
+      "scrollable": "Scrollable"
+    },
+    "open_item_on_checkbox": "Open item on Checkbox",
+    "open_item_on_checkbox_options": {
+      "dblclick": "Double click",
+      "direct": "Direct",
+      "disable_while_checked": "Disable while checked"
     },
     "position_of_header_navbar": "Position of header & nav bar",
     "position_of_header_navbar_options": {
+      "only_navbar_sticky": "Only nav bar sticky",
       "static": "Normal",
-      "sticky": "Stick to top of page",
-      "only_navbar_sticky": "Only nav bar sticky"
+      "sticky": "Stick to top of page"
+    },
+    "show_folder_in_image_view": "Show folder in image view",
+    "show_folder_in_image_view_options": {
+      "bottom": "Bottom",
+      "none": "None",
+      "top": "Top"
     },
     "show_sidebar": "Show sidebar",
     "show_sidebar_options": {
       "none": "None",
       "visible": "Visible"
-    },
-    "list_item_filename_overflow": "List item filename overflow",
-    "list_item_filename_overflow_options": {
-      "ellipsis": "Ellipsis",
-      "scrollable": "Scrollable",
-      "multi_line": "Multi-line"
-    },
-    "open_item_on_checkbox": "Open item on Checkbox",
-    "open_item_on_checkbox_options": {
-      "direct": "Direct",
-      "dblclick": "Double click",
-      "disable_while_checked": "Disable while checked"
     }
+  },
+  "nav": {
+    "dir": "Dir",
+    "file": "File"
+  },
+  "no_images": "No images in the current folder",
+  "no_more": "* * * * *",
+  "obj": {
+    "modified": "Modified",
+    "name": "Name",
+    "size": "Size"
   },
   "package_download": {
     "current_status": "Current Status",
-    "initializing": "Initializing",
-    "fetching_struct": "Fetching folder structure",
-    "fetching_struct_failed": "Failed to fetch folder structure",
     "downloading": "Downloading files, don't close or refresh the page",
     "failed": "Failed to package download",
+    "fetching_struct": "Fetching folder structure",
+    "fetching_struct_failed": "Failed to fetch folder structure",
+    "initializing": "Initializing",
     "success": "Download completed"
   },
-  "footer": {
-    "powered_by": "PeiFeng.Li",
-    "manage": "iNoi • 2025",
-    "guest": "iNoi • 2025"
+  "preview": {
+    "auto_next": "Auto next",
+    "download": "Download",
+    "failed_load_img": "Failed to load image",
+    "install": "Install",
+    "installing": "Installing",
+    "open_in_new_window": "Open in new window",
+    "open_with": "Open with ...",
+    "pdf": {
+      "close_sidebar": "Close Sidebar",
+      "document_outline": "Document Outline",
+      "loading": "Loading...",
+      "next_page": "Next Page",
+      "no_outline": "No outline available for this document",
+      "prev_page": "Previous Page",
+      "toggle_pen": "Toggle Pen",
+      "toggle_sidebar": "Toggle Sidebar",
+      "zoom_100": "100%",
+      "zoom_125": "125%",
+      "zoom_150": "150%",
+      "zoom_200": "200%",
+      "zoom_50": "50%",
+      "zoom_75": "75%",
+      "zoom_actual": "Actual Size",
+      "zoom_auto": "Auto",
+      "zoom_fit": "Page Fit",
+      "zoom_in": "Zoom In",
+      "zoom_levels": "Zoom Levels",
+      "zoom_out": "Zoom Out",
+      "zoom_presets": "Zoom Presets",
+      "zoom_width": "Page Width"
+    },
+    "play_with": "Play with ...",
+    "tr-install": "TrollStore",
+    "tr-installing": "TrollStore Installing"
   },
   "search": {
-    "search": "Search",
     "no_result": "iNoi • Search",
     "scopes": {
       "all": "All",
-      "folder": "Folder",
-      "file": "File"
-    }
+      "file": "File",
+      "folder": "Folder"
+    },
+    "search": "Search"
   },
   "strm": {
+    "delete_file": "Delete File",
+    "failed": " Failed to generate strm",
     "generate_strm": "generate_strm",
     "generate_strm_tips": "Do you wish to proceed with generating a strm?",
-    "success": "Generated strm successfully",
-    "failed": " Failed to generate strm",
-    "delete_file": "Delete File"
+    "success": "Generated strm successfully"
   },
-  "fetching_settings_failed": "Please wait, loading...⏳",
-  "get_current_user_failed": "Failed get current user: ",
-  "conflict_policy": {
-    "cancel_if_exists": "Cancel if file exists",
-    "overwrite_existing": "Overwrite existing files",
-    "skip_existing": "Skip existing files"
+  "toolbar": {
+    "archive": {
+      "extract_header": "Extract {{path}} to...",
+      "incorrect_password": "Incorrect password",
+      "input_password": "Please input extraction password"
+    },
+    "aria2_not_set": "Please set aria2 rpc url",
+    "aria2_set_error": "aria2 set error",
+    "batch_download": "Batch Download",
+    "batch_rename": "Batch Rename",
+    "browser_setting": "browser setting",
+    "cancel_select": "Cancel Select",
+    "choose_dst_folder": "Select destination folder",
+    "close": "close toolbar",
+    "copy": "Copy",
+    "copy_link": "Copy link",
+    "decompress": "Decompress",
+    "decompress-cache-full": "Cache full into a temp-file",
+    "decompress-pass": "Extraction password: ",
+    "decompress-put-into-new": "Decompress into a new sub-folder",
+    "delete": "Delete",
+    "delete_policy": {
+      "delete_always": "Always delete",
+      "delete_never": "Never delete",
+      "delete_on_upload_failed": "Delete on upload failed",
+      "delete_on_upload_succeed": "Delete on upload succeed",
+      "upload_download_stream": "Download stream direct upload"
+    },
+    "delete-tips": "Are you sure to delete the selected object?",
+    "down_link": "Download link",
+    "download": "Download",
+    "encode_down_link": "Encode download link",
+    "extract": "Extract to",
+    "input_dir_name": "Input folder name",
+    "input_filename": "Input filename",
+    "input_new_name": "Input new name",
+    "local_settings": "Local Settings",
+    "local_settings_auto": "Setup successful, will be refreshed automatically",
+    "mkdir": "New Folder",
+    "more": "open toolbar",
+    "move": "Move",
+    "new_file": "New File",
+    "offline_download": "Offline download",
+    "offline_download-tips": "One URL per line",
+    "package_download": "Package Download",
+    "package_download_disabled": "Package download is disabled",
+    "package_download-tips": "Downloading, please wait don't close the page",
+    "playlist_download": "Playlist Download",
+    "pre_package_download-tips": "Using streamsaver in the browser instead of the server for package download requires the corresponding storage to support cors, and the unsupported storage will fail.",
+    "preview_page": "Preview page",
+    "recursive_move": "Recursive Move",
+    "recursive_move_directory-tips": "Are you sure you want to move all files in the current folder and its subfolders to the specified folder?",
+    "refresh": "Refresh",
+    "regex_rename": "Regex Rename",
+    "regex_rename_preview": "Changed Files",
+    "regex_rename_preview_new_name": "New Name",
+    "regex_rename_preview_old_name": "Old Name",
+    "regular_rename": "Regular expression file renaming. Input the source file name regular expression on the first line, and input the new file name regular expression on the second line.",
+    "remove_empty_directory": "Remove Empty Folder",
+    "remove_empty_directory-tips": "Are you sure to delete all its empty subfolders?",
+    "rename": "Rename",
+    "send_aria2": "Send to Aria2",
+    "send_aria2_success": "Send to aria2 successfully",
+    "sequential_renaming": "Sequential Rename",
+    "sequential_renaming_desc": "The new file name will have a numerical starting value appended to it, and it will be displayed sequentially by adding 1 to the starting value. Enter the new file name on the first line and the starting value on the second line.",
+    "switch_lang": "Switch Language",
+    "toggle_checkbox": "Toggle Checkbox",
+    "toggle_markdown_toc": "Toggle Outline",
+    "toggle_theme": "Toggle Theme",
+    "toggle_theme_auto": "Auto toggle theme",
+    "upload": "Upload"
+  },
+  "upload": {
+    "add_as_task": "Add as task",
+    "back": "Back to Upload",
+    "backending": "Uploading in the backend",
+    "clear_done": "Clear Done",
+    "error": "Error",
+    "no_files_drag": "No files were dragged in.",
+    "pending": "Pending",
+    "release": "Release to upload",
+    "success": "Success",
+    "try_rapid": "Try rapid",
+    "upload_files": "Choose Files",
+    "upload_folder": "Choose Folder",
+    "upload-tips": "Drag files here to upload, or click:",
+    "uploading": "Uploading"
   }
 }

@@ -49,6 +49,8 @@
   "ldap_user_search_base": "Ldap 用戶搜索基礎",
   "ldap_user_search_filter": "Ldap 用戶搜索過濾器",
   "link_expiration": "連結有效期",
+  "load_default_setting": "載入預設設定",
+  "load_default_setting_success": "載入成功，未儲存",
   "logo": "圖示",
   "main_color": "主顏色",
   "max_client_download_speed": "客戶端的最大下行速率（KiB/s，負數至無限制）",
@@ -78,12 +80,12 @@
   "robots_txt": "Robots txt",
   "s3_access_key_id": "S3訪問密鑰 id",
   "s3_buckets": "S3桶",
-  "s3_enabled": "S3 已啟用",
-  "s3_generate": "S3 產生金鑰",
-  "s3_secret_access_key": "S3訪問密鑰",
   "s3_buckets_duplicate_name": "儲存桶名稱重複",
   "s3_buckets_empty": "儲存桶名稱或路徑為空白",
+  "s3_enabled": "S3 已啟用",
+  "s3_generate": "S3 產生金鑰",
   "s3_restart_to_apply": "您需要重啟來應用本頁設置",
+  "s3_secret_access_key": "S3訪問密鑰",
   "search_index": "搜索索引",
   "search_indexs": {
     "bleve": "Bleve",
@@ -129,7 +131,5 @@
   "version": "版本",
   "video_autoplay": "自動播放影片",
   "video_types": "影片類型",
-  "load_default_setting": "載入預設設定",
-  "load_default_setting_success": "載入成功，未儲存",
   "webauthn_login_enabled": "啟用 Webauthn 登入"
 }

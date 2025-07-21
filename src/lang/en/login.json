@@ -1,14 +1,14 @@
 {
-  "login_to": "Login to the",
-  "username-tips": "Username",
-  "password-tips": "Password",
-  "otp-tips": "OTP Code",
-  "remember": "Remember me",
+  "clear": "Clear",
   "forget": "Forget password?",
   "forget_url": "https://peifeng.li/messages",
-  "clear": "Clear",
+  "help": "Support",
   "login": "Login",
-  "use_guest": "Guest",
+  "login_to": "Login to the",
+  "otp-tips": "OTP Code",
+  "password-tips": "Password",
+  "remember": "Remember me",
   "success": "Login successfully",
-  "help": "Support"
+  "use_guest": "Guest",
+  "username-tips": "Username"
 }

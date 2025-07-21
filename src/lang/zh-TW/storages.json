@@ -1,53 +1,53 @@
 {
   "common": {
-    "mount_path": "掛載路徑",
-    "mount_path-tips": "欲掛載的路徑，它是唯一值，不能重複",
-    "driver": "驅動",
-    "order": "排序",
-    "order-tips": "用於排序",
-    "status": "狀態",
-    "remark": "備註",
     "cache_expiration": "快取過期時間",
     "cache_expiration-tips": "此儲存空間的快取過期時間 (分鐘)",
+    "disable_index": "停用索引",
     "down_proxy_url": "下載代理地址",
-    "web_proxy": "Web代理",
-    "webdav_policy": "WebDAV 策略",
-    "proxy_range": "代理範圍",
-    "proxy_range-tips": "需要啟用代理",
-    "webdav_policys": {
-      "302_redirect": "302 重新轉導",
-      "use_proxy_url": "使用代理地址",
-      "native_proxy": "本機代理"
+    "driver": "驅動",
+    "enable_sign": "啟用簽章",
+    "extract_folder": "提取資料夾",
+    "extract_folders": {
+      "back": "提取到最後",
+      "front": "提取到最前"
     },
+    "mount_path": "掛載路徑",
+    "mount_path-tips": "欲掛載的路徑，它是唯一值，不能重複",
+    "order": "排序",
     "order_by": "排序",
     "order_bys": {
+      "modified": "修改時間",
       "name": "名稱",
-      "size": "大小",
-      "modified": "修改時間"
+      "size": "大小"
     },
     "order_direction": "排序方式",
     "order_directions": {
       "asc": "遞增",
       "desc": "遞減"
     },
-    "extract_folder": "提取資料夾",
-    "extract_folders": {
-      "front": "提取到最前",
-      "back": "提取到最後"
-    },
-    "enable_sign": "啟用簽章",
-    "disable_index": "停用索引"
-  },
-  "table_fields": {
-    "status": {
-      "work": "工作",
-      "disabled": "已停用"
+    "order-tips": "用於排序",
+    "proxy_range": "代理範圍",
+    "proxy_range-tips": "需要啟用代理",
+    "remark": "備註",
+    "status": "狀態",
+    "web_proxy": "Web代理",
+    "webdav_policy": "WebDAV 策略",
+    "webdav_policys": {
+      "302_redirect": "302 重新轉導",
+      "native_proxy": "本機代理",
+      "use_proxy_url": "使用代理地址"
     }
   },
   "other": {
-    "start_load_success": "開始載入",
-    "load_all": "全部重新載入",
     "filter_by_driver": "按驅動篩選",
+    "load_all": "全部重新載入",
+    "start_load_success": "開始載入",
     "table_layout": "表格排列"
+  },
+  "table_fields": {
+    "status": {
+      "disabled": "已停用",
+      "work": "工作"
+    }
   }
 }

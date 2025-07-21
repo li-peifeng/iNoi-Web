@@ -1,14 +1,14 @@
 {
-  "login_to": "登录到",
-  "username-tips": "输入您的用户名",
-  "password-tips": "输入您的密码",
-  "otp-tips": "输入您的 OTP 代码",
-  "remember": "记住账号",
+  "clear": "清除",
   "forget": "忘记密码？",
   "forget_url": "https://peifeng.li/messages",
-  "clear": "清除",
+  "help": "获取帮助",
   "login": "登录",
-  "use_guest": "游客",
+  "login_to": "登录到",
+  "otp-tips": "输入您的 OTP 代码",
+  "password-tips": "输入您的密码",
+  "remember": "记住账号",
   "success": "登录成功",
-  "help": "获取帮助"
+  "use_guest": "游客",
+  "username-tips": "输入您的用户名"
 }

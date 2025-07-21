@@ -1,16 +1,54 @@
 {
-  "offline_download": "Download file to local machine",
-  "offline_download_transfer": "Transfer downloaded file to corresponding storage",
-  "upload": "Upload file to corresponding storage",
+  "attr": {
+    "copy": {
+      "dst": "Destination Path",
+      "src": "Source Path"
+    },
+    "creator": "Creator",
+    "decompress": {
+      "dst": "Destination Path",
+      "inner": "Inner Path",
+      "password": "Extraction Password",
+      "src": "Source Path"
+    },
+    "err": "Error",
+    "name": "Name",
+    "offline_download": {
+      "path": "Destination Path",
+      "transfer_dst": "Destination Path",
+      "transfer_src": "Source Path",
+      "transfer_src_local": "Source Path (Local)",
+      "url": "URL"
+    },
+    "operation": "Operation",
+    "progress": "Progress",
+    "speed": "Speed",
+    "state": "State",
+    "status": "Status",
+    "time_elapsed": "Time Elapsed",
+    "upload": {
+      "path": "Path"
+    }
+  },
+  "cancel_selected": "Cancel Selected",
+  "clear_succeeded": "Clear Succeeded",
   "copy": "Copy file from a storage to another storage",
-  "move": "Move file from a storage to another storage",
   "decompress": "Download and decompress an archive file",
   "decompress_upload": "Upload extracted file into target storage",
+  "delete_selected": "Delete Selected",
   "done": "Completed",
-  "undone": "Running",
-  "clear_succeeded": "Clear Succeeded",
+  "expand": "Expand",
+  "expand_all": "Expand All",
+  "filter": "Filter",
+  "fold": "Fold",
+  "fold_all": "Fold All",
+  "move": "Move file from a storage to another storage",
+  "offline_download": "Download file to local machine",
+  "offline_download_transfer": "Transfer downloaded file to corresponding storage",
   "retry": "Retry",
   "retry_failed": "Retry Failed",
+  "retry_selected": "Retry Selected",
+  "show_only_mine": "Show only my tasks",
   "state": {
     "0": "Pending",
     "1": "Running",
@@ -23,44 +61,6 @@
     "8": "WaitingRetry",
     "9": "BeforeRetry"
   },
-  "retry_selected": "Retry Selected",
-  "cancel_selected": "Cancel Selected",
-  "delete_selected": "Delete Selected",
-  "filter": "Filter",
-  "expand": "Expand",
-  "fold": "Fold",
-  "expand_all": "Expand All",
-  "fold_all": "Fold All",
-  "attr": {
-    "name": "Name",
-    "creator": "Creator",
-    "state": "State",
-    "progress": "Progress",
-    "speed": "Speed",
-    "operation": "Operation",
-    "copy": {
-      "src": "Source Path",
-      "dst": "Destination Path"
-    },
-    "upload": {
-      "path": "Path"
-    },
-    "offline_download": {
-      "url": "URL",
-      "path": "Destination Path",
-      "transfer_src": "Source Path",
-      "transfer_src_local": "Source Path (Local)",
-      "transfer_dst": "Destination Path"
-    },
-    "decompress": {
-      "src": "Source Path",
-      "dst": "Destination Path",
-      "inner": "Inner Path",
-      "password": "Extraction Password"
-    },
-    "time_elapsed": "Time Elapsed",
-    "status": "Status",
-    "err": "Error"
-  },
-  "show_only_mine": "Show only my tasks"
+  "undone": "Running",
+  "upload": "Upload file to corresponding storage"
 }

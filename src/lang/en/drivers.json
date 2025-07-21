@@ -1,5 +1,6 @@
 {
   "115 Cloud": {
+    "api_url_address": "api url address",
     "cookie": "Cookie",
     "cookie-tips": "one of QR code token and cookie required",
     "limit_rate": "Limit rate",
@@ -20,11 +21,11 @@
     "qrcode_token": "Qrcode token",
     "qrcode_token-tips": "one of QR code token and cookie required",
     "root_folder_id": "Root folder id",
-    "use_online_api": "use online api",
-    "api_url_address": "api url address"
+    "use_online_api": "use online api"
   },
   "115 Open": {
     "access_token": "Access token",
+    "api_url_address": "api url address",
     "limit_rate": "Limit rate",
     "limit_rate-tips": "limit all api request rate ([limit]r/1s)",
     "order_by": "Order by",
@@ -41,8 +42,7 @@
     },
     "refresh_token": "Refresh token",
     "root_folder_id": "Root folder id",
-    "use_online_api": "use online api",
-    "api_url_address": "api url address"
+    "use_online_api": "use online api"
   },
   "115 Share": {
     "cookie": "Cookie",
@@ -75,9 +75,9 @@
     "ClientID": "ClientID",
     "ClientSecret": "ClientSecret",
     "RefreshToken": "RefreshToken",
+    "root_folder_id": "Root folder id",
     "UploadThread": "UploadThread",
-    "UploadThread-tips": "the threads of upload",
-    "root_folder_id": "Root folder id"
+    "UploadThread-tips": "the threads of upload"
   },
   "123Pan": {
     "password": "Password",
@@ -193,6 +193,7 @@
     "writable": "Writable"
   },
   "Aliyundrive": {
+    "api_url_address": "api url address",
     "internal_upload": "Internal upload",
     "order_by": "Order by",
     "order_bys": {
@@ -209,8 +210,7 @@
     "rapid_upload": "Rapid upload",
     "refresh_token": "Refresh token",
     "root_folder_id": "Root folder id",
-    "use_online_api": "use online api",
-    "api_url_address": "api url address"
+    "use_online_api": "use online api"
   },
   "AliyundriveOpen": {
     "alipan_type": "Alipan type",
@@ -454,13 +454,6 @@
     "root_folder_path": "Root folder path",
     "use_online_api": "Use online api"
   },
-  "FTP": {
-    "address": "Address",
-    "encoding": "Encoding",
-    "password": "Password",
-    "root_folder_path": "Root folder path",
-    "username": "Username"
-  },
   "FebBox": {
     "client_id": "Client id",
     "client_secret": "Client secret",
@@ -485,6 +478,13 @@
     "ip": "Ip",
     "password": "Password",
     "root_folder_id": "Root folder id",
+    "username": "Username"
+  },
+  "FTP": {
+    "address": "Address",
+    "encoding": "Encoding",
+    "password": "Password",
+    "root_folder_path": "Root folder path",
     "username": "Username"
   },
   "GitHub API": {
@@ -589,9 +589,9 @@
     "repair_file_info": "Repair file info",
     "repair_file_info-tips": "To use webdav, you need to enable it",
     "root_folder_id": "Root folder id",
+    "share_password": "Share password",
     "shareUrl": "ShareUrl",
     "shareUrl-tips": "used to get the sharing page",
-    "share_password": "Share password",
     "type": "Type",
     "types": {
       "account": "Account",
@@ -607,7 +607,8 @@
     "share_id": "Share id",
     "share_id-tips": "The part after the last / in the shared link",
     "share_pwd": "Share pwd",
-    "share_pwd-tips": "The password of the shared link"
+    "share_pwd-tips": "The password of the shared link",
+    "show_root_folder": "Show root folder"
   },
   "Local": {
     "mkdir_perm": "Mkdir perm",
@@ -703,6 +704,7 @@
     "url": "Url"
   },
   "OnedriveAPP": {
+    "api_url_address": "api url address",
     "chunk_size": "Chunk size",
     "client_id": "Client id",
     "client_secret": "Client secret",
@@ -718,8 +720,7 @@
     },
     "root_folder_path": "Root folder path",
     "tenant_id": "Tenant id",
-    "use_online_api": "use online api",
-    "api_url_address": "api url address"
+    "use_online_api": "use online api"
   },
   "OpenList": {
     "forward_archive_requests": "Forward archive requests",
@@ -837,6 +838,15 @@
     "session_token": "Session token",
     "sign_url_expire": "Sign url expire"
   },
+  "Seafile": {
+    "address": "Address",
+    "password": "Password",
+    "repoId": "RepoId",
+    "repoPwd": "RepoPwd",
+    "root_folder_path": "Root folder path",
+    "token": "Token",
+    "username": "Username"
+  },
   "SFTP": {
     "address": "Address",
     "ignore_symlink_error": "Ignore symlink error",
@@ -851,15 +861,6 @@
     "password": "Password",
     "root_folder_path": "Root folder path",
     "share_name": "Share name",
-    "username": "Username"
-  },
-  "Seafile": {
-    "address": "Address",
-    "password": "Password",
-    "repoId": "RepoId",
-    "repoPwd": "RepoPwd",
-    "root_folder_path": "Root folder path",
-    "token": "Token",
     "username": "Username"
   },
   "Strm": {
@@ -1094,6 +1095,13 @@
     "refresh_token": "Refresh token",
     "root_folder_id": "Root folder id"
   },
+  "UrlTree": {
+    "head_size": "Head size",
+    "head_size-tips": "Use head method to get file size, but it may be failed.",
+    "url_structure": "Url structure",
+    "url_structure-tips": "structure:FolderName:\n  [FileName:][FileSize:][Modified:]Url",
+    "writable": "Writable"
+  },
   "USS": {
     "anti_theft_chain_token": "Anti theft chain token",
     "bucket": "Bucket",
@@ -1102,13 +1110,6 @@
     "operator_password": "Operator password",
     "root_folder_path": "Root folder path",
     "sign_url_expire": "Sign url expire"
-  },
-  "UrlTree": {
-    "head_size": "Head size",
-    "head_size-tips": "Use head method to get file size, but it may be failed.",
-    "url_structure": "Url structure",
-    "url_structure-tips": "structure:FolderName:\n  [FileName:][FileSize:][Modified:]Url",
-    "writable": "Writable"
   },
   "Virtual": {
     "max_file_size": "Max file size",
@@ -1214,9 +1215,9 @@
     "Doubao": {},
     "DoubaoShare": {},
     "Dropbox": {},
-    "FTP": {},
     "FebBox": {},
     "FeijiPan": {},
+    "FTP": {},
     "GitHub API": {},
     "GitHub Releases": {},
     "GoogleDrive": {},
@@ -1245,9 +1246,9 @@
     "QuarkOpen": {},
     "QuarkTV": {},
     "S3": {},
+    "Seafile": {},
     "SFTP": {},
     "SMB": {},
-    "Seafile": {},
     "Strm": {},
     "Teambition": {},
     "Terabox": {},
@@ -1259,8 +1260,8 @@
     "ThunderXExpert": {},
     "UC": {},
     "UCTV": {},
-    "USS": {},
     "UrlTree": {},
+    "USS": {},
     "Virtual": {},
     "WebDav": {},
     "WeiYun": {},
@@ -1294,9 +1295,9 @@
     "Doubao": "Doubao",
     "DoubaoShare": "DoubaoShare",
     "Dropbox": "Dropbox",
-    "FTP": "FTP",
     "FebBox": "FebBox",
     "FeijiPan": "FeijiPan",
+    "FTP": "FTP",
     "GitHub API": "GitHub API",
     "GitHub Releases": "GitHub Releases",
     "GoogleDrive": "GoogleDrive",
@@ -1323,9 +1324,9 @@
     "QuarkOpen": "QuarkOpen",
     "QuarkTV": "QuarkTV",
     "S3": "S3",
+    "Seafile": "Seafile",
     "SFTP": "SFTP",
     "SMB": "SMB",
-    "Seafile": "Seafile",
     "Strm": "Strm",
     "Teambition": "Teambition",
     "Terabox": "Terabox",
@@ -1337,8 +1338,8 @@
     "ThunderXExpert": "ThunderXExpert",
     "UC": "UC",
     "UCTV": "UCTV",
-    "USS": "USS",
     "UrlTree": "UrlTree",
+    "USS": "USS",
     "Virtual": "Virtual",
     "WebDav": "WebDav",
     "WeiYun": "WeiYun",

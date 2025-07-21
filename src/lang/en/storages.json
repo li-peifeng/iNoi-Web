@@ -1,53 +1,53 @@
 {
   "common": {
-    "mount_path": "Mount Path",
-    "mount_path-tips": "The path you want to mount to, it is unique and cannot be repeated",
-    "driver": "Driver",
-    "order": "Order",
-    "order-tips": "Use to sort",
-    "status": "Status",
-    "remark": "Remark",
     "cache_expiration": "Cache Expiration",
     "cache_expiration-tips": "The cache expiration time for this storage(minutes)",
+    "disable_index": "Disable index",
     "down_proxy_url": "Download proxy URL",
-    "web_proxy": "Web proxy",
-    "webdav_policy": "WebDAV policy",
-    "proxy_range": "Proxy Range",
-    "proxy_range-tips": "Need to enable proxy",
-    "webdav_policys": {
-      "302_redirect": "302 redirect",
-      "use_proxy_url": "use proxy URL",
-      "native_proxy": "native proxy"
+    "driver": "Driver",
+    "enable_sign": "Enable sign",
+    "extract_folder": "Extract folder",
+    "extract_folders": {
+      "back": "Extract to back",
+      "front": "Extract to front"
     },
+    "mount_path": "Mount Path",
+    "mount_path-tips": "The path you want to mount to, it is unique and cannot be repeated",
+    "order": "Order",
     "order_by": "Order by",
     "order_bys": {
+      "modified": "Modified",
       "name": "Name",
-      "size": "Size",
-      "modified": "Modified"
+      "size": "Size"
     },
     "order_direction": "Order direction",
     "order_directions": {
       "asc": "Ascending",
       "desc": "Descending"
     },
-    "extract_folder": "Extract folder",
-    "extract_folders": {
-      "front": "Extract to front",
-      "back": "Extract to back"
-    },
-    "enable_sign": "Enable sign",
-    "disable_index": "Disable index"
-  },
-  "table_fields": {
-    "status": {
-      "work": "Work",
-      "disabled": "Disabled"
+    "order-tips": "Use to sort",
+    "proxy_range": "Proxy Range",
+    "proxy_range-tips": "Need to enable proxy",
+    "remark": "Remark",
+    "status": "Status",
+    "web_proxy": "Web proxy",
+    "webdav_policy": "WebDAV policy",
+    "webdav_policys": {
+      "302_redirect": "302 redirect",
+      "native_proxy": "native proxy",
+      "use_proxy_url": "use proxy URL"
     }
   },
   "other": {
-    "start_load_success": "Start loading",
-    "load_all": "Reload All",
     "filter_by_driver": "Filter by driver",
+    "load_all": "Reload All",
+    "start_load_success": "Start loading",
     "table_layout": "Table layout"
+  },
+  "table_fields": {
+    "status": {
+      "disabled": "Disabled",
+      "work": "Work"
+    }
   }
 }

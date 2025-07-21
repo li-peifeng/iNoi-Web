@@ -1,12 +1,12 @@
 {
-  "path": "Path",
-  "password": "Password",
-  "write": "Write",
-  "hide": "Hide",
-  "readme": "Readme",
-  "readme_help": "Render a markdown at the bottom, support content or link",
+  "apply_sub": "Apply to sub folder",
   "header": "Header",
   "header_help": "Render a markdown at the top, support content or link",
-  "apply_sub": "Apply to sub folder",
-  "hide_help": "One regular expression per line"
+  "hide": "Hide",
+  "hide_help": "One regular expression per line",
+  "password": "Password",
+  "path": "Path",
+  "readme": "Readme",
+  "readme_help": "Render a markdown at the bottom, support content or link",
+  "write": "Write"
 }

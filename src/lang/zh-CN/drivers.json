@@ -1,5 +1,6 @@
 {
   "115 Cloud": {
+    "api_url_address": "API 网络地址",
     "cookie": "Cookie",
     "cookie-tips": "需要 QR 代码令牌和 cookie 中的一个",
     "limit_rate": "限制速率",
@@ -20,11 +21,11 @@
     "qrcode_token": "二维码令牌",
     "qrcode_token-tips": "需要 QR 代码令牌和 cookie 中的一个",
     "root_folder_id": "根文件夹ID",
-    "use_online_api": "使用在线API",
-    "api_url_address": "API 网络地址"
+    "use_online_api": "使用在线API"
   },
   "115 Open": {
     "access_token": "访问令牌",
+    "api_url_address": "API 网络地址",
     "limit_rate,string": "限制速率",
     "limit_rate,string-tips": "限制所有 api 请求率 ([limit]r/1s)",
     "order_by": "排序",
@@ -41,8 +42,7 @@
     },
     "refresh_token": "刷新令牌",
     "root_folder_id": "根文件夹ID",
-    "use_online_api": "使用在线API",
-    "api_url_address": "API 网络地址"
+    "use_online_api": "使用在线API"
   },
   "115 Share": {
     "cookie": "Cookie",
@@ -75,9 +75,9 @@
     "ClientID": "客户端ID",
     "ClientSecret": "客户端密钥",
     "RefreshToken": "刷新令牌",
+    "root_folder_id": "根文件夹 ID",
     "UploadThread": "上传线程",
-    "UploadThread-tips": "上传线程",
-    "root_folder_id": "根文件夹 ID"
+    "UploadThread-tips": "上传线程"
   },
   "123Pan": {
     "password": "密码",
@@ -193,6 +193,7 @@
     "writable": "可写"
   },
   "Aliyundrive": {
+    "api_url_address": "API 网络地址",
     "internal_upload": "内部上传",
     "order_by": "排序",
     "order_bys": {
@@ -209,8 +210,7 @@
     "rapid_upload": "秒传",
     "refresh_token": "刷新令牌",
     "root_folder_id": "根文件夹ID",
-    "use_online_api": "使用在线API",
-    "api_url_address": "API 网络地址"
+    "use_online_api": "使用在线API"
   },
   "AliyundriveOpen": {
     "alipan_type": "阿里盘类型",
@@ -454,13 +454,6 @@
     "root_folder_path": "根文件夹路径",
     "use_online_api": "使用在线 API"
   },
-  "FTP": {
-    "address": "地址",
-    "encoding": "编码",
-    "password": "密码",
-    "root_folder_path": "根文件夹路径",
-    "username": "用户名"
-  },
   "FebBox": {
     "client_id": "客户端ID",
     "client_secret": "客户端密钥",
@@ -485,6 +478,13 @@
     "ip": "IP",
     "password": "密码",
     "root_folder_id": "根文件夹ID",
+    "username": "用户名"
+  },
+  "FTP": {
+    "address": "地址",
+    "encoding": "编码",
+    "password": "密码",
+    "root_folder_path": "根文件夹路径",
     "username": "用户名"
   },
   "GitHub API": {
@@ -589,9 +589,9 @@
     "repair_file_info": "修复文件信息",
     "repair_file_info-tips": "要使用 WebDAV，您需要启用它",
     "root_folder_id": "根文件夹ID",
+    "share_password": "分享密码",
     "shareUrl": "分享链接",
     "shareUrl-tips": "用于获取分享页面",
-    "share_password": "分享密码",
     "type": "类型",
     "types": {
       "account": "账户",
@@ -607,7 +607,8 @@
     "share_id": "分享ID",
     "share_id-tips": "最后一个/共享链接后的部分",
     "share_pwd": "分享密码",
-    "share_pwd-tips": "分享链接的密码"
+    "share_pwd-tips": "分享链接的密码",
+    "show_root_folder": "显示根文件夹"
   },
   "Local": {
     "mkdir_perm": "创建文件夹权限",
@@ -703,6 +704,7 @@
     "url": "链接"
   },
   "OnedriveAPP": {
+    "api_url_address": "API 网络地址",
     "chunk_size": "分片大小",
     "client_id": "客户端ID",
     "client_secret": "客户端密钥",
@@ -718,8 +720,7 @@
     },
     "root_folder_path": "根文件夹路径",
     "tenant_id": "租户 ID",
-    "use_online_api": "使用在线API",
-    "api_url_address": "API 网络地址"
+    "use_online_api": "使用在线API"
   },
   "OpenList": {
     "forward_archive_requests": "转发归档请求",
@@ -837,6 +838,15 @@
     "session_token": "会话令牌",
     "sign_url_expire": "签名链接有效期"
   },
+  "Seafile": {
+    "address": "地址",
+    "password": "密码",
+    "repoId": "RepoId",
+    "repoPwd": "仓库密码",
+    "root_folder_path": "根文件夹路径",
+    "token": "令牌",
+    "username": "用户名"
+  },
   "SFTP": {
     "address": "地址",
     "ignore_symlink_error": "忽略软链接错误",
@@ -851,15 +861,6 @@
     "password": "密码",
     "root_folder_path": "根文件夹路径",
     "share_name": "分享名称",
-    "username": "用户名"
-  },
-  "Seafile": {
-    "address": "地址",
-    "password": "密码",
-    "repoId": "RepoId",
-    "repoPwd": "仓库密码",
-    "root_folder_path": "根文件夹路径",
-    "token": "令牌",
     "username": "用户名"
   },
   "Strm": {
@@ -1094,6 +1095,13 @@
     "refresh_token": "刷新令牌",
     "root_folder_id": "根文件夹 ID"
   },
+  "UrlTree": {
+    "head_size": "Head 大小",
+    "head_size-tips": "使用HEAD方法获取文件大小，但可能失败。",
+    "url_structure": "Url 结构",
+    "url_structure-tips": "结构:\nFolderName:\n  [FileName:][FileSize:][Modified:]Url",
+    "writable": "可写"
+  },
   "USS": {
     "anti_theft_chain_token": "反盗链令牌",
     "bucket": "存储桶",
@@ -1102,13 +1110,6 @@
     "operator_password": "操作员密码",
     "root_folder_path": "根文件夹路径",
     "sign_url_expire": "签名链接有效期"
-  },
-  "UrlTree": {
-    "head_size": "Head 大小",
-    "head_size-tips": "使用HEAD方法获取文件大小，但可能失败。",
-    "url_structure": "Url 结构",
-    "url_structure-tips": "结构:\nFolderName:\n  [FileName:][FileSize:][Modified:]Url",
-    "writable": "可写"
   },
   "Virtual": {
     "max_file_size": "最大文件大小",
@@ -1214,9 +1215,9 @@
     "Doubao": {},
     "DoubaoShare": {},
     "Dropbox": {},
-    "FTP": {},
     "FebBox": {},
     "FeijiPan": {},
+    "FTP": {},
     "GitHub API": {},
     "GitHub Releases": {},
     "GoogleDrive": {},
@@ -1245,9 +1246,9 @@
     "QuarkOpen": {},
     "QuarkTV": {},
     "S3": {},
+    "Seafile": {},
     "SFTP": {},
     "SMB": {},
-    "Seafile": {},
     "Strm": {},
     "Teambition": {},
     "Terabox": {},
@@ -1259,8 +1260,8 @@
     "ThunderXExpert": {},
     "UC": {},
     "UCTV": {},
-    "USS": {},
     "UrlTree": {},
+    "USS": {},
     "Virtual": {},
     "WebDav": {},
     "WeiYun": {},
@@ -1294,9 +1295,9 @@
     "Doubao": "豆包",
     "DoubaoShare": "豆包共享",
     "Dropbox": "Dropbox",
-    "FTP": "FTP",
     "FebBox": "FebBox",
     "FeijiPan": "飞机盘",
+    "FTP": "FTP",
     "GitHub API": "GitHub API",
     "GitHub Releases": "GitHub 发行",
     "GoogleDrive": "谷歌云盘",
@@ -1323,9 +1324,9 @@
     "QuarkOpen": "夸克 Open",
     "QuarkTV": "夸克 TV",
     "S3": "对象存储",
+    "Seafile": "Seafile",
     "SFTP": "SFTP",
     "SMB": "SMB",
-    "Seafile": "Seafile",
     "Strm": "Strm",
     "Teambition": "Teambition 网盘",
     "Terabox": "Terabox",
@@ -1337,8 +1338,8 @@
     "ThunderXExpert": "迅雷 X 专家版",
     "UC": "UC",
     "UCTV": "UC TV",
-    "USS": "又拍云存储",
     "UrlTree": "地址树",
+    "USS": "又拍云存储",
     "Virtual": "虚拟存储",
     "WebDav": "WebDav",
     "WeiYun": "腾讯微云",

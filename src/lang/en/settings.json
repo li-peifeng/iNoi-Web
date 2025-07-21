@@ -49,6 +49,8 @@
   "ldap_user_search_base": "Ldap user search base",
   "ldap_user_search_filter": "Ldap user search filter",
   "link_expiration": "Link expiration",
+  "load_default_setting": "Load default settings",
+  "load_default_setting_success": "Loaded successfully, Not saved",
   "logo": "Logo",
   "main_color": "Main color",
   "max_client_download_speed": "Max client download speed",
@@ -78,12 +80,12 @@
   "robots_txt": "Robots txt",
   "s3_access_key_id": "S3 access key id",
   "s3_buckets": "S3 buckets",
-  "s3_enabled": "S3 enabled",
-  "s3_generate": "S3 generate",
-  "s3_secret_access_key": "S3 secret access key",
   "s3_buckets_duplicate_name": "Bucket name is duplicate",
   "s3_buckets_empty": "Bucket name or path is empty",
+  "s3_enabled": "S3 enabled",
+  "s3_generate": "S3 generate",
   "s3_restart_to_apply": "Above settings need restart to apply",
+  "s3_secret_access_key": "S3 secret access key",
   "search_index": "Search index",
   "search_indexs": {
     "bleve": "Bleve",
@@ -129,7 +131,5 @@
   "version": "Version",
   "video_autoplay": "Video autoplay",
   "video_types": "Video types",
-  "load_default_setting": "Load default settings",
-  "load_default_setting_success": "Loaded successfully, Not saved",
   "webauthn_login_enabled": "Webauthn login enabled"
 }
