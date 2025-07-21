@@ -1,4 +1,8 @@
 {
+  "nav": {
+    "dir": "Dir",
+    "file": "File"
+  },
   "obj": {
     "name": "Name",
     "size": "Size",

@@ -33,8 +33,8 @@ export const Nav = () => {
     )
 
     const parts: string[] = []
-    if (dir) parts.push(`D:${dir}`)
-    if (file) parts.push(`F:${file}`)
+    if (dir) parts.push(`${t("home.nav.dir")}:${dir}`)
+    if (file) parts.push(`${t("home.nav.file")}:${file}`)
     return parts.join(" ")
   })
   const selectInfo = createMemo(() => {

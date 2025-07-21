@@ -1,4 +1,8 @@
 {
+  "nav": {
+    "dir": "目錄",
+    "file": "檔案"
+  },
   "obj": {
     "name": "名稱",
     "size": "大小",
@@ -14,7 +18,31 @@
     "tr-install": "巨魔商店",
     "tr-installing": "巨魔正在安裝",
     "open_in_new_window": "於新視窗中開啟",
-    "auto_next": "自動下一個"
+    "auto_next": "自動下一頁",
+    "pdf": {
+      "document_outline": "文件大綱",
+      "no_outline": "此文件無可用大綱",
+      "loading": "正在載入...",
+      "prev_page": "上一頁",
+      "next_page": "下一頁",
+      "toggle_sidebar": "切換側邊欄",
+      "close_sidebar": "關閉側邊欄",
+      "toggle_pen": "切換畫筆",
+      "zoom_presets": "縮放預設",
+      "zoom_levels": "縮放等級",
+      "zoom_auto": "自動",
+      "zoom_actual": "實際大小",
+      "zoom_fit": "適合頁面",
+      "zoom_width": "頁面寬度",
+      "zoom_50": "50%",
+      "zoom_75": "75%",
+      "zoom_100": "100%",
+      "zoom_125": "125%",
+      "zoom_150": "150%",
+      "zoom_200": "200%",
+      "zoom_in": "放大",
+      "zoom_out": "縮小"
+    }
   },
   "layouts": {
     "list": "清單檢視",
@@ -75,13 +103,13 @@
     "batch_download": "批次下載",
     "package_download": "整包壓縮下載",
     "package_download_disabled": "整包壓縮下載已關閉",
+    "playlist_download": "播放列表下載",
     "send_aria2": "發送到aria2",
     "aria2_not_set": "請設定 aria2 rpc url",
     "aria2_set_error": "任務發送失敗，請檢查配置",
     "send_aria2_success": "成功發送到aria2",
     "pre_package_download-tips": "在瀏覽器中使用 streamsaver 而不是伺服器來進行整包下載需要相應的儲存空間支援 CORS，而不支援的儲存空間將失敗。",
     "package_download-tips": "正在下載，請稍候不要關閉頁面哦",
-    "playlist_download": "播放列表下載",
     "upload": "上傳",
     "local_settings": "本機設定",
     "recursive_move": "遞迴移動",

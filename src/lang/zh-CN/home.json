@@ -1,4 +1,8 @@
 {
+  "nav": {
+    "dir": "目录",
+    "file": "文件"
+  },
   "obj": {
     "name": "名称",
     "size": "大小",
@@ -14,7 +18,31 @@
     "tr-install": "巨魔商店",
     "tr-installing": "巨魔正在安装",
     "open_in_new_window": "在新窗口中打开",
-    "auto_next": "自动按序播放"
+    "auto_next": "自动下一页",
+    "pdf": {
+      "document_outline": "文档大纲",
+      "no_outline": "此文档无可用大纲",
+      "loading": "正在加载...",
+      "prev_page": "上一页",
+      "next_page": "下一页",
+      "toggle_sidebar": "切换侧边栏",
+      "close_sidebar": "关闭侧边栏",
+      "toggle_pen": "切换画笔",
+      "zoom_presets": "缩放预设",
+      "zoom_levels": "缩放级别",
+      "zoom_auto": "自动",
+      "zoom_actual": "实际大小",
+      "zoom_fit": "适合页面",
+      "zoom_width": "页面宽度",
+      "zoom_50": "50%",
+      "zoom_75": "75%",
+      "zoom_100": "100%",
+      "zoom_125": "125%",
+      "zoom_150": "150%",
+      "zoom_200": "200%",
+      "zoom_in": "放大",
+      "zoom_out": "缩小"
+    }
   },
   "layouts": {
     "list": "列表视图",
@@ -123,13 +151,13 @@
       "bottom": "下方",
       "none": "不显示"
     },
+    "grid_item_size": "网格项目大小",
     "global_default_layout": "全局默认布局",
     "global_default_layout_options": {
       "list": "列表视图",
       "grid": "网格视图",
       "image": "图片视图"
     },
-    "grid_item_size": "网格项目大小",
     "position_of_header_navbar": "导航栏位置",
     "position_of_header_navbar_options": {
       "static": "常规固定模式",
