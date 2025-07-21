@@ -41,7 +41,7 @@ export type PreviewComponent = Pick<Preview, "name" | "component">
 
 const previews: Preview[] = [
   {
-    name: "HTML网页",
+    name: t("files.html"),
     exts: ["html"],
     component: lazy(() => import("./html")),
     prior: true,
