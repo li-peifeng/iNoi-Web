@@ -18,29 +18,29 @@ const Preview = () => {
     heicFiles = [objStore.obj]
   }
 
-  // 键盘导航功能：左右箭头切换文件
-  const onKeydown = (e: KeyboardEvent) => {
-    const index = heicFiles.findIndex((f) => f.name === objStore.obj.name)
-    if (e.key === "ArrowLeft" && index > 0) {
-      replace(heicFiles[index - 1].name)
-    } else if (e.key === "ArrowRight" && index < heicFiles.length - 1) {
-      replace(heicFiles[index + 1].name)
-    }
-  }
+  // // 键盘导航功能：左右箭头切换文件
+  // const onKeydown = (e: KeyboardEvent) => {
+  //   const index = heicFiles.findIndex((f) => f.name === objStore.obj.name)
+  //   if (e.key === "ArrowLeft" && index > 0) {
+  //     replace(heicFiles[index - 1].name)
+  //   } else if (e.key === "ArrowRight" && index < heicFiles.length - 1) {
+  //     replace(heicFiles[index + 1].name)
+  //   }
+  // }
 
   let libheif: any
   let decoder: any
   let canvas: HTMLCanvasElement | undefined
 
   onMount(() => {
-    window.addEventListener("keydown", onKeydown)
+    // window.addEventListener("keydown", onKeydown)
     initLibheif()
   })
 
   onCleanup(() => {
-    window.removeEventListener("keydown", onKeydown)
+    // window.removeEventListener("keydown", onKeydown)
     if (libheif && decoder) {
-      decoder.free()
+      // decoder.free()
       decoder = null
     }
     libheif = null
