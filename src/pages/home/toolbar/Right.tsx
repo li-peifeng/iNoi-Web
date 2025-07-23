@@ -44,34 +44,33 @@ export const Right = () => {
       right={margin()}
       bottom={margin()}
     >
-      <Show
-        when={isOpen()}
-        fallback={
-          <RightIcon
-            class="toolbar-toggle"
-            tips="more"
-            as={VsHeart}
-            onClick={() => {
-              onToggle()
-            }}
-          />
-        }
-      >
-        <VStack
-          class="right-toolbar"
-          p="$1"
-          rounded="$lg"
-          spacing="$1"
-          bgColor="$neutral1"
-          as={Motion.div}
-          initial={{ opacity: 0, scale: 0, y: 300 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0, y: 300 }}
-          transition={{ duration: 0.2 } as any}
+      <Show when={me()}>
+        <Show
+          when={isOpen()}
+          fallback={
+            <RightIcon
+              class="toolbar-toggle"
+              tips="more"
+              as={VsHeart}
+              onClick={() => {
+                onToggle()
+              }}
+            />
+          }
         >
-          <VStack spacing="$1" class="right-toolbar-in">
-            {/* 所有工具按钮仅在登录后显示 */}
-            <Show when={me()}>
+          <VStack
+            class="right-toolbar"
+            p="$1"
+            rounded="$lg"
+            spacing="$1"
+            bgColor="$neutral1"
+            as={Motion.div}
+            initial={{ opacity: 0, scale: 0, y: 300 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0, y: 300 }}
+            transition={{ duration: 0.2 } as any}
+          >
+            <VStack spacing="$1" class="right-toolbar-in">
               <Show when={isFolder() && (userCan("write") || objStore.write)}>
                 <RightIcon
                   as={RiSystemRefreshLine}
@@ -156,10 +155,10 @@ export const Right = () => {
                   }}
                 />
               </Show>
-            </Show>
+            </VStack>
+            <RightIcon tips="close" as={VsHeart} onClick={onToggle} />
           </VStack>
-          <RightIcon tips="close" as={VsHeart} onClick={onToggle} />
-        </VStack>
+        </Show>
       </Show>
     </Box>
   )
