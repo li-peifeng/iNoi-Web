@@ -41,100 +41,100 @@ export type PreviewComponent = Pick<Preview, "name" | "component">
 
 const previews: Preview[] = [
   {
-    name: t("files.html"),
+    name: "HTML网页",
     exts: ["html"],
     component: lazy(() => import("./html")),
     prior: true,
   },
   {
-    name: t("files.aliyun_video"),
+    name: "在线阿里网盘视频",
     type: ObjType.VIDEO,
     provider: /^Aliyundrive(Open)?$/,
     component: lazy(() => import("./aliyun_video")),
     prior: true,
   },
   {
-    name: t("files.markdown"),
+    name: "Markdown文档",
     type: ObjType.TEXT,
     component: lazy(() => import("./markdown")),
     prior: true,
   },
   {
-    name: t("files.markdown_with_word_wrap"),
+    name: "Markdown自动换行",
     type: ObjType.TEXT,
     component: lazy(() => import("./markdown_with_word_wrap")),
     prior: true,
   },
   {
-    name: t("files.url"),
+    name: "URL网址",
     exts: ["url"],
     component: lazy(() => import("./url")),
     prior: true,
   },
   {
-    name: t("files.text-editor"),
+    name: "TXT文档",
     type: ObjType.TEXT,
     exts: ["url"],
     component: lazy(() => import("./text-editor")),
     prior: true,
   },
   {
-    name: t("files.image"),
+    name: "在线查看图片",
     type: ObjType.IMAGE,
     component: lazy(() => import("./image")),
     prior: true,
   },
   {
-    name: t("files.video"),
+    name: "在线播放视频",
     type: ObjType.VIDEO,
     component: lazy(() => import("./video")),
     prior: true,
   },
   {
-    name: t("files.audio"),
+    name: "音乐音频",
     type: ObjType.AUDIO,
     component: lazy(() => import("./audio")),
     prior: true,
   },
   {
-    name: t("files.ipa"),
+    name: "IPA安装及下载",
     exts: ["ipa", "tipa"],
     component: lazy(() => import("./ipa")),
     prior: true,
   },
   {
-    name: t("files.plist"),
+    name: "PLIST",
     exts: ["plist"],
     component: lazy(() => import("./plist")),
     prior: true,
   },
   {
-    name: t("files.heic"),
+    name: "图片",
     exts: ["heic", "heif", "avif", "vvc", "avc", "jpeg", "jpg"],
     component: lazy(() => import("./heic")),
     prior: true,
   },
   {
-    name: t("files.aliyun_office"),
+    name: "办公文档",
     exts: ["doc", "docx", "ppt", "pptx", "xls", "xlsx", "pdf"],
     provider: /^Aliyundrive(Share)?$/,
     component: lazy(() => import("./aliyun_office")),
     prior: true,
   },
   {
-    name: t("files.pdf"),
+    name: "PDF预览",
     exts: ["pdf"],
     component: lazy(() => import("./pdf")),
     prior: true,
   },
   {
-    name: t("files.asciinema"),
+    name: "录屏",
     exts: ["cast"],
     component: lazy(() => import("./asciinema")),
     prior: true,
   },
   {
-    name: t("files.archive"),
+    name: "压缩文档",
     exts: (name: string) => {
       const index = UserPermissions.findIndex(
         (item) => item === "read_archives",
@@ -184,7 +184,7 @@ export const getPreviews = (
 
   // download page
   const downloadComponent: PreviewComponent = {
-    name: t("files.download"),
+    name: "下载保存",
     component: lazy(() => import("./download")),
   }
 

@@ -38,13 +38,13 @@ export const Right = () => {
   const { refresh } = usePath()
 
   return (
-    <Box
-      class="right-toolbar-box"
-      pos="fixed"
-      right={margin()}
-      bottom={margin()}
-    >
-      <Show when={me()}>
+    <Show when={UserMethods.is_admin(me())}>
+      <Box
+        class="right-toolbar-box"
+        pos="fixed"
+        right={margin()}
+        bottom={margin()}
+      >
         <Show
           when={isOpen()}
           fallback={
@@ -141,25 +141,23 @@ export const Right = () => {
                   }}
                 />
               </Show>
-              <Show when={UserMethods.is_admin(me())}>
-                <RightIcon
-                  tips="toggle_checkbox"
-                  as={TbCheckbox}
-                  onClick={toggleCheckbox}
-                />
-                <RightIcon
-                  as={AiOutlineSetting}
-                  tips="browser_setting"
-                  onClick={() => {
-                    bus.emit("tool", "local_settings")
-                  }}
-                />
-              </Show>
+              <RightIcon
+                tips="toggle_checkbox"
+                as={TbCheckbox}
+                onClick={toggleCheckbox}
+              />
+              <RightIcon
+                as={AiOutlineSetting}
+                tips="browser_setting"
+                onClick={() => {
+                  bus.emit("tool", "local_settings")
+                }}
+              />
+              <RightIcon tips="close" as={VsHeart} onClick={onToggle} />
             </VStack>
-            <RightIcon tips="close" as={VsHeart} onClick={onToggle} />
           </VStack>
         </Show>
-      </Show>
-    </Box>
+      </Box>
+    </Show>
   )
 }

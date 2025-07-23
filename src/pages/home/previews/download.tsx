@@ -48,12 +48,7 @@ export const Download = (props: { openWith?: boolean }) => {
           <PopoverContent width="fit-content">
             <PopoverArrow />
             <PopoverBody>
-              <Image
-                maxWidth="156px"
-                src={qrUrl()}
-                alt={t("files.qrtips")}
-                objectFit="cover"
-              />
+              <Image maxWidth="156px" src={qrUrl()} objectFit="cover" />
             </PopoverBody>
           </PopoverContent>
         </Popover>
