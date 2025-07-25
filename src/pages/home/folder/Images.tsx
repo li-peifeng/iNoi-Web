@@ -1,9 +1,9 @@
-import { Flex, Grid, Heading, VStack } from "@hope-ui/solid"
+import { Box, Flex, Grid, Heading, Text, VStack } from "@hope-ui/solid"
 import { For, Show, createMemo } from "solid-js"
 import { ImageItem } from "./ImageItem"
-import { local, objStore } from "~/store"
+import { countMsg, local, objStore } from "~/store"
 import { GridItem } from "./GridItem"
-import { StoreObj } from "~/types"
+import { ObjType, StoreObj } from "~/types"
 import { useT } from "~/hooks"
 import { useSelectWithMouse } from "./helper"
 
@@ -33,6 +33,9 @@ const ImageLayout = (props: { images: StoreObj[] }) => {
       spacing="$2"
       w="$full"
     >
+      <Box w="100%" textAlign="left" pl="$2">
+        <Text>{countMsg(ObjType.IMAGE)}</Text>
+      </Box>
       <Show when={local["show_folder_in_image_view"] === "top"}>
         {folders()}
       </Show>

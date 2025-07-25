@@ -2,7 +2,9 @@
   "conflict_policy": {
     "cancel_if_exists": "如果文件存在则取消",
     "overwrite_existing": "覆盖现有文件",
-    "skip_existing": "跳过现有文件"
+    "skip_existing": "跳过现有文件",
+    "upload-tips": "将文件拖至此处上传，或点击：",
+    "uploading": "正在上传"
   },
   "fetching_settings_failed": "请稍候，正在加载中...⏳",
   "footer": {
@@ -66,6 +68,14 @@
   "no_images": "当前文件夹没有图片哦",
   "no_more": "* * * * *",
   "obj": {
+    "count": {
+      "count": "{{folders}} 个文件夹，共 {{files}} 个文件",
+      "count_files": "共 {{files}} 个文件",
+      "count_folders": "共 {{folders}} 个文件夹",
+      "selected": "{{folders}} 个文件夹，已选择 {{files}} 个文件",
+      "selected_files": "已选择 {{files}} 个文件",
+      "selected_folders": "已选择 {{folders}} 个文件夹"
+    },
     "modified": "修改时间",
     "name": "名称",
     "size": "大小"

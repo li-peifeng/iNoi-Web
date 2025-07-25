@@ -3,6 +3,8 @@
     "cache_expiration": "缓存过期时间",
     "cache_expiration-tips": "此存储的缓存过期时间(分钟)",
     "disable_index": "禁用索引",
+    "disable_proxy_sign": "禁用代理签名",
+    "disable_proxy_sign-tips": "禁用下载代理 URL 的签名",
     "down_proxy_url": "下载代理URL",
     "driver": "驱动",
     "enable_sign": "启用签名",

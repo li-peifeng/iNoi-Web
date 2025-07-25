@@ -1,9 +1,17 @@
 import { HStack, VStack, Text } from "@hope-ui/solid"
-import { batch, createEffect, createSignal, For, Show } from "solid-js"
+import {
+  batch,
+  createEffect,
+  createMemo,
+  createSignal,
+  For,
+  Show,
+} from "solid-js"
 import { useT } from "~/hooks"
 import {
   allChecked,
   checkboxOpen,
+  countMsg,
   isIndeterminate,
   objStore,
   selectAll,
@@ -26,6 +34,7 @@ export const ListTitle = (props: {
       props.sortCallback(orderBy()!, reverse())
     }
   })
+
   const itemProps = (col: Col) => {
     return {
       fontWeight: "bold",
@@ -58,6 +67,7 @@ export const ListTitle = (props: {
           />
         </Show>
         <Text {...itemProps(cols[0])}>{t(`home.obj.${cols[0].name}`)}</Text>
+        <Text {...itemProps(cols[0])}>{countMsg()}</Text>
       </HStack>
       <Text w={cols[1].w} {...itemProps(cols[1])}>
         {t(`home.obj.${cols[1].name}`)}

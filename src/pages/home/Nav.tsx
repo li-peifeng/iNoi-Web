@@ -5,12 +5,11 @@ import {
   BreadcrumbProps,
   BreadcrumbSeparator,
   HStack,
-  Text,
 } from "@hope-ui/solid"
 import { Link } from "@solidjs/router"
 import { createMemo, For, Show } from "solid-js"
 import { usePath, useRouter, useT } from "~/hooks"
-import { getSetting, local, objStore, State } from "~/store"
+import { getSetting, local } from "~/store"
 import { encodePath, hoverColor, joinBase } from "~/utils"
 
 export const Nav = () => {
@@ -19,43 +18,11 @@ export const Nav = () => {
   const t = useT()
   const { setPathAs } = usePath()
 
-  const folderInfo = createMemo(() => {
-    const { dir, file } = objStore.objs.reduce(
-      (acc, item) => {
-        if (item.is_dir) {
-          acc.dir++
-        } else {
-          acc.file++
-        }
-        return acc
-      },
-      { dir: 0, file: 0 },
-    )
-
-    const parts: string[] = []
-    if (dir) parts.push(`${t("home.nav.dir")}:${dir}`)
-    if (file) parts.push(`${t("home.nav.file")}:${file}`)
-    return parts.join(" ")
-  })
-  const selectInfo = createMemo(() => {
-    const { selected } = objStore.objs.reduce(
-      (acc, item) => {
-        if (item.selected) acc.selected++
-        return acc
-      },
-      { selected: 0 },
-    )
-
-    if (!selected) {
-      return ""
-    }
-    return `S:${selected} `
-  })
   const stickyProps = createMemo<BreadcrumbProps>(() => {
     const mask: BreadcrumbProps = {
       _after: {
         content: "",
-        bgColor: "$background",
+        backgroundColor: "$background",
         position: "absolute",
         height: "100%",
         width: "99vw",
@@ -103,7 +70,7 @@ export const Nav = () => {
                     wordBreak: "break-all",
                   }}
                   color="unset"
-                  _hover={{ bgColor: hoverColor(), color: "unset" }}
+                  _hover={{ backgroundColor: hoverColor(), color: "unset" }}
                   _active={{ transform: "scale(.95)", transition: "0.1s" }}
                   cursor="pointer"
                   p="$1"
@@ -123,18 +90,6 @@ export const Nav = () => {
           }}
         </For>
       </Breadcrumb>
-      <Show when={objStore.state == State.Folder}>
-        <Text
-          css={{
-            whiteSpace: "nowrap",
-            userSelect: "none",
-          }}
-          p="$1"
-        >
-          {selectInfo()}
-          {folderInfo()}
-        </Text>
-      </Show>
     </HStack>
   )
 }

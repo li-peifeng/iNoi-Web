@@ -2,7 +2,9 @@
   "conflict_policy": {
     "cancel_if_exists": "如果檔案存在則取消",
     "overwrite_existing": "覆蓋現有文件",
-    "skip_existing": "跳過現有文件"
+    "skip_existing": "跳過現有文件",
+    "upload-tips": "將檔案拖曳至此處上傳，或點選：",
+    "uploading": "正在上傳"
   },
   "fetching_settings_failed": "請稍候，正在加載中...⏳",
   "footer": {
@@ -66,6 +68,14 @@
   "no_images": "目前資料夾沒有圖片哦",
   "no_more": "* * * * *",
   "obj": {
+    "count": {
+      "count": "{{folders}} 個資料夾，共 {{files}} 個檔案",
+      "count_files": "共 {{files}} 個檔案",
+      "count_folders": "共 {{folders}} 個資料夾",
+      "selected": "{{folders}} 個資料夾，已選擇 {{files}} 個檔案",
+      "selected_files": "已選擇 {{files}} 個檔案",
+      "selected_folders": "已選擇 {{folders}} 個資料夾"
+    },
     "modified": "修改時間",
     "name": "名稱",
     "size": "大小"

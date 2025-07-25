@@ -3,6 +3,8 @@
     "cache_expiration": "Cache Expiration",
     "cache_expiration-tips": "The cache expiration time for this storage(minutes)",
     "disable_index": "Disable index",
+    "disable_proxy_sign": "Disable proxy sign",
+    "disable_proxy_sign-tips": "Disable sign for Download proxy URL",
     "down_proxy_url": "Download proxy URL",
     "driver": "Driver",
     "enable_sign": "Enable sign",

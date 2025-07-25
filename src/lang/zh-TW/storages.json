@@ -3,6 +3,8 @@
     "cache_expiration": "快取過期時間",
     "cache_expiration-tips": "此儲存空間的快取過期時間 (分鐘)",
     "disable_index": "停用索引",
+    "disable_proxy_sign": "停用代理簽章",
+    "disable_proxy_sign-tips": "停用下載代理 URL 的簽章",
     "down_proxy_url": "下載代理地址",
     "driver": "驅動",
     "enable_sign": "啟用簽章",
