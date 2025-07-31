@@ -1,5 +1,7 @@
 {
   "add_storage-tips": "您可能需要在新打开的选项卡中填写一些信息。",
+  "load_default_setting": "加载默认设置",
+  "load_default_setting_success": "加载成功，还没有保存哦",
   "logout_success": "退出成功",
   "messenger-tips": "您可能需要在这个标签页中按提示填写一些信息。",
   "not_admin": "请使用管理员帐户登录",

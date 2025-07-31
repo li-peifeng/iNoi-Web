@@ -50,6 +50,11 @@
       "static": "Normal",
       "sticky": "Stick to top of page"
     },
+    "show_count_msg": "Show file count message",
+    "show_count_msg_options": {
+      "none": "None",
+      "visible": "Visible"
+    },
     "show_folder_in_image_view": "Show folder in image view",
     "show_folder_in_image_view_options": {
       "bottom": "Bottom",

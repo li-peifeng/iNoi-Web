@@ -1,5 +1,7 @@
 {
   "add_storage-tips": "您可能需要在新打開的選項卡中填寫一些訊息。",
+  "load_default_setting": "載入預設設定",
+  "load_default_setting_success": "載入成功，尚未保存哦",
   "logout_success": "登出成功",
   "messenger-tips": "您可能需要在新打開的選項卡中填寫一些訊息。",
   "not_admin": "請使用管理員帳號登入",

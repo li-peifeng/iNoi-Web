@@ -22,6 +22,9 @@ export default defineConfig({
       publicPath: " window.__dynamic_base__",
       // dynamic load resources on index.html, default false. maybe change default true
       transformIndexHtml: true,
+      transformIndexHtmlConfig: {
+        insertBodyAfter: true,
+      },
     }),
   ],
   base: process.env.NODE_ENV === "production" ? "/__dynamic_base__/" : "/",
@@ -29,6 +32,14 @@ export default defineConfig({
   build: {
     // target: "es2015", //next
     // polyfillDynamicImport: false,
+    rollupOptions: {
+      output: {
+        assetFileNames: (assetInfo) =>
+          assetInfo.names?.some((name) => name.endsWith("pdf.worker.min.mjs"))
+            ? "assets/[name]-[hash].js"
+            : "assets/[name]-[hash][extname]",
+      },
+    },
   },
   // experimental: {
   //   renderBuiltUrl: (filename, { type, hostId, hostType }) => {

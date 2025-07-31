@@ -49,6 +49,11 @@
       "static": "常规固定模式",
       "sticky": "磁贴在页面顶部"
     },
+    "show_count_msg": "显示文件统计信息",
+    "show_count_msg_options": {
+      "none": "隐藏",
+      "visible": "显示"
+    },
     "show_folder_in_image_view": "在图片视图中显示文件夹",
     "show_folder_in_image_view_options": {
       "bottom": "下方",

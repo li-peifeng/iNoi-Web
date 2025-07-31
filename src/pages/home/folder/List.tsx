@@ -13,8 +13,10 @@ import {
   checkboxOpen,
   countMsg,
   isIndeterminate,
+  local,
   objStore,
   selectAll,
+  selectedMsg,
   sortObjs,
 } from "~/store"
 import { OrderBy } from "~/store"
@@ -66,8 +68,11 @@ export const ListTitle = (props: {
             }}
           />
         </Show>
-        <Text {...itemProps(cols[0])}>{t(`home.obj.${cols[0].name}`)}</Text>
-        <Text {...itemProps(cols[0])}>{countMsg()}</Text>
+        {selectedMsg() ? (
+          <Text {...itemProps(cols[0])}>{selectedMsg()}</Text>
+        ) : (
+          <Text {...itemProps(cols[0])}>{t(`home.obj.${cols[0].name}`)}</Text>
+        )}
       </HStack>
       <Text w={cols[1].w} {...itemProps(cols[1])}>
         {t(`home.obj.${cols[1].name}`)}
@@ -112,6 +117,11 @@ const ListLayout = () => {
           return <ListItem obj={obj} index={i()} />
         }}
       </For>
+      <Show when={local["show_count_msg"] === "visible"}>
+        <Text size="sm" color="$neutral11">
+          {countMsg()}
+        </Text>
+      </Show>
     </VStack>
   )
 }

@@ -36,6 +36,18 @@ export const initialLocalSettings = [
     options: ["none", "visible"],
   },
   {
+    key: "show_count_msg",
+    default: "none",
+    type: "select",
+    options: ["none", "visible"],
+  },
+  {
+    key: "position_of_header_navbar",
+    default: "static",
+    type: "select",
+    options: ["static", "sticky", "only_navbar_sticky"],
+  },
+  {
     key: "grid_item_size",
     default: "90",
     type: "number",

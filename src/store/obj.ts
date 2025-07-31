@@ -224,22 +224,22 @@ export const setPassword = (password: string) => {
   cookieStorage.setItem("browser-password", password)
 }
 
-export const countMsg = (filterType?: ObjType) => {
+const getCountStr = (
+  objs: StoreObj[],
+  prefix: string,
+  filterType?: ObjType,
+) => {
   const t = useT()
-  const selectedList = selectedObjs()
-  const isSelected = selectedList.length > 0
-  let objs = isSelected ? selectedList : objStore.objs
 
   if (filterType) {
     objs = objs.filter((obj) => obj.is_dir || obj.type === filterType)
   }
 
+  if (objs.length === 0) return ""
+
   const folders = objs.filter((o) => o.is_dir).length
   const files = objs.length - folders
-
-  const vars = { folders: `${folders}`, files: `${files}` }
-  const prefix = isSelected ? "selected" : "count"
-
+  const vars = { folders: folders.toString(), files: files.toString() }
   const key =
     folders && files
       ? `${prefix}`
@@ -249,4 +249,23 @@ export const countMsg = (filterType?: ObjType) => {
           ? `${prefix}_files`
           : ""
   return key ? t(`home.obj.count.${key}`, vars) : ""
+}
+
+export const countMsg = (filterType?: ObjType) =>
+  getCountStr(objStore.objs, "count", filterType)
+
+export const selectedMsg = (filterType?: ObjType) => {
+  const selectedList = selectedObjs()
+  const isSelected = selectedList.length > 0
+
+  return isSelected ? getCountStr(selectedList, "selected", filterType) : ""
+}
+
+export const smartCountMsg = (filterType?: ObjType) => {
+  const selectedList = selectedObjs()
+  const isSelected = selectedList.length > 0
+
+  return isSelected
+    ? getCountStr(selectedList, "selected", filterType)
+    : countMsg(filterType)
 }

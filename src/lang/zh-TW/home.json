@@ -49,6 +49,11 @@
       "static": "正常",
       "sticky": "吸附到頁面頂部"
     },
+    "show_count_msg": "顯示檔案統計資料",
+    "show_count_msg_options": {
+      "none": "隱藏",
+      "visible": "顯示"
+    },
     "show_folder_in_image_view": "在圖片檢視中顯示資料夾",
     "show_folder_in_image_view_options": {
       "bottom": "下方",
@@ -57,7 +62,7 @@
     },
     "show_sidebar": "顯示側邊欄",
     "show_sidebar_options": {
-      "none": "無",
+      "none": "隱藏",
       "visible": "顯示"
     }
   },

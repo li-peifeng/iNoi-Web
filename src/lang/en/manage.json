@@ -1,5 +1,7 @@
 {
   "add_storage-tips": "You may need to fill in some information in the newly opened tab.",
+  "load_default_setting": "Load default settings",
+  "load_default_setting_success": "Loaded successfully, Not saved",
   "logout_success": "Logout successfully",
   "messenger-tips": "You may need to fill in some information on this tab as prompted.",
   "not_admin": "You are not admin user, please login with admin account.",

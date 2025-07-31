@@ -63,6 +63,15 @@ const Preview = () => {
       audio: audios.map(objToAudio),
     })
 
+    // Apply monkey patch to fix https://github.com/DIYgod/APlayer/issues/283
+    const _switch = ap.lrc.switch
+    const _update = ap.lrc.update
+    ap.lrc.switch = (index: any) => {
+      ap.lrc.update = () => {}
+      _switch.call(ap.lrc, index)
+      ap.lrc.update = _update
+    }
+
     if (objStore.provider === "NeteaseMusic") {
       ap.on("loadstart", () => {
         const i = ap.list.index
