@@ -74,10 +74,10 @@
   "no_more": "* * * * *",
   "obj": {
     "count": {
-      "count": "{{folders}} 个文件夹，共 {{files}} 个文件",
-      "count_files": "共 {{files}} 个文件",
-      "count_folders": "共 {{folders}} 个文件夹",
-      "selected": "{{folders}} 个文件夹，已选择 {{files}} 个文件",
+      "count": "此目录共 {{folders}} 个文件夹， {{files}} 个文件",
+      "count_files": "此目录共 {{files}} 个文件",
+      "count_folders": "此目录共 {{folders}} 个文件夹",
+      "selected": "已选择 {{folders}} 个文件夹， {{files}} 个文件",
       "selected_files": "已选择 {{files}} 个文件",
       "selected_folders": "已选择 {{folders}} 个文件夹"
     },
