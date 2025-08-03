@@ -95,7 +95,7 @@
     "success": "下載完成，太棒了！"
   },
   "preview": {
-    "auto_next": "自動下一頁",
+    "auto_next": "按序播放",
     "download": "下載",
     "failed_load_img": "載入圖像失敗",
     "install": "安裝",
@@ -106,9 +106,9 @@
       "close_sidebar": "關閉側邊欄",
       "document_outline": "文件大綱",
       "loading": "正在載入...",
-      "next_page": "下一頁",
+      "next_page": "下一個",
       "no_outline": "此文件無可用大綱",
-      "prev_page": "上一頁",
+      "prev_page": "上一個",
       "toggle_pen": "切換畫筆",
       "toggle_sidebar": "切換側邊欄",
       "zoom_100": "100%",
