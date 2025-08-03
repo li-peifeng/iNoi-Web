@@ -95,7 +95,7 @@
     "success": "下载完成，太棒了！"
   },
   "preview": {
-    "auto_next": "自动下一页",
+    "auto_next": "按序播放",
     "download": "下载",
     "failed_load_img": "载入图像失败",
     "install": "安装",
@@ -106,9 +106,9 @@
       "close_sidebar": "关闭侧边栏",
       "document_outline": "文档大纲",
       "loading": "正在加载...",
-      "next_page": "下一页",
+      "next_page": "下一个",
       "no_outline": "此文档无可用大纲",
-      "prev_page": "上一页",
+      "prev_page": "上一个",
       "toggle_pen": "切换画笔",
       "toggle_sidebar": "切换侧边栏",
       "zoom_100": "100%",
