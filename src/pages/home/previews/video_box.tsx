@@ -6,17 +6,14 @@ import {
   Tooltip,
   HStack,
   Switch,
-  Icon,
-  IconButton,
 } from "@hope-ui/solid"
-import { For, JSXElement, createSignal, createMemo } from "solid-js"
+import { For, JSXElement, createSignal } from "solid-js"
 import { useRouter, useLink, useT } from "~/hooks"
 import { objStore } from "~/store"
 import { ObjType } from "~/types"
-import { convertURL, getPlatform } from "~/utils"
+import { convertURL } from "~/utils"
 import Artplayer from "artplayer"
 import { SelectWrapper } from "~/components"
-import { BsArrowRight } from "solid-icons/bs"
 
 Artplayer.PLAYBACK_RATE = [0.5, 0.75, 1, 1.25, 1.5, 2, 3, 4]
 
@@ -108,17 +105,6 @@ export const VideoBox = (props: {
   }
   props.onAutoNextChange(autoNext === "true")
 
-  const [showAll, setShowAll] = createSignal(
-    localStorage.getItem("video_show_all_players") === "true",
-  )
-  const platform = getPlatform()
-  const platformPlayers = createMemo(() => {
-    if (showAll() || platform === "Unknown") {
-      return players
-    }
-    return players.filter((p) => p.platforms.includes(platform))
-  })
-
   return (
     <VStack w="$full" spacing="$2">
       {props.children}
@@ -147,7 +133,7 @@ export const VideoBox = (props: {
         </Switch>
       </HStack>
       <Flex wrap="wrap" gap="$1" justifyContent="center" alignItems="center">
-        <For each={platformPlayers()}>
+        <For each={players}>
           {(item) => {
             return (
               <Tooltip placement="top" withArrow label={item.name}>
@@ -169,27 +155,6 @@ export const VideoBox = (props: {
             )
           }}
         </For>
-        <IconButton
-          aria-label="Show all players"
-          variant="ghost"
-          onClick={() => {
-            const newShowAll = !showAll()
-            setShowAll(newShowAll)
-            localStorage.setItem(
-              "video_show_all_players",
-              newShowAll.toString(),
-            )
-          }}
-          icon={
-            <Icon
-              as={BsArrowRight}
-              boxSize="$6"
-              color="accent.500"
-              transform={showAll() ? "rotate(180deg)" : "none"}
-              transition="transform 0.2s"
-            />
-          }
-        />
       </Flex>
     </VStack>
   )
