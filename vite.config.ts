@@ -3,6 +3,7 @@ import { defineConfig } from "vite"
 import solidPlugin from "vite-plugin-solid"
 import legacy from "@vitejs/plugin-legacy"
 import { dynamicBase } from "vite-plugin-dynamic-base"
+import { viteStaticCopy } from "vite-plugin-static-copy"
 
 export default defineConfig({
   resolve: {
@@ -26,6 +27,44 @@ export default defineConfig({
         insertBodyAfter: true,
       },
     }),
+    process.env.VITE_LITE !== "true"
+      ? viteStaticCopy({
+          targets: [
+            {
+              src: "node_modules/monaco-editor/min/*",
+              dest: "static/monaco-editor",
+            },
+            {
+              src: "node_modules/katex/dist/katex.min.css",
+              dest: "static/katex",
+            },
+            {
+              src: "node_modules/katex/dist/fonts/*",
+              dest: "static/katex/fonts",
+            },
+            {
+              src: "node_modules/mermaid/dist/mermaid.min.js",
+              dest: "static/mermaid",
+            },
+            {
+              src: "node_modules/@ruffle-rs/ruffle/*.{js,wasm}",
+              dest: "static/ruffle",
+            },
+            {
+              src: "node_modules/libheif-js/libheif-wasm/libheif.{js,wasm}",
+              dest: "static/libheif",
+            },
+            {
+              src: "node_modules/libass-wasm/dist/js/subtitles-octopus-worker.{js,wasm}",
+              dest: "static/libass-wasm",
+            },
+            {
+              src: "src/components/artplayer-plugin-ass/fonts/*",
+              dest: "static/fonts",
+            },
+          ],
+        })
+      : null,
   ],
   base: process.env.NODE_ENV === "production" ? "/__dynamic_base__/" : "/",
   // base: "/",

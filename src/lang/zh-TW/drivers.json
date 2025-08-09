@@ -773,6 +773,8 @@
     "show_root_folder": "顯示根文件夾"
   },
   "Local": {
+    "directory_size": "目錄大小",
+    "directory_size-tips": "這可能會影響主機效能",
     "mkdir_perm": "創建文件夾權限",
     "recycle_bin_path": "回收站路徑",
     "recycle_bin_path-tips": "回收站的路徑，如果空或保留「永久刪除」則永久刪除",
