@@ -3,7 +3,7 @@ version=$(git describe --abbrev=0 --tags)
 sed -i -e "s/\"version\": \"0.0.0\"/\"version\": \"$version\"/g" package.json
 cat package.json
 
-pnpm install
+pnpm install --no-frozen-lockfile
 node ./scripts/i18n.mjs
 pnpm build
 cp -r dist ../
