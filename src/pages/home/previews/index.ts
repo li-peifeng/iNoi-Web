@@ -115,13 +115,6 @@ const previews: Preview[] = [
     prior: true,
   },
   {
-    name: "办公文档",
-    exts: ["doc", "docx", "ppt", "pptx", "xls", "xlsx", "pdf"],
-    provider: /^Aliyundrive(Share)?$/,
-    component: lazy(() => import("./aliyun_office")),
-    prior: true,
-  },
-  {
     name: "PDF预览",
     exts: ["pdf"],
     component: lazy(() => import("./pdf")),

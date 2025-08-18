@@ -607,6 +607,7 @@
     "YandexDisk": "Yandex 网盘"
   },
   "Dropbox": {
+    "RootNamespaceId": "根名称空间ID",
     "api_url_address": "API 网络地址",
     "client_id": "客户端ID",
     "client_id-tips": "如果你没有，请留空",

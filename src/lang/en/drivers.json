@@ -609,6 +609,7 @@
     "YandexDisk": "YandexDisk"
   },
   "Dropbox": {
+    "RootNamespaceId": "Root Name space Id",
     "api_url_address": "Api url address",
     "client_id": "Client id",
     "client_id-tips": "Keep it empty if you don't have one",
