@@ -149,6 +149,7 @@ const operations: Operations = {
 const ContextMenu = () => {
   const { copy } = useUtil()
   const { colorMode } = useColorMode()
+  const { isShare } = useRouter()
   return (
     <Menu
       id={2}
@@ -181,7 +182,7 @@ const ContextMenu = () => {
           const index = UserPermissions.findIndex(
             (item) => item === "decompress",
           )
-          return !UserMethods.can(me(), index)
+          return !isShare() && !UserMethods.can(me(), index)
         }}
         onClick={({ props }) => {
           bus.emit(
@@ -426,12 +427,15 @@ const Preview = () => {
                     "/" +
                     obj.name
                   if (!obj.is_dir) {
-                    url = raw_url + "?inner=" + encodePath(innerPath, true)
+                    const hasQuery = raw_url.includes("?")
+                    url =
+                      raw_url +
+                      `${hasQuery ? "&" : "?"}inner=${encodePath(innerPath, true)}`
                     if (archive_pass !== "") {
-                      url = url + "&pass=" + encodeURIComponent(archive_pass)
+                      url = url + `&pass=${encodeURIComponent(archive_pass)}`
                     }
                     if (sign !== "") {
-                      url = url + "&sign=" + sign
+                      url = url + `&sign=${sign}`
                     }
                   }
                   return (

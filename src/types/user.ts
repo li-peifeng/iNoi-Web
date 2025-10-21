@@ -31,6 +31,7 @@ export const UserPermissions = [
   "ftp_manage",
   "read_archives",
   "decompress",
+  "share",
 ] as const
 
 export const UserMethods = {

@@ -1,6 +1,12 @@
 import { useFetch, useT, useManageTitle } from "~/hooks"
-import { Group, SettingItem, PResp, PEmptyResp, EmptyResp } from "~/types"
-import { r, notify, getTarget, handleResp } from "~/utils"
+import { Group, SettingItem, PResp, PEmptyResp, EmptyResp, Resp } from "~/types"
+import {
+  r,
+  notify,
+  getTarget,
+  handleResp,
+  handleRespWithoutAuthAndNotify,
+} from "~/utils"
 import { createStore } from "solid-js/store"
 import { Button, HStack, Heading, VStack } from "@hope-ui/solid"
 import { createSignal, Index, Show } from "solid-js"
@@ -8,6 +14,7 @@ import { Item } from "./SettingItem"
 import { ResponsiveGrid } from "../common/ResponsiveGrid"
 import S3Buckets from "./S3Buckets"
 import crypto from "crypto-js"
+import { setSettings as renewSettings } from "~/store"
 
 const bucket_parse = (settings: SettingItem[]) => {
   const string = { ...settings.find((i) => i.key === "s3_buckets")! }
@@ -110,7 +117,15 @@ const S3Settings = () => {
               names.add(bucket.name)
             }
             const resp = await saveSettings()
-            handleResp(resp, () => notify.success(t("global.save_success")))
+            handleResp(resp, async () => {
+              notify.success(t("global.save_success"))
+              handleRespWithoutAuthAndNotify(
+                (await r.get("/public/settings")) as Resp<
+                  Record<string, string>
+                >,
+                renewSettings,
+              )
+            })
           }}
         >
           {t("global.save")}

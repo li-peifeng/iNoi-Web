@@ -12,8 +12,15 @@ import { getSetting, local } from "~/store"
 import { encodePath, hoverColor, joinBase } from "~/utils"
 
 export const Nav = () => {
-  const { pathname } = useRouter()
-  const paths = createMemo(() => ["", ...pathname().split("/").filter(Boolean)])
+  const { pathname, isShare } = useRouter()
+  const paths = createMemo(() => {
+    if (!isShare()) {
+      return ["", ...pathname().split("/").filter(Boolean)]
+    } else {
+      const p = pathname().split("/").filter(Boolean)
+      return [`@s/${p[1] ?? ""}`, ...p.slice(2)]
+    }
+  })
   const t = useT()
   const { setPathAs } = usePath()
 
@@ -57,8 +64,10 @@ export const Nav = () => {
             .join("/")
           const href = encodePath(path)
           let text = () => name
-          if (text() === "") {
+          if (!isShare() && text() === "") {
             text = () => getSetting("home_icon") + t("manage.sidemenu.home")
+          } else if (isShare() && i() === 0) {
+            text = () => getSetting("share_icon") + t("manage.sidemenu.shares")
           }
           return (
             <BreadcrumbItem class="nav-item">

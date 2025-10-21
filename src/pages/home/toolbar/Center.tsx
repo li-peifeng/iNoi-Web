@@ -15,6 +15,7 @@ import { bus } from "~/utils"
 import { Download } from "./Download"
 import { Motion, Presence } from "solid-motionone"
 import { UserMethods } from "~/types"
+import { useRouter } from "~/hooks"
 
 export const Center = () => {
   const show = createMemo(
@@ -23,6 +24,7 @@ export const Center = () => {
       checkboxOpen() &&
       haveSelected(),
   )
+  const { isShare } = useRouter()
   return (
     <Presence exitBeforeEnter>
       <Show when={show() && UserMethods.is_admin(me())}>
@@ -53,18 +55,29 @@ export const Center = () => {
             <Show when={haveSelected()}>
               <Badge colorScheme="warning">{selectedObjs().length}</Badge>
             </Show>
-            <For each={["rename", "move", "copy", "delete", "decompress"]}>
-              {(name) => {
-                return (
-                  <CenterIcon
-                    name={name}
-                    onClick={() => {
-                      bus.emit("tool", name)
-                    }}
-                  />
-                )
-              }}
-            </For>
+            <Show when={!isShare()}>
+              <For
+                each={[
+                  "rename",
+                  "move",
+                  "copy",
+                  "delete",
+                  "share",
+                  "decompress",
+                ]}
+              >
+                {(name) => {
+                  return (
+                    <CenterIcon
+                      name={name}
+                      onClick={() => {
+                        bus.emit("tool", name)
+                      }}
+                    />
+                  )
+                }}
+              </For>
+            </Show>
             <CopyLink />
             <Download />
             <CenterIcon

@@ -1,55 +1,56 @@
 {
   "conflict_policy": {
     "cancel_if_exists": "如果檔案存在則取消",
-    "overwrite_existing": "覆蓋現有文件",
-    "skip_existing": "跳過現有文件",
+    "overwrite_existing": "覆蓋現有檔案",
+    "skip_existing": "跳過現有檔案",
     "upload-tips": "將檔案拖曳至此處上傳，或點選：",
     "uploading": "正在上傳"
   },
-  "fetching_settings_failed": "請稍候，正在加載中...⏳",
+  "fetching_settings_failed": "請稍候，正在載入中...⏳",
   "footer": {
     "guest": "iNoi • 2025",
     "manage": "iNoi • 2025",
     "powered_by": "PeiFeng.Li"
   },
-  "get_current_user_failed": "用戶資訊驗證失敗：",
+  "get_current_user_failed": "取得目前使用者失敗： ",
   "input_password": "請輸入密碼",
   "layouts": {
     "grid": "網格檢視",
     "image": "圖片檢視",
-    "list": "清單檢視"
+    "list": "列表檢視"
   },
   "load_more": "載入更多",
+  "Loading storage, please wait": "正在載入儲存，請稍候",
   "local_settings": {
     "aria2_dir": "Aria2 下載目錄",
     "aria2_rpc_secret": "Aria2 RPC 密鑰",
-    "aria2_rpc_url": "Aria2 RPC 網址",
-    "global_default_layout": "預設全域版面",
+    "aria2_rpc_url": "Aria2 RPC 連結",
+    "global_default_layout": "全域預設版面配置",
     "global_default_layout_options": {
       "grid": "網格檢視",
       "image": "圖片檢視",
-      "list": "清單檢視"
+      "list": "列表檢視"
     },
     "grid_item_size": "網格項目大小",
-    "list_item_filename_overflow": "清單項目檔名過長",
+    "list_item_filename_overflow": "長檔名",
     "list_item_filename_overflow_options": {
       "ellipsis": "省略號",
       "multi_line": "多行顯示",
-      "scrollable": "可滾動"
+      "scrollable": "可捲動"
     },
-    "open_item_on_checkbox": "在核取方塊上打開選項",
+    "open_item_on_checkbox": "在核取方塊上開啟選項",
     "open_item_on_checkbox_options": {
-      "dblclick": "雙擊打開",
-      "direct": "直接打開",
-      "disable_while_checked": "選中時禁用"
+      "dblclick": "雙擊",
+      "direct": "直接開啟",
+      "disable_while_checked": "選中時停用"
     },
-    "position_of_header_navbar": "標題欄和導航欄的位置",
+    "position_of_header_navbar": "標題列和導覽列的位置",
     "position_of_header_navbar_options": {
-      "only_navbar_sticky": "僅吸附導航欄",
-      "static": "正常",
+      "only_navbar_sticky": "僅吸附導覽列",
+      "static": "普通",
       "sticky": "吸附到頁面頂部"
     },
-    "show_count_msg": "顯示檔案統計資料",
+    "show_count_msg": "顯示檔案統計資訊",
     "show_count_msg_options": {
       "none": "隱藏",
       "visible": "顯示"
@@ -57,7 +58,7 @@
     "show_folder_in_image_view": "在圖片檢視中顯示資料夾",
     "show_folder_in_image_view_options": {
       "bottom": "下方",
-      "none": "無",
+      "none": "隱藏",
       "top": "上方"
     },
     "show_sidebar": "顯示側邊欄",
@@ -86,7 +87,7 @@
     "size": "大小"
   },
   "package_download": {
-    "current_status": "當前狀態",
+    "current_status": "目前狀態",
     "downloading": "稍等，別關閉頁面哦",
     "failed": "打包下載失敗",
     "fetching_struct": "正在取得資料夾結構",
@@ -97,18 +98,18 @@
   "preview": {
     "auto_next": "按序播放",
     "download": "下載",
-    "failed_load_img": "載入圖像失敗",
+    "failed_load_img": "影像載入失敗",
     "install": "安裝",
     "installing": "正在安裝",
-    "open_in_new_window": "於新視窗中開啟",
-    "open_with": "使用... 打開",
+    "open_in_new_window": "在新視窗中開啟",
+    "open_with": "使用... 開啟",
     "pdf": {
       "close_sidebar": "關閉側邊欄",
       "document_outline": "文件大綱",
       "loading": "正在載入...",
-      "next_page": "下一页",
-      "no_outline": "此文件無可用大綱",
-      "prev_page": "上一页",
+      "next_page": "下一頁",
+      "no_outline": "此文件沒有可用的大綱",
+      "prev_page": "上一頁",
       "toggle_pen": "切換畫筆",
       "toggle_sidebar": "切換側邊欄",
       "zoom_100": "100%",
@@ -121,13 +122,13 @@
       "zoom_auto": "自動",
       "zoom_fit": "適合頁面",
       "zoom_in": "放大",
-      "zoom_levels": "縮放等級",
+      "zoom_levels": "縮放級別",
       "zoom_out": "縮小",
       "zoom_presets": "縮放預設",
       "zoom_width": "頁面寬度"
     },
-    "play_with": "選擇播放器",
-    "tr-install": "巨魔商店",
+    "play_with": "使用...播放",
+    "tr-install": "巨魔安裝",
     "tr-installing": "巨魔正在安裝"
   },
   "search": {
@@ -141,19 +142,19 @@
   },
   "strm": {
     "delete_file": "刪除檔案",
-    "failed": "生成 strm 檔案失敗",
-    "generate_strm": "生成 Strm 檔案",
-    "generate_strm_tips": "您是否希望繼續生成 strm 檔案？",
-    "success": "生成 strm 檔案成功"
+    "failed": "產生 strm 檔案失敗",
+    "generate_strm": "產生 Strm 檔案",
+    "generate_strm_tips": "您是否希望繼續產生 strm 檔案?",
+    "success": "產生 strm 檔案成功"
   },
   "toolbar": {
     "archive": {
-      "extract_header": "提取 {{path}} 至...",
-      "incorrect_password": "密碼錯誤",
-      "input_password": "請輸入提取密碼"
+      "extract_header": "提取到 {{path}} ...",
+      "incorrect_password": "密碼不對哦",
+      "input_password": "請輸入解壓密碼"
     },
-    "aria2_not_set": "請設定 aria2 rpc url",
-    "aria2_set_error": "任務發送失敗，請檢查配置",
+    "aria2_not_set": "請設定 Aria2 RPC 網址",
+    "aria2_set_error": "任務傳送失敗，請檢查設定",
     "batch_download": "批次下載",
     "batch_rename": "批次重新命名",
     "browser_setting": "瀏覽器設定",
@@ -163,57 +164,58 @@
     "copy": "複製",
     "copy_link": "複製連結",
     "decompress": "解壓縮",
-    "decompress-cache-full": "將快取內容全部存入暫存文件",
-    "decompress-pass": "提取密碼: ",
-    "decompress-put-into-new": "解壓縮到新的子資料夾",
+    "decompress-cache-full": "將快取內容全部存入暫存檔案",
+    "decompress-pass": "解壓密碼: ",
+    "decompress-put-into-new": "解壓到新的子資料夾",
     "delete": "刪除",
     "delete_policy": {
       "delete_always": "總是刪除",
       "delete_never": "從不刪除",
       "delete_on_upload_failed": "上傳失敗時刪除",
       "delete_on_upload_succeed": "上傳成功後刪除",
-      "upload_download_stream": "下載串流直接上傳"
+      "upload_download_stream": "下載流直接上傳"
     },
-    "delete-tips": "確定要刪除所選對象嗎?",
+    "delete-tips": "確定要刪除嗎?",
     "down_link": "下載連結",
     "download": "下載",
     "encode_down_link": "編碼下載連結",
-    "extract": "解壓縮至",
+    "extract": "解壓到...",
     "input_dir_name": "輸入資料夾名稱",
     "input_filename": "輸入檔名",
-    "input_new_name": "請輸入新名稱",
-    "local_settings": "本機設定",
-    "local_settings_auto": "設定成功，即將自動刷新",
+    "input_new_name": "輸入新名稱",
+    "local_settings": "瀏覽器設定",
+    "local_settings_auto": "設定成功，即將自動重新整理",
     "mkdir": "新增資料夾",
-    "more": "打開工具列",
+    "more": "開啟工具列",
     "move": "移動",
     "new_file": "新增檔案",
     "offline_download": "離線下載",
     "offline_download-tips": "每行一條連結",
-    "package_download": "整包壓縮下載",
-    "package_download_disabled": "整包壓縮下載已關閉",
-    "package_download-tips": "正在下載，請稍候不要關閉頁面哦",
-    "playlist_download": "播放列表下載",
-    "pre_package_download-tips": "在瀏覽器中使用 streamsaver 而不是伺服器來進行整包下載需要相應的儲存空間支援 CORS，而不支援的儲存空間將失敗。",
+    "package_download": "打包下載",
+    "package_download_disabled": "打包下載已停用",
+    "package_download-tips": "正在下載中，請不要關閉目前頁面哦",
+    "playlist_download": "下載播放清單",
+    "pre_package_download-tips": "在瀏覽器中使用streamsaver而不是伺服器來進行套件下載需要相應的儲存支援cors,而不支援的儲存將失敗。",
     "preview_page": "預覽頁面",
-    "recursive_move": "遞迴移動",
-    "recursive_move_directory-tips": "您確定要將目前的資料夾及其子資料夾中的所有檔案移至指定的資料夾嗎？",
-    "refresh": "刷新",
-    "regex_rename": "正則表達式重新命名",
-    "regex_rename_preview": "更改的檔案",
+    "recursive_move": "聚合移動",
+    "recursive_move_directory-tips": "您確定要將所有檔案移動到指定的資料夾嗎？",
+    "refresh": "重新整理",
+    "regex_rename": "正規表示式重新命名",
+    "regex_rename_preview": "變更的檔案",
     "regex_rename_preview_new_name": "新名稱",
     "regex_rename_preview_old_name": "舊名稱",
-    "regular_rename": "正則表達式檔重新命名。 在第一行輸入源檔名正則表達式，並在第二行輸入新檔名正則表達式。",
-    "remove_empty_directory": "拿掉空的子目錄",
+    "regular_rename": "正規表示式檔案重新命名。 在第一行輸入來源檔名正規表示式，並在第二行輸入新檔名正規表示式。",
+    "remove_empty_directory": "移除空的子目錄",
     "remove_empty_directory-tips": "您確定要刪除所有空子資料夾嗎？",
-    "rename": "重命名",
-    "send_aria2": "發送到aria2",
-    "send_aria2_success": "成功發送到aria2",
+    "rename": "重新命名",
+    "send_aria2": "傳送到 Aria2",
+    "send_aria2_success": "成功傳送到 Aria2",
     "sequential_renaming": "順序重新命名",
-    "sequential_renaming_desc": "新檔名將有一個數值起始值， 並且它將通過向起始值加 1 來按順序顯示。 在第一行輸入新的檔名，並在第二行輸入起始值。",
+    "sequential_renaming_desc": "新檔名將在開頭附加一個起始數字，並透過在該起始值基礎上逐次加 1 來順序顯示。請在首行輸入新檔名，並在第二行輸入起始數字。",
+    "share": "分享",
     "switch_lang": "切換語言",
-    "toggle_checkbox": "切換核取方塊",
-    "toggle_markdown_toc": "切換輪廓",
+    "toggle_checkbox": "開關核取方塊",
+    "toggle_markdown_toc": "是否顯示大綱",
     "toggle_theme": "切換主題",
     "toggle_theme_auto": "自動切換主題",
     "upload": "上傳"
@@ -221,17 +223,17 @@
   "upload": {
     "add_as_task": "新增為任務",
     "back": "返回上傳",
-    "backending": "正在後臺上傳",
+    "backending": "正在後台上傳",
     "clear_done": "清空完成",
     "error": "錯誤",
     "no_files_drag": "沒有檔案被拖入。",
-    "pending": "等待中",
-    "release": "放開來上傳",
+    "pending": "等待中...",
+    "release": "鬆開以上傳",
     "success": "成功",
     "try_rapid": "嘗試秒傳",
     "upload_files": "選擇檔案",
     "upload_folder": "選擇資料夾",
-    "upload-tips": "拖動文件到此處以上傳，或點擊：",
+    "upload-tips": "拖曳檔案到此處以上傳，或點選：",
     "uploading": "上傳中"
   }
 }

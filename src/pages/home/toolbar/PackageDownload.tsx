@@ -34,7 +34,7 @@ const PackageDownload = (props: { onClose: () => void }) => {
   // 3: fetching files
   // 4: success
   const [status, setStatus] = createSignal(0)
-  const { pathname } = useRouter()
+  const { pathname, isShare } = useRouter()
   const selectedObjs = _selectedObjs()
   // if (!selectedObjs.length) {
   //   notify.warning(t("home.toolbar.no_selected"));
@@ -52,6 +52,7 @@ const PackageDownload = (props: { onClose: () => void }) => {
             pathJoin(pathname(), pre),
             obj,
             "direct",
+            isShare(),
             true,
           ),
         },

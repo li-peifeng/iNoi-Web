@@ -1,22 +1,22 @@
 {
   "common": {
     "cache_expiration": "缓存过期时间",
-    "cache_expiration-tips": "此存储的缓存过期时间(分钟)",
+    "cache_expiration-tips": "此存储的缓存过期时间（分钟）",
     "disable_index": "禁用索引",
     "disable_proxy_sign": "禁用代理签名",
     "disable_proxy_sign-tips": "禁用下载代理 URL 的签名",
-    "down_proxy_url": "下载代理URL",
+    "down_proxy_url": "下载代理 URL",
     "driver": "驱动",
     "enable_sign": "启用签名",
-    "extract_folder": "提取文件夹",
+    "extract_folder": "文件夹排序方式",
     "extract_folders": {
-      "back": "提取到最后",
-      "front": "提取到最前"
+      "back": "文件夹置底",
+      "front": "文件夹置顶"
     },
     "mount_path": "挂载路径",
     "mount_path-tips": "要挂载到的路径，它是唯一的，不能重复",
     "order": "序号",
-    "order_by": "排序",
+    "order_by": "排序依据",
     "order_bys": {
       "modified": "修改时间",
       "name": "名称",
@@ -32,6 +32,7 @@
     "proxy_range-tips": "需要启用代理",
     "remark": "备注",
     "status": "状态",
+    "usage": "使用情况",
     "web_proxy": "Web 代理",
     "webdav_policy": "WebDAV 策略",
     "webdav_policys": {

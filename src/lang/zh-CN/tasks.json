@@ -17,7 +17,7 @@
       "path": "目标路径",
       "transfer_dst": "目标路径",
       "transfer_src": "源路径",
-      "transfer_src_local": "源路径 (本地)",
+      "transfer_src_local": "源路径（本地）",
       "url": "链接地址"
     },
     "operation": "操作",
@@ -30,17 +30,17 @@
       "path": "路径"
     }
   },
-  "cancel_selected": "取消选中的",
-  "clear_succeeded": "删除已完成",
+  "cancel_selected": "取消选中",
+  "clear_succeeded": "删除已成功",
   "copy": "将文件从一个存储复制到另一个存储",
-  "decompress": "下载并解压缩档案文件",
-  "decompress_upload": "将解压的文件上传到目标存储",
-  "delete_selected": "删除选中的",
+  "decompress": "下载并解压缩",
+  "decompress_upload": "将解压出的文件上传到目标存储",
+  "delete_selected": "删除选中",
   "done": "已完成",
   "expand": "展开",
   "expand_all": "全部展开",
   "filter": "筛选器",
-  "fold": "折叠...",
+  "fold": "折叠",
   "fold_all": "折叠所有",
   "move": "将文件从一个存储移动到另一个存储",
   "offline_download": "下载文件到本地设备",
@@ -50,17 +50,17 @@
   "retry_selected": "重试已选择",
   "show_only_mine": "只显示我的任务",
   "state": {
-    "0": "等待中...",
-    "1": "运行中...",
+    "0": "等待中",
+    "1": "运行中",
     "2": "成功",
     "3": "正在取消···",
     "4": "已取消",
     "5": "错误",
-    "6": "失败中…",
+    "6": "即将失败",
     "7": "失败",
     "8": "等待重试",
-    "9": "重试前置操作中"
+    "9": "重试准备中"
   },
-  "undone": "运行中...",
+  "undone": "运行中",
   "upload": "上传文件到对应的存储"
 }

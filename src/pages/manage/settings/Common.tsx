@@ -1,12 +1,18 @@
 import { useFetch, useT, useRouter, useManageTitle } from "~/hooks"
-import { Group, SettingItem, PResp, PEmptyResp, EmptyResp } from "~/types"
-import { r, notify, getTarget, handleResp } from "~/utils"
+import { Group, SettingItem, PResp, PEmptyResp, EmptyResp, Resp } from "~/types"
+import {
+  r,
+  notify,
+  getTarget,
+  handleResp,
+  handleRespWithoutAuthAndNotify,
+} from "~/utils"
 import { createStore } from "solid-js/store"
 import { Button, HStack, VStack } from "@hope-ui/solid"
 import { createSignal, Index } from "solid-js"
 import { Item } from "./SettingItem"
 import { ResponsiveGrid } from "../common/ResponsiveGrid"
-
+import { setSettings as renewSettings } from "~/store"
 export interface CommonSettingsProps {
   group: Group
 }
@@ -69,7 +75,15 @@ const CommonSettings = (props: CommonSettingsProps) => {
           loading={saveLoading()}
           onClick={async () => {
             const resp = await saveSettings()
-            handleResp(resp, () => notify.success(t("global.save_success")))
+            handleResp(resp, async () => {
+              notify.success(t("global.save_success"))
+              handleRespWithoutAuthAndNotify(
+                (await r.get("/public/settings")) as Resp<
+                  Record<string, string>
+                >,
+                renewSettings,
+              )
+            })
           }}
         >
           {t("global.save")}

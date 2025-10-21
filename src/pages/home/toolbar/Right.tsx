@@ -20,7 +20,7 @@ import { operations } from "./operations"
 import { IoMagnetOutline } from "solid-icons/io"
 import { AiOutlineCloudUpload, AiOutlineSetting } from "solid-icons/ai"
 import { RiSystemRefreshLine } from "solid-icons/ri"
-import { usePath } from "~/hooks"
+import { usePath, useRouter } from "~/hooks"
 import { Motion } from "solid-motionone"
 import { isTocVisible, setTocDisabled } from "~/components"
 import { BiSolidBookContent } from "solid-icons/bi"
@@ -36,7 +36,7 @@ export const Right = () => {
   const margin = createMemo(() => (isOpen() ? "$4" : "$5"))
   const isFolder = createMemo(() => objStore.state === State.Folder)
   const { refresh } = usePath()
-
+  const { isShare } = useRouter()
   return (
     <Show when={UserMethods.is_admin(me())}>
       <Box
@@ -71,19 +71,25 @@ export const Right = () => {
             transition={{ duration: 0.2 } as any}
           >
             <VStack spacing="$1" class="right-toolbar-in">
-              <Show when={isFolder() && (userCan("write") || objStore.write)}>
-                <RightIcon
-                  as={RiSystemRefreshLine}
-                  tips="refresh"
-                  onClick={() => {
-                    refresh(undefined, true)
-                    notificationService.show({
-                      status: "success",
-                      description: "目录刷新成功",
-                      closable: false,
-                    })
-                  }}
-                />
+              <RightIcon
+                as={RiSystemRefreshLine}
+                tips="refresh"
+                onClick={() => {
+                  refresh(undefined, true)
+                  notificationService.show({
+                    status: "success",
+                    description: "目录刷新成功",
+                    closable: false,
+                  })
+                }}
+              />
+              <Show
+                when={
+                  isFolder() &&
+                  !isShare() &&
+                  (userCan("write") || objStore.write)
+                }
+              >
                 <RightIcon
                   as={AiOutlineCloudUpload}
                   tips="upload"
@@ -122,7 +128,9 @@ export const Right = () => {
                   }}
                 />
               </Show>
-              <Show when={isFolder() && userCan("offline_download")}>
+              <Show
+                when={isFolder() && !isShare() && userCan("offline_download")}
+              >
                 <RightIcon
                   as={IoMagnetOutline}
                   pl="0"

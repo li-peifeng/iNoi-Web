@@ -16,6 +16,14 @@ const hide_routes: Route[] = [
     component: lazy(() => import("./storages/AddOrEdit")),
   },
   {
+    to: "/shares/add",
+    component: lazy(() => import("./shares/AddOrEdit")),
+  },
+  {
+    to: "/shares/edit/:id",
+    component: lazy(() => import("./shares/AddOrEdit")),
+  },
+  {
     to: "/users/add",
     component: lazy(() => import("./users/AddOrEdit")),
   },

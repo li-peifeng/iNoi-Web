@@ -1,6 +1,6 @@
 import { IconTypes } from "solid-icons"
 import { TiDeleteOutline } from "solid-icons/ti"
-import { CgRename } from "solid-icons/cg"
+import { CgRename, CgShare } from "solid-icons/cg"
 import { TbArchive, TbFileArrowRight } from "solid-icons/tb"
 import { TbCopy, TbLink } from "solid-icons/tb"
 import { AiTwotoneDelete } from "solid-icons/ai"
@@ -21,7 +21,7 @@ export const operations: Operations = {
   copy: { icon: TbCopy, color: "$success9" },
   move: { icon: TbFileArrowRight, color: "$warning9" },
   delete: { icon: AiTwotoneDelete, color: "$danger9" },
-  decompress: { icon: TbArchive, color: "$primary9" },
+  decompress: { icon: TbArchive, color: "$neutral9" },
   copy_link: { icon: TbLink, color: "$info9" },
   mkdir: { icon: CgFolderAdd, p: true },
   recursive_move: { icon: ImMoveUp, p: true },
@@ -30,6 +30,7 @@ export const operations: Operations = {
   new_file: { icon: CgFileAdd, p: true },
   cancel_select: { icon: TiDeleteOutline },
   download: { icon: AiOutlineCloudDownload, color: "$primary9" },
+  share: { icon: CgShare, color: "$primary9" },
 }
 // interface Operation {
 //   label: string;

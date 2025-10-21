@@ -1,0 +1,41 @@
+{
+  "accessed": "存取次數",
+  "add_path": "新增路徑",
+  "copy_msg": "複製連結",
+  "creator": "建立者",
+  "expires": "過期時間",
+  "extract_folder": "資料夾排序方式",
+  "extract_folders": {
+    "back": "資料夾置底",
+    "front": "資料夾置頂"
+  },
+  "files": "分享路徑",
+  "files_etc": " 與其它 {{more}} 個",
+  "files_placeholder": "輸入檔案或資料夾路徑，每行一個",
+  "header": "頂部說明",
+  "id": "ID",
+  "input_password": "請輸入分享碼",
+  "max_accessed": "最大存取次數",
+  "no_permission_tip": "建立分享需要啟用「分享」權限。",
+  "order_by": "排序依據",
+  "order_bys": {
+    "modified": "修改時間",
+    "name": "名稱",
+    "size": "大小"
+  },
+  "order_direction": "排序方式",
+  "order_directions": {
+    "asc": "升序",
+    "desc": "降序"
+  },
+  "pwd": "分享碼",
+  "readme": "說明",
+  "remark": "備註",
+  "status": "狀態",
+  "status_list": {
+    "denied": "無權限",
+    "disabled": "已停用",
+    "invalid": "已失效",
+    "work": "正常"
+  }
+}

@@ -17,6 +17,9 @@ const useRouter = () => {
   const pathname = createMemo(() => {
     return trimBase(decodeURIComponent(location.pathname))
   })
+  const isShare = createMemo(() => {
+    return pathname().startsWith("/@s")
+  })
   return {
     to: (
       path: string,
@@ -45,6 +48,7 @@ const useRouter = () => {
       navigate(1)
     },
     pathname: pathname,
+    isShare: isShare,
     search: location.search,
     searchParams: location.query,
     setSearchParams: (
