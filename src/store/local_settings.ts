@@ -54,7 +54,7 @@ export const initialLocalSettings = [
   },
   {
     key: "list_item_filename_overflow",
-    default: "scrollable",
+    default: "multi_line",
     type: "select",
     options: ["ellipsis", "scrollable", "multi_line"],
   },
