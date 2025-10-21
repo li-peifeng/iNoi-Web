@@ -1,5 +1,5 @@
 import { Menu, Item, Submenu } from "solid-contextmenu"
-import { useCopyLink, useDownload, useLink, useT } from "~/hooks"
+import { useCopyLink, useDownload, useLink, useRouter, useT } from "~/hooks"
 import "solid-contextmenu/dist/style.css"
 import { HStack, Icon, Text, useColorMode, Image } from "@hope-ui/solid"
 import { operations } from "../toolbar/operations"
@@ -42,6 +42,7 @@ export const ContextMenu = () => {
     return UserMethods.is_admin(me()) || getSettingBool("package_download")
   }
   const { rawLink } = useLink()
+  const { isShare } = useRouter()
   return (
     <Menu
       id={1}
@@ -49,12 +50,12 @@ export const ContextMenu = () => {
       theme={colorMode() !== "dark" ? "light" : "dark"}
       style="z-index: var(--hope-zIndices-popover)"
     >
-      <For each={["rename", "move", "copy", "delete"]}>
+      <For each={["rename", "move", "copy", "delete", "share"]}>
         {(name) => (
           <Item
             hidden={() => {
               const index = UserPermissions.findIndex((item) => item === name)
-              return !UserMethods.can(me(), index)
+              return isShare() || !UserMethods.can(me(), index)
             }}
             onClick={() => {
               bus.emit("tool", name)
@@ -64,25 +65,24 @@ export const ContextMenu = () => {
           </Item>
         )}
       </For>
-      <Show when={oneChecked()}>
-        <Item
-          hidden={() => {
-            const index = UserPermissions.findIndex(
-              (item) => item === "decompress",
-            )
-            return (
-              !UserMethods.can(me(), index) ||
-              selectedObjs()[0].is_dir ||
-              !isArchive(selectedObjs()[0].name)
-            )
-          }}
-          onClick={() => {
-            bus.emit("tool", "decompress")
-          }}
-        >
-          <ItemContent name="decompress" />
-        </Item>
-      </Show>
+      <Item
+        hidden={() => {
+          const index = UserPermissions.findIndex(
+            (item) => item === "decompress",
+          )
+          return (
+            isShare() ||
+            !UserMethods.can(me(), index) ||
+            selectedObjs().some((o) => o.is_dir) ||
+            selectedObjs().some((o) => !isArchive(o.name))
+          )
+        }}
+        onClick={() => {
+          bus.emit("tool", "decompress")
+        }}
+      >
+        <ItemContent name="decompress" />
+      </Item>
       <Show when={oneChecked()}>
         <Item
           onClick={({ props }) => {

@@ -1,22 +1,22 @@
 {
   "common": {
     "cache_expiration": "快取過期時間",
-    "cache_expiration-tips": "此儲存空間的快取過期時間 (分鐘)",
+    "cache_expiration-tips": "此儲存的快取過期時間（分鐘）",
     "disable_index": "停用索引",
-    "disable_proxy_sign": "停用代理簽章",
-    "disable_proxy_sign-tips": "停用下載代理 URL 的簽章",
-    "down_proxy_url": "下載代理地址",
-    "driver": "驅動",
-    "enable_sign": "啟用簽章",
-    "extract_folder": "提取資料夾",
+    "disable_proxy_sign": "停用代理簽名",
+    "disable_proxy_sign-tips": "停用下載代理 URL 的簽名",
+    "down_proxy_url": "下載代理 URL",
+    "driver": "驅動程式",
+    "enable_sign": "啟用簽名",
+    "extract_folder": "資料夾排序方式",
     "extract_folders": {
-      "back": "提取到最後",
-      "front": "提取到最前"
+      "back": "資料夾置底",
+      "front": "資料夾置頂"
     },
     "mount_path": "掛載路徑",
-    "mount_path-tips": "欲掛載的路徑，它是唯一值，不能重複",
-    "order": "排序",
-    "order_by": "排序",
+    "mount_path-tips": "要掛載到的路徑，它是唯一的，不能重複",
+    "order": "序號",
+    "order_by": "排序依據",
     "order_bys": {
       "modified": "修改時間",
       "name": "名稱",
@@ -24,32 +24,33 @@
     },
     "order_direction": "排序方式",
     "order_directions": {
-      "asc": "遞增",
-      "desc": "遞減"
+      "asc": "升序",
+      "desc": "降序"
     },
     "order-tips": "用於排序",
-    "proxy_range": "代理範圍",
+    "proxy_range": "代理 Range",
     "proxy_range-tips": "需要啟用代理",
     "remark": "備註",
     "status": "狀態",
-    "web_proxy": "Web代理",
+    "usage": "使用情況",
+    "web_proxy": "Web 代理",
     "webdav_policy": "WebDAV 策略",
     "webdav_policys": {
-      "302_redirect": "302 重新轉導",
+      "302_redirect": "302 重新導向",
       "native_proxy": "本機代理",
-      "use_proxy_url": "使用代理地址"
+      "use_proxy_url": "使用代理位址"
     }
   },
   "other": {
-    "filter_by_driver": "按驅動篩選",
+    "filter_by_driver": "按驅動程式篩選",
     "load_all": "全部重新載入",
     "start_load_success": "開始載入",
-    "table_layout": "表格排列"
+    "table_layout": "檢視"
   },
   "table_fields": {
     "status": {
       "disabled": "已停用",
-      "work": "正常運作中"
+      "work": "正常執行中"
     }
   }
 }

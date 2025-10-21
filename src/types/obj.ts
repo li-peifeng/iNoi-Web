@@ -1,3 +1,5 @@
+import { PageResp } from "~/types/resp"
+
 export enum ObjType {
   UNKNOWN,
   FOLDER,
@@ -46,7 +48,4 @@ export type ArchiveMeta = {
   sign: string
 }
 
-export type ArchiveList = {
-  content: Obj[]
-  total: number
-}
+export type ArchiveList = PageResp<Obj>

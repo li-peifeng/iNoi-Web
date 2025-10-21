@@ -72,7 +72,7 @@
     "file": "File"
   },
   "no_images": "No images in the current folder",
-  "no_more": "* * * * *",
+  "no_more": "No more",
   "obj": {
     "count": {
       "count": "{{folders}} folders, {{files}} files in total",
@@ -212,6 +212,7 @@
     "send_aria2_success": "Send to aria2 successfully",
     "sequential_renaming": "Sequential Rename",
     "sequential_renaming_desc": "The new file name will have a numerical starting value appended to it, and it will be displayed sequentially by adding 1 to the starting value. Enter the new file name on the first line and the starting value on the second line.",
+    "share": "Share",
     "switch_lang": "Switch Language",
     "toggle_checkbox": "Toggle Checkbox",
     "toggle_markdown_toc": "Toggle Outline",
@@ -232,6 +233,7 @@
     "try_rapid": "Try rapid",
     "upload_files": "Choose Files",
     "upload_folder": "Choose Folder",
+    "upload-tips": "Drag files here to upload, or click:",
     "uploading": "Uploading"
   }
 }

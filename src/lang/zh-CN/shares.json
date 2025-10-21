@@ -1,0 +1,41 @@
+{
+  "accessed": "访问次数",
+  "add_path": "添加路径",
+  "copy_msg": "复制链接",
+  "creator": "创建者",
+  "expires": "过期时间",
+  "extract_folder": "文件夹排序方式",
+  "extract_folders": {
+    "back": "文件夹置底",
+    "front": "文件夹置顶"
+  },
+  "files": "分享路径",
+  "files_etc": " 与其它 {{more}} 个",
+  "files_placeholder": "输入文件或文件夹路径，每行一个",
+  "header": "顶部说明",
+  "id": "ID",
+  "input_password": "请输入分享码",
+  "max_accessed": "最大访问次数",
+  "no_permission_tip": "创建分享需要启用“分享”权限。",
+  "order_by": "排序依据",
+  "order_bys": {
+    "modified": "修改时间",
+    "name": "名称",
+    "size": "大小"
+  },
+  "order_direction": "排序方式",
+  "order_directions": {
+    "asc": "升序",
+    "desc": "降序"
+  },
+  "pwd": "分享码",
+  "readme": "说明",
+  "remark": "备注",
+  "status": "状态",
+  "status_list": {
+    "denied": "无权限",
+    "disabled": "已禁用",
+    "invalid": "已失效",
+    "work": "正常"
+  }
+}

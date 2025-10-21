@@ -1,6 +1,7 @@
 {
   "name": "inoi-web",
   "version": "0.0.0",
+  "type": "module",
   "author": {
     "name": "The OpenList Projects Contributors",
     "url": "https://github.com/OpenListTeam"
@@ -76,12 +77,13 @@
     "clsx": "^2.1.1",
     "copy-to-clipboard": "^3.3.3",
     "crypto-js": "^4.2.0",
+    "handlebars": "^4.7.8",
     "hash-wasm": "^4.12.0",
     "hls.js": "^1.6.5",
     "ini": "^5.0.0",
     "just-once": "^2.2.0",
     "libass-wasm": "^4.1.0",
-    "iphotos": "2.8.4",
+    "iphotos": "^2.9.0",
     "mark.js": "^8.11.1",
     "mitt": "^3.0.1",
     "mpegts.js": "^1.8.0",
