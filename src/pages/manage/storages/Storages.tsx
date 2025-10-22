@@ -68,15 +68,7 @@ const Storages = () => {
   )
   return (
     <VStack spacing="$3" alignItems="start" w="$full">
-      <HStack
-        spacing="$2"
-        gap="$2"
-        w="$full"
-        wrap={{
-          "@initial": "wrap",
-          "@md": "unset",
-        }}
-      >
+      <HStack spacing="$2" w="$full" wrap="nowrap">
         <Button
           colorScheme="accent"
           loading={getStoragesLoading()}
@@ -129,6 +121,7 @@ const Storages = () => {
           </Select>
         </Show>
         <HopeSwitch
+          flexShrink={0}
           checked={layout() === "table"}
           onChange={(e: Event) => {
             setLayout(
@@ -158,21 +151,24 @@ const Storages = () => {
         </Match>
         <Match when={layout() === "table"}>
           <Box w="$full" overflowX="auto">
-            <Table highlightOnHover dense>
+            <Table
+              highlightOnHover
+              dense
+              css={{
+                tableLayout: "auto", // 自动列宽
+                width: "100%", // 填满容器
+              }}
+            >
               <Thead>
                 <Tr>
-                  <For
-                    each={[
-                      "mount_path",
-                      "driver",
-                      "order",
-                      "usage",
-                      "status",
-                      "remark",
-                    ]}
-                  >
-                    {(title) => <Th>{t(`storages.common.${title}`)}</Th>}
-                  </For>
+                  <Th>{t("storages.common.mount_path")}</Th>
+                  <Th>{t("storages.common.driver")}</Th>
+                  <Th>{t("storages.common.order")}</Th>
+                  <Th css={{ minWidth: "100px" }}>
+                    {t("storages.common.usage")}
+                  </Th>
+                  <Th>{t("storages.common.status")}</Th>
+                  <Th>{t("storages.common.remark")}</Th>
                   <Th>{t("global.operations")}</Th>
                 </Tr>
               </Thead>
