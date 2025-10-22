@@ -303,7 +303,14 @@ const Profile = () => {
           {t("users.add_webauthn")}
         </Button>
       </Show>
-      <PublicKeys isMine={true} userId={me().id} />
+      <Show
+        when={UserMethods.can(
+          me(),
+          UserPermissions.findIndex((p) => p === "ftp_read"),
+        )}
+      >
+        <PublicKeys isMine={true} userId={me().id} />
+      </Show>
       <HStack wrap="wrap" gap="$2" mt="$2">
         <For each={UserPermissions}>
           {(item, i) => (
