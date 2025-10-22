@@ -202,11 +202,7 @@ export const getPreviews = (
     res.push(downloadComponent)
     if (!isShare() || getSettingBool("share_preview")) {
       const textPreviewsToAdd = previews
-        .filter((p) =>
-          ["Markdown", "Markdown with word wrap", "Text Editor"].includes(
-            p.name,
-          ),
-        )
+        .filter((p) => ["阅读文档", "阅读文档自动换行"].includes(p.name))
         .map((p) => ({ name: p.name, component: p.component }))
       res.push(...textPreviewsToAdd)
     }
