@@ -68,7 +68,15 @@ const Storages = () => {
   )
   return (
     <VStack spacing="$3" alignItems="start" w="$full">
-      <HStack spacing="$2" w="$full" wrap="nowrap">
+      <HStack
+        spacing="$2"
+        gap="$2"
+        w="$full"
+        wrap={{
+          "@initial": "wrap",
+          "@md": "unset",
+        }}
+      >
         <Button
           colorScheme="accent"
           loading={getStoragesLoading()}
@@ -161,14 +169,24 @@ const Storages = () => {
             >
               <Thead>
                 <Tr>
-                  <Th>{t("storages.common.mount_path")}</Th>
-                  <Th>{t("storages.common.driver")}</Th>
-                  <Th>{t("storages.common.order")}</Th>
-                  <Th css={{ minWidth: "100px" }}>
+                  <Th css={{ minWidth: "120px" }}>
+                    {t("storages.common.mount_path")}
+                  </Th>
+                  <Th css={{ minWidth: "120px" }}>
+                    {t("storages.common.driver")}
+                  </Th>
+                  <Th css={{ minWidth: "60px" }}>
+                    {t("storages.common.order")}
+                  </Th>
+                  <Th css={{ minWidth: "120px" }}>
                     {t("storages.common.usage")}
                   </Th>
-                  <Th>{t("storages.common.status")}</Th>
-                  <Th>{t("storages.common.remark")}</Th>
+                  <Th css={{ minWidth: "120px" }}>
+                    {t("storages.common.status")}
+                  </Th>
+                  <Th css={{ minWidth: "120px" }}>
+                    {t("storages.common.remark")}
+                  </Th>
                   <Th>{t("global.operations")}</Th>
                 </Tr>
               </Thead>
