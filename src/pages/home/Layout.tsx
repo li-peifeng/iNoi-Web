@@ -6,13 +6,20 @@ import { Body } from "./Body"
 import { Footer } from "./Footer"
 import { Header } from "./header/Header"
 import { Toolbar } from "./toolbar/Toolbar"
+import { createSignal, onMount } from "solid-js"
+
+let announcementShown = false
 
 const Index = () => {
   useTitle(getSetting("site_title"))
   const announcement = getSetting("announcement")
-  if (announcement) {
-    notify.render(<Markdown children={announcement} />)
-  }
+
+  onMount(() => {
+    if (announcement && !announcementShown) {
+      notify.render(() => <Markdown children={announcement} />)
+      announcementShown = true
+    }
+  })
   return (
     <>
       <Header />
