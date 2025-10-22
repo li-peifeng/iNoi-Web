@@ -47,7 +47,7 @@ const previews: Preview[] = [
     prior: true,
   },
   {
-    name: "在线阿里网盘视频",
+    name: "阿里网盘视频",
     type: ObjType.VIDEO,
     provider: /^Aliyundrive(Open)?$/,
     component: lazy(() => import("./aliyun_video")),
@@ -79,13 +79,13 @@ const previews: Preview[] = [
     prior: true,
   },
   {
-    name: "在线查看图片",
+    name: "在线查看",
     type: ObjType.IMAGE,
     component: lazy(() => import("./image")),
     prior: true,
   },
   {
-    name: "在线播放视频",
+    name: "在线播放",
     type: ObjType.VIDEO,
     component: lazy(() => import("./video")),
     prior: true,
@@ -106,12 +106,6 @@ const previews: Preview[] = [
     name: "PLIST",
     exts: ["plist"],
     component: lazy(() => import("./plist")),
-    prior: true,
-  },
-  {
-    name: "图片",
-    exts: ["heic", "heif", "avif", "vvc", "avc", "jpeg", "jpg"],
-    component: lazy(() => import("./heic")),
     prior: true,
   },
   {

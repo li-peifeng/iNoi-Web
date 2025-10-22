@@ -129,7 +129,6 @@ const Storages = () => {
           </Select>
         </Show>
         <HopeSwitch
-          minW={80}
           checked={layout() === "table"}
           onChange={(e: Event) => {
             setLayout(
@@ -163,7 +162,14 @@ const Storages = () => {
               <Thead>
                 <Tr>
                   <For
-                    each={["mount_path", "driver", "order", "status", "remark"]}
+                    each={[
+                      "mount_path",
+                      "driver",
+                      "order",
+                      "usage",
+                      "status",
+                      "remark",
+                    ]}
                   >
                     {(title) => <Th>{t(`storages.common.${title}`)}</Th>}
                   </For>

@@ -1,4 +1,11 @@
-import { HStack, Icon, Text } from "@hope-ui/solid"
+import {
+  HStack,
+  Icon,
+  Progress,
+  ProgressIndicator,
+  ProgressLabel,
+  Text,
+} from "@hope-ui/solid"
 import { Motion } from "solid-motionone"
 import { useContextMenu } from "solid-contextmenu"
 import { batch, Show } from "solid-js"
@@ -11,7 +18,7 @@ import {
   OrderBy,
   selectIndex,
 } from "~/store"
-import { ObjType, StoreObj } from "~/types"
+import { MountDetails, ObjType, StoreObj } from "~/types"
 import { bus, formatDate, getFileSize, hoverColor } from "~/utils"
 import { getIconByObj } from "~/utils/icon"
 import { ItemCheckbox, useSelectWithMouse } from "./helper"
@@ -39,6 +46,35 @@ export const ListItem = (props: { obj: StoreObj; index: number }) => {
   const { openWithDoubleClick, toggleWithClick, restoreSelectionCache } =
     useSelectWithMouse()
   const filenameStyle = () => local["list_item_filename_overflow"]
+  const details = props.obj.mount_details
+  const showDiskUsage =
+    details &&
+    details.total_space &&
+    details.free_space &&
+    details.total_space > 0 &&
+    details.free_space > 0
+  const toReadableUsage = (details: MountDetails) => {
+    let total = details.total_space!
+    let used = total - details.free_space!
+    const units = ["B", "KB", "MB", "GB", "TB", "PB"]
+    const k = 1000
+    let unit_i = 0
+    while (unit_i < units.length - 1 && (used >= k || total >= k)) {
+      used /= k
+      total /= k
+      unit_i++
+    }
+    return `${used.toFixed(2)} / ${total.toFixed(2)} ${units[unit_i]}`
+  }
+  const usedPercentage = (details: MountDetails) => {
+    return (
+      ((details.total_space! - details.free_space!) / details.total_space!) *
+      100.0
+    )
+  }
+  const nearlyFull = (details: MountDetails) => {
+    return details.free_space! / details.total_space! < 0.1
+  }
   return (
     <Motion.div
       initial={{ opacity: 0, scale: 0.95 }}
@@ -145,9 +181,37 @@ export const ListItem = (props: { obj: StoreObj; index: number }) => {
             {props.obj.name}
           </Text>
         </HStack>
-        <Text class="size" w={cols[1].w} textAlign={cols[1].textAlign as any}>
-          {getFileSize(props.obj.size)}
-        </Text>
+        <Show
+          fallback={
+            <Text
+              class="size"
+              w={cols[1].w}
+              textAlign={cols[1].textAlign as any}
+            >
+              {getFileSize(props.obj.size)}
+            </Text>
+          }
+          when={showDiskUsage}
+        >
+          <Progress
+            w={cols[1].w}
+            class="disk-usage-percentage"
+            trackColor="$info3"
+            rounded="$full"
+            size="md"
+            value={usedPercentage(props.obj.mount_details!)}
+          >
+            <ProgressIndicator
+              color={
+                nearlyFull(props.obj.mount_details!) ? "$danger6" : "$info6"
+              }
+              rounded="$md"
+            />
+            <ProgressLabel class="disk-usage-text">
+              {toReadableUsage(props.obj.mount_details!)}
+            </ProgressLabel>
+          </Progress>
+        </Show>
         <Text
           class="modified"
           display={{ "@initial": "none", "@md": "inline" }}
