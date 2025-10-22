@@ -71,13 +71,6 @@ const previews: Preview[] = [
     prior: true,
   },
   {
-    name: "编辑文档",
-    type: ObjType.TEXT,
-    exts: ["url"],
-    component: lazy(() => import("./text-editor")),
-    prior: true,
-  },
-  {
     name: "查看图片",
     type: ObjType.IMAGE,
     component: lazy(() => import("./image")),

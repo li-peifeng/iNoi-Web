@@ -540,16 +540,6 @@
   background-color: unset !important;
 }
 
-.monaco-editor,
-.monaco-editor-background,
-.monaco-editor .inputarea.ime-input {
-  background-color: unset !important;
-}
-
-.monaco-editor .margin {
-  background-color: unset !important;
-}
-
 .hope-c-PJLV.hope-c-PJLV-iciJSBF-css {
   background-color: #ffffff80 !important;
   border-radius: 10px !important;

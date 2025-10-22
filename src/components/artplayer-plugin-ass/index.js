@@ -2,9 +2,6 @@ import SubtitlesOctopus from "libass-wasm"
 import workerUrl from "libass-wasm/dist/js/subtitles-octopus-worker.js?url"
 import wasmUrl from "libass-wasm/dist/js/subtitles-octopus-worker.wasm?url"
 
-import TimesNewRomanFont from "./fonts/TimesNewRoman.ttf?url"
-import fallbackFont from "./fonts/SourceHanSansCN-Bold.woff2?url"
-
 let instance = null
 
 function isAbsoluteUrl(url) {
@@ -13,8 +10,6 @@ function isAbsoluteUrl(url) {
 
 function toAbsoluteUrl(url) {
   if (isAbsoluteUrl(url)) return url
-
-  // handle absolute URL when the `Worker` of `BLOB` type loading network resources
   return new URL(url, document.baseURI).toString()
 }
 
@@ -53,13 +48,9 @@ function setVisible(visible) {
 
 function artplayerPluginAss(options) {
   return async (art) => {
+    // 最小化配置，使用系统默认字体
     instance = new SubtitlesOctopus({
-      // TODO: load available fonts from manage panel
-      availableFonts: {
-        "times new roman": toAbsoluteUrl(TimesNewRomanFont),
-      },
       workerUrl: await loadWorker({ workerUrl, wasmUrl }),
-      fallbackFont: toAbsoluteUrl(fallbackFont),
       video: art.template.$video,
       ...options,
     })
@@ -73,21 +64,16 @@ function artplayerPluginAss(options) {
       pointer-events: none;
       z-index: 20;
     `
-    // switch subtitle track
+
     art.on("artplayer-plugin-ass:switch", (subtitle) => {
       instance.freeTrack()
       instance.setTrackByUrl(subtitle)
       setVisible(true)
     })
 
-    // set subtitle visible
     art.on("subtitle", (visible) => setVisible(visible))
     art.on("artplayer-plugin-ass:visible", (visible) => setVisible(visible))
-
-    // set subtitle offset
     art.on("subtitleOffset", (offset) => (instance.timeOffset = offset))
-
-    // when player destory
     art.on("destroy", () => instance.dispose())
 
     return {
