@@ -3,10 +3,11 @@ import { createMemo, createSignal, Show, Suspense } from "solid-js"
 import { Dynamic } from "solid-js/web"
 import { FullLoading, SelectWrapper } from "~/components"
 import { objStore } from "~/store"
-import { Download } from "../previews/download"
+import { lazy } from "solid-js"
 import { OpenWith } from "./open-with"
 import { getPreviews } from "../previews"
 
+const Download = lazy(() => import("../previews/download"))
 const File = () => {
   const previews = createMemo(() => {
     return getPreviews({ ...objStore.obj, provider: objStore.provider })
