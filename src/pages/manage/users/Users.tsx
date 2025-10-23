@@ -124,15 +124,15 @@ const Users = () => {
             <For each={users()}>
               {(user) => (
                 <Tr>
-                  <Td>{user.username}</Td>
-                  <Td>{user.base_path}</Td>
+                  <Td css={{ minWidth: "80px" }}>{user.username}</Td>
+                  <Td css={{ minWidth: "100px" }}>{user.base_path}</Td>
                   <Td>
                     <Role role={user.role} />
                   </Td>
                   <Td>
                     <Permissions user={user} />
                   </Td>
-                  <Td>
+                  <Td css={{ minWidth: "80px" }}>
                     <Wether yes={!user.disabled} />
                   </Td>
                   <Td>
