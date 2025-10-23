@@ -74,13 +74,17 @@ const Shares = () => {
           <Thead>
             <Tr>
               <For each={["files", "id"]}>
-                {(title) => <Th>{t(`shares.${title}`)}</Th>}
+                {(title) => (
+                  <Th css={{ minWidth: "90px" }}>{t(`shares.${title}`)}</Th>
+                )}
               </For>
               <Show when={UserMethods.is_admin(me())}>
-                <Th>{t(`shares.creator`)}</Th>
+                <Th css={{ minWidth: "100px" }}>{t(`shares.creator`)}</Th>
               </Show>
               <For each={["expires", "accessed", "status", "remark"]}>
-                {(title) => <Th>{t(`shares.${title}`)}</Th>}
+                {(title) => (
+                  <Th css={{ minWidth: "90px" }}>{t(`shares.${title}`)}</Th>
+                )}
               </For>
               <Th>{t("global.operations")}</Th>
             </Tr>
