@@ -463,18 +463,17 @@ const BackupRestore = () => {
         >
           {t("br.restore")}
         </Button>
+        <HopeSwitch
+          id="restore-override"
+          checked={override()}
+          onChange={(e: { currentTarget: HTMLInputElement }) =>
+            setOverride(e.currentTarget.checked)
+          }
+        ></HopeSwitch>
+        <FormLabel>{t(`br.override`)}</FormLabel>
       </HStack>
       <FormControl w="$full" display="flex" flexDirection="column">
         <Flex w="$full" direction="column" gap="$1">
-          <FormLabel>{t(`br.override`)}</FormLabel>
-          <HopeSwitch
-            id="restore-override"
-            checked={override()}
-            onChange={(e: { currentTarget: HTMLInputElement }) =>
-              setOverride(e.currentTarget.checked)
-            }
-          ></HopeSwitch>
-
           <FormLabel>{t(`br.encrypt_password`)}</FormLabel>
           <Input
             id="password"
