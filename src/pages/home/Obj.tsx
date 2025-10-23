@@ -62,9 +62,7 @@ export const Obj = () => {
 
   const isStorageError = createMemo(() => {
     const err = objStore.err
-    return (
-      err.includes("storage not found") || err.includes("please add a storage")
-    )
+    return err.includes("存储不存在") || err.includes("请先创建存储")
   })
 
   const shouldShowStorageButton = createMemo(() => {
@@ -72,7 +70,7 @@ export const Obj = () => {
   })
 
   const storageErrorActions = () => (
-    <Button colorScheme="accent" onClick={() => to("/@manage/storages")}>
+    <Button colorScheme="danger" onClick={() => to("/@manage/storages")}>
       {t("global.go_to_storages")}
     </Button>
   )
